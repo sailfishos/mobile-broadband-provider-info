@@ -1,0 +1,2 @@
+from Config import *
+addFilter("mobile-broadband-provider-info.* devel-file-in-non-devel-package")
