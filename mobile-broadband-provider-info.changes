@@ -1,3 +1,8 @@
+* Tue May 15 2012 Marko Saukko <sage@merproject.org> - 20110511
+- Moved .pc file to -devel package to reduce the install size and 
+  to remove pkgconfig dependency.
+- Fixes MER#262: mobile-broadband-provider-info URL incorrect
+
 * Wed Sep 28 2011 Jussi Kukkonen <jku@linux.intel.com> - 20110511
 - Latest upstream release (BMC#23453)
 
