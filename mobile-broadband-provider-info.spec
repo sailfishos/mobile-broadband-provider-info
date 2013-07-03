@@ -7,12 +7,12 @@
 
 Name:       mobile-broadband-provider-info
 Summary:    Mobile Broadband Dataprovider Database
-Version:    20110511
+Version:    20130704
 Release:    1
 Group:      Applications/Internet
 License:    Creative Commons Public Domain
 URL:        http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
-Source0:    http://ftp.gnome.org/pub/GNOME/sources/mobile-broadband-provider-info/%{version}/%{name}-%{version}.tar.bz2
+Source0:    %{name}-src-%{version}.tar.xz
 Source100:  mobile-broadband-provider-info.yaml
 Source101:  mobile-broadband-provider-info-rpmlintrc
 
@@ -55,13 +55,16 @@ Contains development files for mobile-broadband-provider-info, e.g., .pc file.
 
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-src-%{version}
 
 # >> setup
 # << setup
 
 %build
 # >> build pre
+chmod a+x autogen.sh
+./autogen.sh
+chmod a+x configure
 # << build pre
 
 %configure --disable-static
