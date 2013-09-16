@@ -1,0 +1,15 @@
+* Tue May 15 2012 Marko Saukko <sage@merproject.org> - 20110511
+- Moved .pc file to -devel package to reduce the install size and 
+  to remove pkgconfig dependency.
+- Fixes MER#262: mobile-broadband-provider-info URL incorrect
+
+* Wed Sep 28 2011 Jussi Kukkonen <jku@linux.intel.com> - 20110511
+- Latest upstream release (BMC#23453)
+
+* Sat Apr 10 2010 Anas Nashif <anas.nashif@intel.com> - 20090918
+- Fixed rpmlint errors
+
+* Thu Oct 01 2009 Rusty Lynch <rusty.lynch@intel.com> - 20090918
+- Initial packaging of the 20090918 database release
+
+
