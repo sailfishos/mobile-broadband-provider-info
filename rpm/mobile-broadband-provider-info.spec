@@ -6,9 +6,6 @@ Group:      Applications/Internet
 License:    Creative Commons Public Domain
 URL:        http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
 Source0:    %{name}-%{version}.tar.xz
-Source100:  mobile-broadband-provider-info.yaml
-Source101:  mobile-broadband-provider-info-rpmlintrc
-
 
 %description
 This package contains mobile broadband settings for different service providers
