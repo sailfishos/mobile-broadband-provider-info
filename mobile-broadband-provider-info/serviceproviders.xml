@@ -3498,6 +3498,16 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<name>Aina</name>
+		<gsm>
+			<network-id mcc="244" mnc="03"/>
+			<apn value="internet.aina.fi">
+				<usage type="internet"/>
+				<name>Internet</name>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Dna</name>
 		<gsm>
 			<network-id mcc="244" mnc="04"/>
@@ -3611,6 +3621,16 @@ conceived.
 				<name>Prointernet (public IP)</name>
 				<dns>192.89.123.230</dns>
 				<dns>192.89.123.231</dns>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Aina</name>
+		<gsm>
+			<network-id mcc="244" mnc="91"/>
+			<apn value="internet.aina.fi">
+				<usage type="internet"/>
+				<name>Internet</name>
 			</apn>
 		</gsm>
 	</provider>
