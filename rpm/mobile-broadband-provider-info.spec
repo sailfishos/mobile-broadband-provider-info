@@ -45,6 +45,7 @@ Contains development files for mobile-broadband-provider-info, e.g., .pc file.
 %prep
 %setup -q -n %{name}-%{version}/%{name}
 %patch0 -p1
+%patch1 -p1
 
 %build
 chmod a+x autogen.sh
