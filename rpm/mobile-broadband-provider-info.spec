@@ -7,6 +7,7 @@ License:    Creative Commons Public Domain
 URL:        http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
 Source0:    %{name}-%{version}.tar.xz
 Patch0:     0001-Shorten-excessively-long-access-point-names.patch
+Patch1:     0002-fi-add-Aina-MVNO.patch
 
 %description
 This package contains mobile broadband settings for different service providers
