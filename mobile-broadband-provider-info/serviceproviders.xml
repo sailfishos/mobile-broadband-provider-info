@@ -4186,6 +4186,8 @@ conceived.
 		<name>Dna</name>
 		<gsm>
 			<network-id mcc="244" mnc="03"/>
+			<network-id mcc="244" mnc="12"/>
+			<network-id mcc="244" mnc="13"/>
 			<!-- Phone number dependent:
 			 - Numbers beginning with 044 XXXXXXX turn in to 044 6 XXXXXXX
 			 - Numbers beginning with 041 XXXXXXX turn in to 041 6 XXXXXXX
@@ -4207,74 +4209,10 @@ conceived.
 			</apn>
 			<apn value="mms">
 				<usage type="mms"/>
-				<name>DNA MMS</name>
-				<username>dna</username>
-				<password>mms</password>
-				<mmsc>http://mmsc.dnafinland.fi/</mmsc>
-				<mmsproxy>10.1.1.2:8080</mmsproxy>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>Aina</name>
-		<gsm>
-			<network-id mcc="244" mnc="03"/>
-			<apn value="internet.aina.fi">
-				<usage type="internet"/>
-				<name>Internet</name>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>Dna</name>
-		<gsm>
-			<network-id mcc="244" mnc="04"/>
-			<apn value="internet">
-				<usage type="internet"/>
-				<name>dna internet</name>
-			</apn>
-			<apn value="mms">
-				<usage type="mms"/>
-				<name>DNA MMS</name>
-				<username>dna</username>
-				<password>mms</password>
-				<mmsc>http://mmsc.dnafinland.fi/</mmsc>
-				<mmsproxy>10.1.1.2:8080</mmsproxy>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>Dna</name>
-		<gsm>
-			<network-id mcc="244" mnc="12"/>
-			<apn value="internet">
-				<usage type="internet"/>
-				<name>dna internet</name>
-			</apn>
-			<apn value="mms">
-				<usage type="mms"/>
-				<name>DNA MMS</name>
+				<name>dna MMS</name>
 				<username>dna</username>
 				<password>mms</password>
 				<mmsc>http://mmsc.dnafinland.fi</mmsc>
-				<mmsproxy>10.1.1.2:8080</mmsproxy>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>Dna</name>
-		<gsm>
-			<network-id mcc="244" mnc="13"/>
-			<apn value="internet">
-				<usage type="internet"/>
-				<name>dna internet</name>
-			</apn>
-			<apn value="mms">
-				<usage type="mms"/>
-				<name>DNA MMS</name>
-				<username>dna</username>
-				<password>mms</password>
-				<mmsc>http://mmsc.dnafinland.fi/</mmsc>
 				<mmsproxy>10.1.1.2:8080</mmsproxy>
 			</apn>
 		</gsm>
@@ -4394,21 +4332,27 @@ conceived.
 				<dns>192.89.123.230</dns>
 				<dns>192.89.123.231</dns>
 			</apn>
-			<apn value="wap.sonera.net">
+			<apn value="mms">
 				<usage type="mms"/>
 				<name>Sonera MMS</name>
 				<mmsc>http://mms.sonera.fi:8002</mmsc>
-				<mmsproxy>195.156.25.33:8080</mmsproxy>
+				<mmsproxy>195.156.25.33:80</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
 	<provider>
 		<name>Aina</name>
 		<gsm>
-			<network-id mcc="244" mnc="91"/>
+			<network-id mcc="244" mnc="04"/>
 			<apn value="internet.aina.fi">
 				<usage type="internet"/>
 				<name>Internet</name>
+			</apn>
+			<apn value="mms.aina.fi">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<mmsc>http://mmsc.aina.fi</mmsc>
+				<mmsproxy>10.1.10.2:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -4419,6 +4363,22 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Wekkula</name>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>ÅMT</name>
+		<gsm>
+			<network-id mcc="244" mnc="14"/>
+			<apn value="internet">
+				<usage type="internet"/>
+				<name>Ålcom Internet</name>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Ålcom MMS</name>
+				<mmsc>http://mms.amt.aland.fi</mmsc>
+				<mmsproxy>194.110.177.70:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
