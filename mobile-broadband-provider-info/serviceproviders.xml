@@ -12804,17 +12804,11 @@ conceived.
 				<usage type="internet"/>
 				<name>Internet with VPN (old)</name>
 			</apn>
-			<apn value="good.call">
+                        <!-- http://support.t-mobile.com/docs/DOC-1976 -->
+			<apn value="epc.tmobile.com">
 				<usage type="mms"/>
-				<name>GoodCall Picture Message</name>
-				<mmsc>http://mms.suncom.net:8088/mms</mmsc>
-				<mmsproxy>66.150.33.125:8080</mmsproxy>
-			</apn>
-			<apn value="mms">
-				<usage type="mms"/>
-				<name>Suncom MMS</name>
-				<mmsc>http://mms.suncom.net:8088/mms</mmsc>
-				<mmsproxy>66.150.33.125:8080</mmsproxy>
+				<name>T-Mobile MMS</name>
+				<mmsc>http://mms.msg.eng.t-mobile.com/mms/wapenc</mmsc>
 			</apn>
 		</gsm>
 	</provider>
