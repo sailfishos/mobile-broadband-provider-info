@@ -12831,6 +12831,14 @@ conceived.
 	</provider>
 	<provider>
 		<name>Sprint</name>
+		<gsm>
+			<network-id mcc="310" mnc="120"/>
+			<apn value="internet">
+				<usage type="mms"/>
+				<name>USCC</name>
+				<mmsc>http://mmsc1.uscc.net/mmsc/MMS</mmsc>
+			</apn>
+		</gsm>
 		<cdma>
 			<!-- Assignments taken from IFAST: http://www.ifast.org/files/NationalSID.htm -->
 			<sid value="4103"/>
@@ -12883,14 +12891,6 @@ conceived.
 			<sid value="5116"/>
 			<sid value="5142"/>
 		</cdma>
-		<gsm>
-			<network-id mcc="310" mnc="120"/>
-			<apn value="internet">
-				<usage type="mms"/>
-				<name>USCC</name>
-				<mmsc>http://mmsc1.uscc.net/mmsc/MMS</mmsc>
-			</apn>
-		</gsm>
 	</provider>
 	<provider>
 		<name>Boost Mobile (Prepaid)</name>
