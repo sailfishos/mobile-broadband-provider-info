@@ -4382,6 +4382,22 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<provider>
+		<name>ÅMT</name>
+		<gsm>
+			<network-id mcc="244" mnc="14"/>
+			<apn value="internet">
+				<usage type="internet"/>
+				<name>Ålcom Internet</name>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Ålcom MMS</name>
+				<mmsc>http://mms.amt.aland.fi</mmsc>
+				<mmsproxy>194.110.177.70:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
 </country>
 
 <!-- Fiji -->
