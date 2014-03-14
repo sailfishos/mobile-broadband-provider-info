@@ -1,13 +1,3 @@
-Name:       mobile-broadband-provider-info
-Summary:    Mobile Broadband Dataprovider Database
-Version:    20130911
-Release:    1
-Group:      Applications/Internet
-License:    Creative Commons Public Domain
-URL:        http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
-Source0:    %{name}-%{version}.tar.xz
-
-%description
 This package contains mobile broadband settings for different service providers
 in different countries. The Package contains only informational files so it's
 safe for distributions to grab updates even during feature freeze and
@@ -32,36 +22,9 @@ edit.
 
 The database is released under Creative Commons Public Domain (CC-PD).
 
-%package devel
-Summary:    Development files for mobile-broadband-provider-info package
-Group:      Development/Libraries
-Requires:   %{name} = %{version}-%{release}
-
-%description devel
-Contains development files for mobile-broadband-provider-info, e.g., .pc file.
-
-%prep
-%setup -q -n %{name}-%{version}/%{name}
-
-%build
-chmod a+x autogen.sh
-./autogen.sh
-chmod a+x configure
-
-%configure --disable-static
-make %{?jobs:-j%jobs}
-
-%install
-rm -rf %{buildroot}
-%make_install
-
-%files
-%defattr(-,root,root,-)
-%{_datadir}/mobile-broadband-provider-info/*
-
-%files devel
-%defattr(-,root,root,-)
-%doc ChangeLog COPYING NEWS README
-%{_datadir}/pkgconfig/mobile-broadband-provider-info.pc
+for more info, see:
+http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
 
 
+If you are using pkg-config, variable MOBILE_BROADBAND_PROVIDER_INFO contains
+the full path to the database.
