@@ -9359,26 +9359,12 @@ conceived.
 				<dns>212.17.131.3</dns>
 				<dns>148.122.161.2</dns>
 			</apn>
-			<apn value="mms.ventelo.no">
-				<usage type="mms"/>
-				<name>Ludo MMS</name>
-				<username>ventelo</username>
-				<password>1111</password>
-				<mmsc>http://mmsc/</mmsc>
-				<mmsproxy>10.10.10.11:8080</mmsproxy>
-			</apn>
-			<apn value="mms">
-				<usage type="mms"/>
-				<name>Telenor MMS</name>
-				<mmsc>http://mmsc/</mmsc>
-				<mmsproxy>10.10.10.11:8080</mmsproxy>
-			</apn>
 			<apn value="telenor">
 				<usage type="mms"/>
-				<name>Mobitalk MMS</name>
+				<name>Telenor MMS</name>
 				<username>dj</username>
 				<password>dj</password>
-				<mmsc>http://mmsc/</mmsc>
+				<mmsc>http://mmsc</mmsc>
 				<mmsproxy>10.10.10.11:8080</mmsproxy>
 			</apn>
 		</gsm>
@@ -9454,6 +9440,14 @@ conceived.
 			<apn value="internet.ventelo.no">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+			</apn>
+			<apn value="mms.ventelo.no">
+				<usage type="mms"/>
+				<name>Ventelo MMS</name>
+				<username>ventelo</username>
+				<password>1111</password>
+				<mmsc>http://mmsc/</mmsc>
+				<mmsproxy>10.10.10.11:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
