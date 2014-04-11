@@ -2285,7 +2285,7 @@ conceived.
 				<name>Sunrise MMS</name>
 				<username>mms</username>
 				<password>mms</password>
-				<mmsc> http://mmsc.sunrise.ch</mmsc>
+				<mmsc>http://mmsc.sunrise.ch</mmsc>
 				<mmsproxy>212.35.34.75:8080</mmsproxy>
 			</apn>
 		</gsm>
@@ -8276,7 +8276,7 @@ conceived.
 				<name>ProMonte MMS</name>
 				<username>mms</username>
 				<password>mms</password>
-				<mmsc> http://mm.vor.promonte.com</mmsc>
+				<mmsc>http://mm.vor.promonte.com</mmsc>
 				<mmsproxy>192.168.246.5:8080</mmsproxy>
 			</apn>
 		</gsm>
