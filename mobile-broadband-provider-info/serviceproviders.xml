@@ -4522,6 +4522,7 @@ conceived.
 		<gsm>
 			<network-id mcc="208" mnc="01"/>
 			<network-id mcc="208" mnc="02"/>
+			<network-id mcc="208" mnc="18"/>
 
 			<voicemail>888</voicemail>
 			<balance-check>
@@ -4560,32 +4561,12 @@ conceived.
 				<dns>172.17.0.2</dns>
 				<dns>172.17.0.4</dns>
 			</apn>
-			<apn value="orange-acte">
-				<plan type="postpaid"/>
-				<usage type="mms"/>
-				<name>Orange MMS</name>
-				<username>orange</username>
-				<password>orange</password>
-			</apn>
-			<apn value="orange.ie">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Internet Everywhere 3G</name>
-			</apn>
 			<apn value="orange.acte">
 				<usage type="mms"/>
 				<name>Orange FR-MMS</name>
 				<username>orange</username>
 				<password>orange</password>
 				<mmsc>http://mms.orange.fr</mmsc>
-				<mmsproxy>192.168.10.200:8080</mmsproxy>
-			</apn>
-			<apn value="orange.acte">
-				<usage type="mms"/>
-				<name>MMS Orange GPRS</name>
-				<username>orange</username>
-				<password>orange</password>
-				<mmsc>http://mms.orange.fr/</mmsc>
 				<mmsproxy>192.168.10.200:8080</mmsproxy>
 			</apn>
 		</gsm>
