@@ -567,6 +567,12 @@ conceived.
 				<dns>213.94.78.17</dns>
 				<dns>213.94.78.16</dns>
 			</apn>
+			<apn value="drei.at">
+				<usage type="mms"/>
+				<name>3MMS</name>
+				<mmsc>http://mmsc</mmsc>
+				<mmsproxy>213.94.78.133:8799</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
