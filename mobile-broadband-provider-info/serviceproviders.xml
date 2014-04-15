@@ -1474,10 +1474,10 @@ conceived.
 			<apn value="mms-gprs.mtel.bg">
 				<usage type="mms"/>
 				<name>MobiTel BG MMS</name>
-				<username>Mtel</username>
-				<password>Mtel</password>
-				<mmsc>http://mmsc/</mmsc>
-				<mmsproxy>10.150.0.22:9201</mmsproxy>
+				<username>mtel</username>
+				<password>mtel</password>
+				<mmsc>http://mmsc</mmsc>
+				<mmsproxy>10.150.0.33:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
