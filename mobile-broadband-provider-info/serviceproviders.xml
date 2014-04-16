@@ -5402,19 +5402,25 @@ conceived.
 		<name>China Mobile</name>
 		<gsm>
 			<network-id mcc="454" mnc="12"/>
+			<!-- http://www.hk.chinamobile.com/images/handsets/android_settings_en.pdf -->
+			<apn value="CMHK">
+				<usage type="internet"/>
+				<name>CMHK Data</name>
+			</apn>
 			<apn value="peoples.net">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Peoples Data</name>
 			</apn>
-			<apn value="170170">
+			<apn value="CMHK">
 				<usage type="mms"/>
-				<name>PEOPLES MMS</name>
-				<mmsc>http://mms.peoples.com.hk/mms</mmsc>
+				<name>CMHK MMS</name>
+				<mmsc>http://mms.hk.chinamobile.com/mms</mmsc>
 				<mmsproxy>172.31.31.36:8080</mmsproxy>
 			</apn>
 			<apn value="peoples.mms">
 				<usage type="mms"/>
-				<name>China Mobile HK MMS</name>
+				<name>Peoples MMS</name>
 				<mmsc>http://mms.peoples.com.hk/mms</mmsc>
 				<mmsproxy>172.31.31.36:8080</mmsproxy>
 			</apn>
