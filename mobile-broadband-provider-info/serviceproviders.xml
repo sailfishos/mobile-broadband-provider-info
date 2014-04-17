@@ -5380,21 +5380,16 @@ conceived.
 		<gsm>
 			<network-id mcc="454" mnc="00"/>
 			<network-id mcc="454" mnc="02"/>
-			<apn value="internet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<dns>202.84.255.1</dns>
-				<dns>203.116.254.150</dns>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>New World</name>
-		<gsm>
 			<network-id mcc="454" mnc="10"/>
-			<apn value="internet">
-				<plan type="postpaid"/>
+			<apn value="hkcsl">
 				<usage type="internet"/>
+				<name>CSL Internet</name>
+			</apn>
+			<apn value="hkcsl">
+				<usage type="mms"/>
+				<name>CSL MMS</name>
+				<mmsc>http://192.168.58.171:8002</mmsc>
+				<mmsproxy>192.168.59.51:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
