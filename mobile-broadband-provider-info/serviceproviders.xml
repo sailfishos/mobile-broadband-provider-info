@@ -3766,7 +3766,7 @@ conceived.
 				<usage type="mms"/>
 				<name>Elisa EE MMS</name>
 				<mmsc>http://194.204.2.10</mmsc>
-				<mmsproxy>194.204.2.6:8080</mmsproxy>
+				<mmsproxy>194.204.2.6:8000</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
