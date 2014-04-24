@@ -3373,6 +3373,12 @@ conceived.
 				<usage type="internet"/>
 				<name>3 (statisk IP)</name>
 			</apn>
+			<apn value="data.tre.dk">
+				<usage type="mms"/>
+				<name>3 MMS</name>
+				<mmsc>http://mms.3.dk</mmsc>
+				<mmsproxy>80.251.201.131:8799</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<!-- http://oister.dk - Same network as 3.dk -->
