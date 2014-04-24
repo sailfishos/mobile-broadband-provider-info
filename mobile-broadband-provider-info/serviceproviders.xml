@@ -11396,17 +11396,22 @@ conceived.
 				<dtmf>211</dtmf>
 			</balance-check>
 
-			<!-- http://www.tele2.se/internet-via-gprs.html -->
 			<apn value="internet.tele2.se">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Mobilt Internet</name>
+				<name>Tele2 Internet</name>
 			</apn>
 			<!-- http://www.tele2.se/alien-modem.html -->
 			<apn value="mobileinternet.tele2.se">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Mobilt Bredband</name>
+			</apn>
+			<apn value="internet.tele2.se">
+				<usage type="mms"/>
+				<name>Tele2 MMS</name>
+				<mmsc>http://mmsc.tele2.se</mmsc>
+				<mmsproxy>130.244.202.30:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
