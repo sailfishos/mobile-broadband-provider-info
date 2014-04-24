@@ -10490,15 +10490,8 @@ conceived.
 				<name>Vodafone Internet</name>
 			</apn>
 			<apn value="vas.vodafone.pt">
-				<plan type="postpaid"/>
 				<usage type="mms"/>
 				<name>Vodafone MMS</name>
-				<username>vas</username>
-				<password>vas</password>
-			</apn>
-			<apn value="vas.vodafone.pt">
-				<usage type="mms"/>
-				<name>Vodafone PT MMS</name>
 				<username>vas</username>
 				<password>vas</password>
 				<mmsc>http://mms/servlets/mms</mmsc>
