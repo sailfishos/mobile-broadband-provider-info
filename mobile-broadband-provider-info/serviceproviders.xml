@@ -3740,16 +3740,7 @@ conceived.
 				<usage type="mms"/>
 				<name>EMT MMS</name>
 				<mmsc>http://mms.emt.ee/servlets/mms</mmsc>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>Nordea</name>
-		<gsm>
-			<network-id mcc="248" mnc="01"/>
-			<apn value="internet.emt.ee">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
+				<mmsproxy>217.71.32.82:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
