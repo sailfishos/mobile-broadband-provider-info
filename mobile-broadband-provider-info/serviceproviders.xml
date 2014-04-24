@@ -3766,16 +3766,7 @@ conceived.
 		<gsm>
 			<network-id mcc="248" mnc="03"/>
 			<apn value="internet.tele2.ee">
-				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<username>wap</username>
-				<password>wap</password>
-			</apn>
-			<apn value="mms.emt.ee">
-				<usage type="mms"/>
-				<name>Tele2 EE MMS</name>
-				<mmsc>http://mms.emt.ee/servlets/mms</mmsc>
-				<mmsproxy>217.71.32.82:8080</mmsproxy>
 			</apn>
 			<apn value="mms.tele2.ee">
 				<usage type="mms"/>
