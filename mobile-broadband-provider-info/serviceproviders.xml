@@ -4936,6 +4936,14 @@ conceived.
 				<usage type="internet"/>
 				<name>TopUp and Go (older 1GB SIMs)</name>
 			</apn>
+			<apn value="wap.vodafone.co.uk">
+				<usage type="mms"/>
+				<name>Vodafone MMS</name>
+				<username>wap</username>
+				<password>wap</password>
+				<mmsc>http://mms.vodafone.co.uk/servlets/mms</mmsc>
+				<mmsproxy>212.183.137.12:8799</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
