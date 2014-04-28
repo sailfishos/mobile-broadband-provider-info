@@ -4328,7 +4328,7 @@ conceived.
 				<usage type="mms"/>
 				<name>Sonera MMS</name>
 				<mmsc>http://mms.sonera.fi:8002</mmsc>
-				<mmsproxy>195.156.25.33:80</mmsproxy>
+				<mmsproxy>195.156.25.33:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
