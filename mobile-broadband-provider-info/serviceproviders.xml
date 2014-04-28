@@ -6123,12 +6123,13 @@ conceived.
 				<dns>158.43.192.1</dns>
 				<dns>158.43.128.1</dns>
 			</apn>
-			<apn value="wap.orange.co.il">
+			<apn value="uwap.orange.co.il">
 				<usage type="mms"/>
-				<name>Orange IL</name>
+				<name>Orange MMS</name>
 				<username>orange</username>
 				<password>mobile54</password>
 				<mmsc>http://192.168.220.15/servlets/mms</mmsc>
+				<mmsproxy>192.118.11.55:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
