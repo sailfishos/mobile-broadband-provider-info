@@ -10396,28 +10396,6 @@ conceived.
 				<dns>62.169.67.172</dns>
 				<dns>62.169.67.171</dns>
 			</apn>
-			<apn value="noapn">
-				<name>Apn dinâmico (no apn)</name>
-				<dns>62.169.67.172</dns>
-				<dns>62.169.67.171</dns>
-			</apn>
-			<apn value="mms">
-				<usage type="mms"/>
-				<name>Optimus MMS</name>
-				<mmsc>http://mmsc:10021/mmsc</mmsc>
-				<mmsproxy>62.169.66.5:8799</mmsproxy>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<!-- Merged with Optimus in 2010 -->
-		<name>Clix</name>
-		<gsm>
-			<network-id mcc="268" mnc="03"/>
-			<apn value="clixinternetmovel">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-			</apn>
 		</gsm>
 	</provider>
 	<provider>
@@ -10427,13 +10405,19 @@ conceived.
 			<apn value="umts">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>3G</name>
+				<name>Optimus</name>
 			</apn>
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>GPRS</name>
 				<dns>194.79.69.129</dns>
+			</apn>
+			<apn value="umts">
+				<usage type="mms"/>
+				<name>Optimus MMS</name>
+				<mmsc>http://mmsc:10021/mmsc</mmsc>
+				<mmsproxy>62.169.66.5:8799</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -10444,20 +10428,9 @@ conceived.
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Tmn Internet</name>
-				<username>tmn</username>
-				<password>tmn</password>
+				<name>TMN Internet</name>
 				<dns>88.214.178.1</dns>
 				<dns>88.214.182.2</dns>
-			</apn>
-			<apn value="mmsc.tmn.pt">
-				<plan type="postpaid"/>
-				<usage type="mms"/>
-				<name>Tmn Mms</name>
-				<username>tmn</username>
-				<password>tmnnet</password>
-				<dns>194.65.3.20</dns>
-				<dns>194.65.3.21</dns>
 			</apn>
 			<apn value="mmsc.tmn.pt">
 				<usage type="mms"/>
@@ -10476,6 +10449,7 @@ conceived.
 			<apn value="internet.vodafone.pt">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Vodafone Internet</name>
 				<username>vodafone</username>
 				<password>vodafone</password>
 				<dns>212.18.160.133</dns>
@@ -10503,14 +10477,18 @@ conceived.
 			<apn value="internet.zon.pt">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Dados Móveis</name>
+				<name>Zon Internet</name>
+				<username>vas</username>
+				<password>vas</password>
 			</apn>
 			<apn value="vas.zon.pt">
 				<plan type="postpaid"/>
 				<usage type="mms"/>
-				<name>MMS</name>
+				<name>Zon MMS</name>
 				<username>vas</username>
 				<password>vas</password>
+				<mmsc>http://mms/servlets/mms</mmsc>
+				<mmsproxy>213.30.27.63:8799</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
