@@ -4684,7 +4684,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<name>BT Mobile</name>
 		<gsm>
 			<network-id mcc="234" mnc="00"/>
@@ -4739,7 +4739,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<name>O2</name>
 		<gsm>
 			<network-id mcc="234" mnc="02"/>
@@ -4800,10 +4800,11 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<!-- http://sales.talktalk.co.uk/products/mobile/faq/started.html#A12 -->
 		<name>TalkTalk</name>
 		<gsm>
+			<network-id mcc="234" mnc="16"/>
 			<apn value="mobile.talktalk.co.uk">
 				<gateway>212.183.137.12:8799</gateway>
 				<username>wap</username>
@@ -4811,7 +4812,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<name>T-Mobile</name>
 		<gsm>
 			<network-id mcc="234" mnc="30"/>
@@ -4892,7 +4893,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<name>Vodafone</name>
 		<gsm>
 			<network-id mcc="234" mnc="15"/>
@@ -4946,7 +4947,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<name>3</name>
 		<gsm>
 			<network-id mcc="234" mnc="20"/>
@@ -4964,7 +4965,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<name>Orange</name>
 		<gsm>
 			<network-id mcc="234" mnc="33"/>
