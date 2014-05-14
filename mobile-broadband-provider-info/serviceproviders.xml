@@ -5380,21 +5380,16 @@ conceived.
 		<gsm>
 			<network-id mcc="454" mnc="00"/>
 			<network-id mcc="454" mnc="02"/>
-			<apn value="internet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<dns>202.84.255.1</dns>
-				<dns>203.116.254.150</dns>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>New World</name>
-		<gsm>
 			<network-id mcc="454" mnc="10"/>
-			<apn value="internet">
-				<plan type="postpaid"/>
+			<apn value="hkcsl">
 				<usage type="internet"/>
+				<name>CSL Internet</name>
+			</apn>
+			<apn value="hkcsl">
+				<usage type="mms"/>
+				<name>CSL MMS</name>
+				<mmsc>http://192.168.58.171:8002</mmsc>
+				<mmsproxy>192.168.59.51:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -5402,19 +5397,25 @@ conceived.
 		<name>China Mobile</name>
 		<gsm>
 			<network-id mcc="454" mnc="12"/>
+			<!-- http://www.hk.chinamobile.com/images/handsets/android_settings_en.pdf -->
+			<apn value="CMHK">
+				<usage type="internet"/>
+				<name>CMHK Data</name>
+			</apn>
 			<apn value="peoples.net">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Peoples Data</name>
 			</apn>
-			<apn value="170170">
+			<apn value="CMHK">
 				<usage type="mms"/>
-				<name>PEOPLES MMS</name>
-				<mmsc>http://mms.peoples.com.hk/mms</mmsc>
+				<name>CMHK MMS</name>
+				<mmsc>http://mms.hk.chinamobile.com/mms</mmsc>
 				<mmsproxy>172.31.31.36:8080</mmsproxy>
 			</apn>
 			<apn value="peoples.mms">
 				<usage type="mms"/>
-				<name>China Mobile HK MMS</name>
+				<name>Peoples MMS</name>
 				<mmsc>http://mms.peoples.com.hk/mms</mmsc>
 				<mmsproxy>172.31.31.36:8080</mmsproxy>
 			</apn>
@@ -5431,10 +5432,16 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<!-- http://www.pccw-hkt.com/en/Mobile-Data-Setup-guide/ -->
 		<name>PCCW (Sunday)</name>
 		<gsm>
 			<network-id mcc="454" mnc="16"/>
 			<network-id mcc="454" mnc="19"/>
+			<apn value="pccw">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>PCCW 3G</name>
+			</apn>
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -5446,9 +5453,10 @@ conceived.
 				<name>PCCW 2G/GPRS</name>
 			</apn>
 			<apn value="pccw">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>PCCW 3G</name>
+				<usage type="mms"/>
+				<name>PCCW 3G MMS</name>
+				<mmsc>http://mms.pccw-hkt.com:8080</mmsc>
+				<mmsproxy>10.140.14.10:8080</mmsproxy>
 			</apn>
 			<apn value="pccwmms">
 				<usage type="mms"/>
@@ -5469,29 +5477,39 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<name>Orange</name>
+		<name>3 (2G)</name>
 		<gsm>
 			<network-id mcc="454" mnc="04"/>
-			<apn value="web.orangehk.com">
+			<apn value="web-g.three.com.hk">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>3 (2G) GPRS</name>
 			</apn>
 			<apn value="mms-g.three.com.hk">
 				<usage type="mms"/>
 				<name>3 (2G) MMS</name>
 				<mmsc>http://10.30.15.51:10021/mmsc</mmsc>
-				<mmsproxy>10.30.15.53:9201</mmsproxy>
+				<mmsproxy>10.30.15.53:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<name>Three</name>
+		<name>3</name>
 		<gsm>
+			<!-- http://www.three.com.hk/website/appmanager/three/home?_nfpb=true&pageid=b15201&lang=eng -->
 			<network-id mcc="454" mnc="03"/>
-			<network-id mcc="454" mnc="04"/>
-			<apn value="mobile.three.com.hk">
+			<!-- 3G apn is "mobile.three.com.hk" -->
+			<apn value="mobile.lte.three.com.hk">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>3 (LTE)</name>
+			</apn>
+			<!-- 3G apn is "mobile.three.com.hk" -->
+			<apn value="mobile.lte.three.com.hk">
+				<usage type="mms"/>
+				<name>3 MMS (LTE)</name>
+				<mmsc>http://mms.um.three.com.hk:10021/mmsc</mmsc>
+				<mmsproxy>172.20.97.116:8799</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
