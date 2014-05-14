@@ -5432,10 +5432,16 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<!-- http://www.pccw-hkt.com/en/Mobile-Data-Setup-guide/ -->
 		<name>PCCW (Sunday)</name>
 		<gsm>
 			<network-id mcc="454" mnc="16"/>
 			<network-id mcc="454" mnc="19"/>
+			<apn value="pccw">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>PCCW 3G</name>
+			</apn>
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -5447,9 +5453,10 @@ conceived.
 				<name>PCCW 2G/GPRS</name>
 			</apn>
 			<apn value="pccw">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>PCCW 3G</name>
+				<usage type="mms"/>
+				<name>PCCW 3G MMS</name>
+				<mmsc>http://mms.pccw-hkt.com:8080</mmsc>
+				<mmsproxy>10.140.14.10:8080</mmsproxy>
 			</apn>
 			<apn value="pccwmms">
 				<usage type="mms"/>
