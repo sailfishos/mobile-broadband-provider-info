@@ -5490,14 +5490,16 @@ conceived.
 		<name>3</name>
 		<gsm>
 			<network-id mcc="454" mnc="03"/>
-			<apn value="mobile.three.com.hk">
+			<!-- 3G apn is "mobile.three.com.hk" -->
+			<apn value="mobile.lte.three.com.hk">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>3</name>
+				<name>3 (LTE)</name>
 			</apn>
-			<apn value="mobile.three.com.hk">
+			<!-- 3G apn is "mobile.three.com.hk" -->
+			<apn value="mobile.lte.three.com.hk">
 				<usage type="mms"/>
-				<name>3 MMS</name>
+				<name>3 MMS (LTE)</name>
 				<mmsc>http://mms.um.three.com.hk:10021/mmsc</mmsc>
 				<mmsproxy>172.20.97.116:8799</mmsproxy>
 			</apn>
