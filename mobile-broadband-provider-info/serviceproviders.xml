@@ -5496,6 +5496,7 @@ conceived.
 	<provider>
 		<name>3</name>
 		<gsm>
+			<!-- http://www.three.com.hk/website/appmanager/three/home?_nfpb=true&pageid=b15201&lang=eng -->
 			<network-id mcc="454" mnc="03"/>
 			<!-- 3G apn is "mobile.three.com.hk" -->
 			<apn value="mobile.lte.three.com.hk">
