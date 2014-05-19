@@ -10104,6 +10104,10 @@ conceived.
 			<balance-top-up>
 				<ussd replacement="CODE">*123*CODE#</ussd>
 			</balance-top-up>
+			<apn value="plus">
+				<usage type="internet"/>
+				<name>Plus</name>
+			</apn>
 			<apn value="www.plusgsm.pl">
 				<plan type="postpaid"/>
 				<plan type="prepaid"/>
@@ -10144,6 +10148,12 @@ conceived.
 				<dns>212.2.96.51</dns>
 				<dns>212.2.96.52</dns>
 			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Plus MMS</name>
+				<mmsc>http://mms.plusgsm.pl:8002</mmsc>
+				<mmsproxy>212.2.96.16:8080</mmsproxy>
+			</apn>
 			<apn value="mms.fmgmobile.pl">
 				<usage type="mms"/>
 				<name>FM Group Mobile MMS</name>
@@ -10173,12 +10183,6 @@ conceived.
 			<apn value="mms.plusgsm.pl">
 				<usage type="mms"/>
 				<name>Plus MMS</name>
-				<mmsc>http://mms.plusgsm.pl:8002</mmsc>
-				<mmsproxy>212.2.96.16:8080</mmsproxy>
-			</apn>
-			<apn value="mms">
-				<usage type="mms"/>
-				<name>PlusGSM MMS</name>
 				<mmsc>http://mms.plusgsm.pl:8002</mmsc>
 				<mmsproxy>212.2.96.16:8080</mmsproxy>
 			</apn>
