@@ -9964,7 +9964,7 @@ conceived.
 <country code="pl">
 	<!-- Polish physical operators -->
 	<provider primary="true">
-		<name>T-mobile</name><!-- rebranded from Era in 2011 -->
+		<name>T-Mobile</name> <!-- Rebranded from Era in 2011 -->
 		<gsm>
 			<network-id mcc="260" mnc="02"/>
 			<voicemail>602950</voicemail>
@@ -9981,12 +9981,10 @@ conceived.
 				<dns>213.158.194.1</dns>
 				<dns>213.158.193.38</dns>
 			</apn>
-			<apn value="eramms">
+			<apn value="mms">
 				<usage type="mms"/>
-				<name>Era MMS</name>
-				<username>eramms</username>
-				<password>eramms</password>
-				<mmsc>http://mms.era.pl/servlets/mms</mmsc>
+				<name>T-Mobile MMS</name>
+				<mmsc>http://mms/servlets/mms</mmsc>
 				<mmsproxy>213.158.194.226:8080</mmsproxy>
 			</apn>
 			<apn value="heyahmms">
