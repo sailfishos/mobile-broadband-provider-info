@@ -4335,16 +4335,32 @@ conceived.
 	<provider>
 		<name>Aina</name>
 		<gsm>
-			<network-id mcc="244" mnc="04"/>
+			<network-id mcc="244" mnc="12"/>
 			<apn value="internet.aina.fi">
 				<usage type="internet"/>
-				<name>Internet</name>
+				<name>Aina Web</name>
 			</apn>
 			<apn value="mms.aina.fi">
 				<usage type="mms"/>
-				<name>MMS</name>
+				<name>Aina MMS</name>
 				<mmsc>http://mmsc.aina.fi</mmsc>
 				<mmsproxy>10.1.10.2:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Aina</name>
+		<gsm>
+			<network-id mcc="244" mnc="91"/>
+			<apn value="internet.aina.fi">
+				<usage type="internet"/>
+				<name>Aina Web</name>
+			</apn>
+			<apn value="mms.aina.fi">
+				<usage type="mms"/>
+				<name>Aina MMS</name>
+				<mmsc>http://mms.sonera.fi:8002</mmsc>
+				<mmsproxy>195.156.25.33:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
