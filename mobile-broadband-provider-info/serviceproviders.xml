@@ -4723,35 +4723,20 @@ conceived.
 				<ussd>*100#</ussd>
 			</balance-check>
 			<apn value="giffgaff.com">
+				<plan type="postpaid"/>
 				<plan type="prepaid"/>
 				<usage type="internet"/>
-				<name>Mobile Broadband</name>
+				<name>Giffgaff</name>
+				<username></username>
+				<password></password>
+			</apn>
+			<apn value="giffgaff.com">
+				<usage type="mms"/>
+				<name>Giffgaff MMS</name>
 				<username>giffgaff</username>
-				<password>password</password>
-			</apn>
-			<apn value="payandgo.o2.co.uk">
-				<usage type="mms"/>
-				<name>O2 MMS Prepay</name>
-				<username>payandgo</username>
-				<password>password</password>
-				<mmsc>http://mmsc.mms.o2.co.uk:8002</mmsc>
-				<mmsproxy>193.113.200.195:8080</mmsproxy>
-			</apn>
-			<apn value="wap.o2.co.uk">
-				<usage type="mms"/>
-				<name>O2 MMS Postpay</name>
-				<username>o2wap</username>
-				<password>password</password>
-				<mmsc>http://mmsc.mms.o2.co.uk:8002</mmsc>
-				<mmsproxy>193.113.200.195:8080</mmsproxy>
-			</apn>
-			<apn value="idata.o2.co.uk">
-				<usage type="mms"/>
-				<name>O2 UK MMS</name>
-				<username>vertigo</username>
-				<password>password</password>
-				<mmsc>http://mmsc.mms.o2.co.uk:8002</mmsc>
-				<mmsproxy>193.113.200.195:8080</mmsproxy>
+				<password></password>
+				<mmsc>http://mmsc.mediamessaging.co.uk:8002</mmsc>
+				<mmsproxy>82.132.254.1:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
