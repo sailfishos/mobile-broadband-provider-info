@@ -4799,6 +4799,14 @@ conceived.
 				<username>o2wap</username>
 				<password>password</password>
 			</apn>
+			<apn value="wap.o2.co.uk">
+				<usage type="mms"/>
+				<name>O2 MMS postpay</name>
+				<username>o2wap</username>
+				<password>password</password>
+				<mmsc>http://mmsc.mms.o2.co.uk:8002</mmsc>
+				<mmsproxy>193.113.200.195:8080</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider primary="true">
