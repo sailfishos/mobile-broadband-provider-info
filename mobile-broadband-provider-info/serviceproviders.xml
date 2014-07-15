@@ -3006,6 +3006,12 @@ conceived.
 				<dns>195.182.110.132</dns>
 				<dns>62.134.11.4</dns>
 			</apn>
+			<apn value="internet">
+				<usage type="mms"/>
+				<name>o2 MMS</name>
+				<mmsc>http://10.81.0.7:8002</mmsc>
+				<mmsproxy>82.113.100.5:8080</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
