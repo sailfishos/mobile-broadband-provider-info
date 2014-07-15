@@ -3056,6 +3056,14 @@ conceived.
 				<dns>10.74.83.22</dns>
 				<dns>193.254.160.1</dns>
 			</apn>
+			<apn value="internet.t-mobile">
+				<usage type="mms"/>
+				<name>T-Mobile MMS</name>
+				<username>t-mobile</username>
+				<password>tm</password>
+				<mmsc>http://mms.t-mobile.de/servlets/mms</mmsc>
+				<mmsproxy>172.28.23.131:8008</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
