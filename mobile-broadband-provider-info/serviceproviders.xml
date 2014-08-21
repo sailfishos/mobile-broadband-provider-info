@@ -11361,7 +11361,7 @@ conceived.
 				<usage type="mms"/>
 				<name>3 SE MMS</name>
 				<mmsc>http://mms.tre.se</mmsc>
-				<mmsproxy>mmsproxy.tre.se:8799</mmsproxy>
+				<mmsproxy>172.16.53.11:8799</mmsproxy>
 			</apn>
 			<apn value="services.telenor.se">
 				<usage type="mms"/>
