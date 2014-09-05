@@ -6374,12 +6374,18 @@ conceived.
 			<network-id mcc="405" mnc="52"/>
 			<network-id mcc="405" mnc="54"/>
 			<network-id mcc="405" mnc="56"/>
-
 			<apn value="airtelgprs.com">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Airtel Internet</name>
 				<dns>202.56.230.5</dns>
 				<dns>202.56.240.5</dns>
+			</apn>
+			<apn value="airtelmms.com">
+				<usage type="mms"/>
+				<name>Airtel MMS</name>
+				<mmsc>http://100.1.201.171:10021/mmsc</mmsc>
+				<mmsproxy>100.1.201.172:8799</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
