@@ -3437,6 +3437,7 @@ conceived.
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Telenor</name>
 				<dns>212.88.64.199</dns>
 				<dns>212.88.64.14</dns>
 			</apn>
