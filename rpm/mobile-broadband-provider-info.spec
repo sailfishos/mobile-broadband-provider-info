@@ -6,6 +6,7 @@ Group:      Applications/Internet
 License:    Creative Commons Public Domain
 URL:        http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
 Source0:    %{name}-%{version}.tar.xz
+BuildRequires: libxml2
 
 %description
 This package contains mobile broadband settings for different service providers
@@ -55,6 +56,9 @@ make %{?jobs:-j%jobs}
 rm -rf %{buildroot}
 %make_install
 
+%check
+xmllint --noout --dtdvalid serviceproviders.2.dtd serviceproviders.xml
+
 %files
 %defattr(-,root,root,-)
 %{_datadir}/mobile-broadband-provider-info/*
@@ -63,5 +67,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc ChangeLog COPYING NEWS README
 %{_datadir}/pkgconfig/mobile-broadband-provider-info.pc
-
-
