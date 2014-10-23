@@ -3440,24 +3440,16 @@ conceived.
 				<dns>212.88.64.199</dns>
 				<dns>212.88.64.14</dns>
 			</apn>
-			<apn value="mms.bibob.dk">
-				<usage type="mms"/>
-				<name>Bibob MMS DK</name>
-				<mmsc>http://mms.telenor.dk</mmsc>
-			</apn>
-			<apn value="telenor">
-				<usage type="mms"/>
-				<name>Telenor DK MMS</name>
-				<username>telenor</username>
-				<password>telenor</password>
-				<mmsc>http://mms.telenor.dk</mmsc>
-				<mmsproxy>212.88.64.8:9201</mmsproxy>
-			</apn>
 			<apn value="telenor">
 				<usage type="mms"/>
 				<name>Telenor MMS</name>
 				<mmsc>http://mms.telenor.dk</mmsc>
 				<mmsproxy>212.88.64.8:8080</mmsproxy>
+			</apn>
+			<apn value="mms.bibob.dk">
+				<usage type="mms"/>
+				<name>Bibob MMS DK</name>
+				<mmsc>http://mms.telenor.dk</mmsc>
 			</apn>
 		</gsm>
 	</provider>
