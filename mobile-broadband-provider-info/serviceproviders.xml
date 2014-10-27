@@ -5666,7 +5666,7 @@ conceived.
 		<name>Telenor</name>
 		<gsm>
 			<network-id mcc="216" mnc="01"/>
-			<apn value="net">
+			<apn value="online">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>mobilinternet</name>
