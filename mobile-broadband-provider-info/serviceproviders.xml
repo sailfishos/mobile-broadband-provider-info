@@ -5997,6 +5997,12 @@ conceived.
 				<dns>62.40.32.33</dns>
 				<dns>62.40.32.34</dns>
 			</apn>
+			<apn value="internet">
+				<usage type="mms"/>
+				<name>O2.ie Internet</name>
+				<mmsc>http://mmsc.mms.o2.ie:8002</mmsc>
+				<mmsproxy>62.40.32.40:8080</mmsproxy>
+			</apn>
 			<apn value="pp.internet">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
