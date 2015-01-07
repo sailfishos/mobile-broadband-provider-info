@@ -4380,7 +4380,7 @@ conceived.
 				<usage type="internet"/>
 				<name>Aina Web</name>
 			</apn>
-			<apn value="mms.aina.fi">
+			<apn value="mediapiste">
 				<usage type="mms"/>
 				<name>Aina MMS</name>
 				<mmsc>http://mms.sonera.fi:8002</mmsc>
