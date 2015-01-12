@@ -8148,10 +8148,11 @@ conceived.
 				<usage type="internet"/>
 				<name>O!Karte</name>
 			</apn>
-			<apn value="mms.lmt.lv">
+			<apn value="internet.lmt.lv">
 				<usage type="mms"/>
 				<name>LMT MMS</name>
-				<mmsproxy>212.93.97.201</mmsproxy>
+				<mmsc>http://mmsc.lmt.lv/mmsc</mmsc>
+				<mmsproxy>212.93.97.201:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
