@@ -10687,6 +10687,11 @@ conceived.
 		<name>Vodafone</name>
 		<gsm>
 			<network-id mcc="226" mnc="01"/>
+			<apn value="live.vodafone.com">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>VF Mobile Internet</name>
+			</apn>
 			<apn value="tobe.vodafone.ro">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -10708,13 +10713,6 @@ conceived.
 				<username>internet.pre.vodafone.ro</username>
 				<password>vodafone</password>
 			</apn>
-			<apn value="live.vodafone.com">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Live! (Postpaid)</name>
-				<username>live</username>
-				<password>vodafone</password>
-			</apn>
 			<apn value="live.pre.vodafone.ro">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
@@ -10722,17 +10720,15 @@ conceived.
 				<username>live.pre.vodafone.com</username>
 				<password>vodafone</password>
 			</apn>
-			<apn value="mms.pre.vodafone.ro">
+			<apn value="mms.vodafone.ro">
 				<usage type="mms"/>
-				<name>Vodafone RO MMS PRE</name>
-				<username>mms</username>
-				<password>vodafone</password>
+				<name>Vodafone MMS</name>
 				<mmsc>http://multimedia/servlets/mms</mmsc>
 				<mmsproxy>193.230.161.231:8080</mmsproxy>
 			</apn>
-			<apn value="mms.vodafone.ro">
+			<apn value="mms.pre.vodafone.ro">
 				<usage type="mms"/>
-				<name>Vodafone RO MMS</name>
+				<name>Vodafone RO MMS PRE</name>
 				<username>mms</username>
 				<password>vodafone</password>
 				<mmsc>http://multimedia/servlets/mms</mmsc>
