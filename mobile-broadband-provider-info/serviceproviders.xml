@@ -12674,7 +12674,6 @@ conceived.
 			<network-id mcc="310" mnc="030"/>
 			<network-id mcc="310" mnc="038"/>
 			<network-id mcc="310" mnc="090"/>
-			<network-id mcc="310" mnc="150"/>
 			<network-id mcc="310" mnc="170"/>
 			<network-id mcc="310" mnc="410"/>
 			<network-id mcc="310" mnc="560"/>
@@ -12731,6 +12730,23 @@ conceived.
 				<name>DobsonMMS</name>
 				<mmsc>http://mmsc</mmsc>
 				<mmsproxy>172.23.1.252:8799</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Cricket Wireless</name>
+		<gsm>
+			<network-id mcc="310" mnc="150"/>
+			<!-- https://www.cricketwireless.com/support/apps-and-services/bring-your-own-device-byod/customer/bring-your-own-windows-device.html -->
+			<apn value="ndo">
+				<usage type="internet"/>
+				<name>Cricket Internet</name>
+			</apn>
+			<apn value="ndo">
+				<usage type="mms"/>
+				<name>Cricket MMS</name>
+				<mmsc>http://mmsc.aiowireless.net</mmsc>
+				<mmsproxy>192.168.197.22</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
