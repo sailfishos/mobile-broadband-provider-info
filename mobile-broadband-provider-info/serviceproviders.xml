@@ -11392,18 +11392,12 @@ conceived.
 				<dtmf>211</dtmf>
 			</balance-check>
 
-			<apn value="internet.tele2.se">
+			<apn value="4g.tele2.se">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Tele2 Internet</name>
 			</apn>
-			<!-- http://www.tele2.se/alien-modem.html -->
-			<apn value="mobileinternet.tele2.se">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Mobilt Bredband</name>
-			</apn>
-			<apn value="internet.tele2.se">
+			<apn value="4g.tele2.se">
 				<usage type="mms"/>
 				<name>Tele2 MMS</name>
 				<mmsc>http://mmsc.tele2.se</mmsc>
