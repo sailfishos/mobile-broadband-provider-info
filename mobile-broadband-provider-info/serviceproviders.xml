@@ -3024,7 +3024,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<name>Vodafone</name>
 		<gsm>
 			<network-id mcc="262" mnc="02"/>
@@ -3042,6 +3042,7 @@ conceived.
 			<apn value="web.vodafone.de">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Vodafone Internet</name>
 				<dns>139.7.30.125</dns>
 				<dns>139.7.30.126</dns>
 			</apn>
@@ -3056,7 +3057,9 @@ conceived.
 			</apn>
 			<apn value="event.vodafone.de">
 				<usage type="mms"/>
-				<name>Vodafone DE-MMS</name>
+				<name>Vodafone MMS</name>
+				<dns>139.7.30.125</dns>
+				<dns>139.7.30.126</dns>
 				<mmsc>http://139.7.24.1/servlets/mms</mmsc>
 				<mmsproxy>139.7.29.17:80</mmsproxy>
 			</apn>
