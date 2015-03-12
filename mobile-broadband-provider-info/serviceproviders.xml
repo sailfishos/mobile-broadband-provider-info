@@ -817,6 +817,13 @@ conceived.
 				<dtmf>1258888</dtmf>
 				<ussd-response>*100#</ussd-response>
 			</balance-check>
+			<apn value="telstra.internet">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Telstra Internet</name>
+				<dns>10.4.85.138</dns>
+				<dns>10.4.176.234</dns>
+			</apn>
 			<apn value="telstra.wap">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -831,13 +838,6 @@ conceived.
 				<dns>139.130.4.4</dns>
 				<dns>203.50.2.71</dns>
 			</apn>
-			<apn value="telstra.internet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Telstra (Next G)</name>
-				<dns>10.4.85.138</dns>
-				<dns>10.4.176.234</dns>
-			</apn>
 			<apn value="telstra.pcpack">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -851,6 +851,12 @@ conceived.
 				<usage type="wap"/>
 				<name>Telstra Internet/Wap</name>
 			</apn>
+			<apn value="Telstra.mms">
+				<usage type="mms"/>
+				<name>Telstra MMS</name>
+				<mmsc>http://mmsc.telstra.com:8002</mmsc>
+				<mmsproxy>10.1.1.180:80</mmsproxy>
+			</apn>
 			<apn value="telstra.mms">
 				<plan type="postpaid"/>
 				<usage type="mms"/>
@@ -861,12 +867,6 @@ conceived.
 				<usage type="internet"/>
 				<name>Telstra BigPond</name>
 				<!-- username/password per-user -->
-			</apn>
-			<apn value="Telstra.mms">
-				<usage type="mms"/>
-				<name>Telstra MMS</name>
-				<mmsc>http://mmsc.telstra.com:8002</mmsc>
-				<mmsproxy>10.1.1.180:80</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
