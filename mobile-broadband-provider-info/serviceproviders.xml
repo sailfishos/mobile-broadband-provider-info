@@ -2978,6 +2978,11 @@ conceived.
 			<balance-top-up>
 				<ussd replacement="CODE">*101*CODE#</ussd>
 			</balance-top-up>
+			<apn value="internet.telekom">
+				<usage type="internet"/>
+				<username>tm</username>
+				<password>tm</password>
+			</apn>
 			<apn value="internet.t-d1.de">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -2992,6 +2997,14 @@ conceived.
 				<password>tm</password>
 				<dns>10.74.83.22</dns>
 				<dns>193.254.160.1</dns>
+			</apn>
+			<apn value="internet.telekom">
+				<usage type="mms"/>
+				<name>T-Mobile MMS</name>
+				<username>tm</username>
+				<password>tm</password>
+				<mmsc>http://mms.t-mobile.de/servlets/mms</mmsc>
+				<mmsproxy>172.28.23.131:8008</mmsproxy>
 			</apn>
 			<apn value="internet.t-mobile">
 				<usage type="mms"/>
