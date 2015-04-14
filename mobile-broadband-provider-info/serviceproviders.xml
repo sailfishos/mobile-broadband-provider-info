@@ -6900,14 +6900,14 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<name>TIM</name>
 		<gsm>
 			<network-id mcc="222" mnc="01"/>
 			<apn value="ibox.tim.it">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Maxxi Alice/Internet</name>
+				<name>TIM Internet</name>
 				<dns>217.200.200.42</dns>
 				<dns>213.230.129.10</dns>
 			</apn>
@@ -6919,23 +6919,28 @@ conceived.
 				<dns>213.230.155.94</dns>
 				<dns>213.230.130.222</dns>
 			</apn>
-			<apn value="mms.noverca.it">
-				<usage type="mms"/>
-				<name>NOVERCA MMS</name>
-				<mmsc>http://mms.noverca.it/</mmsc>
-				<mmsproxy>213.230.130.89:80</mmsproxy>
-			</apn>
-			<apn value="mms.tim.it">
+			<apn value="unico.tim.it">
 				<usage type="mms"/>
 				<name>TIM MMS</name>
 				<mmsc>http://mms.tim.it/servlets/mms</mmsc>
 				<mmsproxy>213.230.130.89:80</mmsproxy>
 			</apn>
-			<apn value="unico.tim.it">
+		</gsm>
+	</provider>
+	<provider>
+		<!-- http://www.noverca.it/configurazione-internet-wap-mms -->
+		<name>Noverca</name>
+		<gsm>
+			<network-id mcc="222" mnc="07"/>
+			<apn value="web.noverca.it">
+				<usage type="internet"/>
+				<name>Noverca Web</name>
+			</apn>
+			<apn value="mms.noverca.it">
 				<usage type="mms"/>
-				<name>iTIM</name>
-				<mmsc>http://mms.tim.it/servlets/mms</mmsc>
-				<mmsproxy>213.230.130.89:80</mmsproxy>
+				<name>Noverca MMS</name>
+				<mmsc>http://mms.noverca.it/</mmsc>
+				<mmsproxy>10.248.1.12:80</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
