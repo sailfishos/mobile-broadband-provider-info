@@ -4947,17 +4947,20 @@ conceived.
 		<name>3</name>
 		<gsm>
 			<network-id mcc="234" mnc="20"/>
+			<apn value="three.co.uk">
+				<usage type="internet"/>
+				<name>3 Internet</name>
+			</apn>
 			<apn value="3internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Internet</name>
 			</apn>
 			<apn value="three.co.uk">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Handsets</name>
-				<dns>172.30.139.17</dns>
-				<dns>172.31.139.17</dns>
+				<usage type="mms"/>
+				<name>3 MMS</name>
+				<mmsc>http://mms.um.three.co.uk:10021/mmsc</mmsc>
+				<mmsproxy>217.171.129.2:8799</mmsproxy> <!-- mms.three.co.uk -->
 			</apn>
 		</gsm>
 	</provider>
