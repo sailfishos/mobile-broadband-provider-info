@@ -5268,7 +5268,7 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<name>Wind</name>
+		<name>WIND</name>
 		<gsm>
 			<network-id mcc="202" mnc="09"/>
 			<network-id mcc="202" mnc="10"/>
@@ -5285,22 +5285,19 @@ conceived.
 			<apn value="gint.b-online.gr">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<username>web</username>
-				<password>web</password>
+				<name>WIND Internet</name>
+			</apn>
+			<apn value="mnet.b-online.gr">
+				<usage type="mms"/>
+				<name>WIND MMS</name>
+				<mmsc>http://192.168.200.95/servlets/mms</mmsc>
+				<mmsproxy>192.168.200.11:9401</mmsproxy>
 			</apn>
 			<apn value="q-mms.myq.gr">
 				<usage type="mms"/>
 				<name>Q-Telecom MMS GPRS</name>
 				<mmsc>http://mms.myq.gr</mmsc>
 				<mmsproxy>192.168.80.134:8080</mmsproxy>
-			</apn>
-			<apn value="mnet.b-online.gr">
-				<usage type="mms"/>
-				<name>WIND GR MMS</name>
-				<username>mms</username>
-				<password>mms</password>
-				<mmsc>http://192.168.200.95/servlets/mms</mmsc>
-				<mmsproxy>192.168.200.11:9401</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
