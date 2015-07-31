@@ -12764,7 +12764,7 @@ conceived.
 				<usage type="mms"/>
 				<name>Cricket MMS</name>
 				<mmsc>http://mmsc.aiowireless.net</mmsc>
-				<mmsproxy>192.168.197.22</mmsproxy>
+				<mmsproxy>192.168.196.78</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
