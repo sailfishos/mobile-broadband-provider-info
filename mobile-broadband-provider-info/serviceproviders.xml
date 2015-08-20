@@ -12686,7 +12686,7 @@ conceived.
 
 <!-- United States -->
 <country code="us">
-	<provider>
+	<provider primary="true">
 		<name>AT&amp;T</name>
 		<gsm>
 			<network-id mcc="310" mnc="030"/>
@@ -12755,6 +12755,7 @@ conceived.
 		<name>Cricket Wireless</name>
 		<gsm>
 			<network-id mcc="310" mnc="150"/>
+			<network-id mcc="310" mnc="410"/>
 			<!-- https://www.cricketwireless.com/support/apps-and-services/bring-your-own-device-byod/customer/bring-your-own-windows-device.html -->
 			<apn value="ndo">
 				<usage type="internet"/>
