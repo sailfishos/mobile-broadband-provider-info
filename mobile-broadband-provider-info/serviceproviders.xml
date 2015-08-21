@@ -4492,7 +4492,8 @@ conceived.
 			<apn value="mmsfree">
 				<usage type="mms"/>
 				<name>Free Mobile MMS</name>
-				<mmsc>http://212.27.40.225</mmsc>
+				<mmsc>http://mms.free.fr</mmsc>
+				<mmsproxy>212.27.40.225:80</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
