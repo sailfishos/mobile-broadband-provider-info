@@ -6139,6 +6139,13 @@ conceived.
 			<apn value="net.hotm">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Hot Mobile Internet</name>
+			</apn>
+			<apn value="mms.hotm">
+				<usage type="mms"/>
+				<name>Hot Mobile MMS</name>
+				<mmsc>http://mms.hotmobile.co.il</mmsc>
+				<mmsproxy>80.246.131.99:80</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
