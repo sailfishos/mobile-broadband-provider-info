@@ -10486,6 +10486,11 @@ conceived.
 		<name>Vodafone</name>
 		<gsm>
 			<network-id mcc="268" mnc="01"/>
+			<apn value="net2.vodafone.pt">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Vodafone Internet</name>
+			</apn>
 			<apn value="internet.vodafone.pt">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -10496,9 +10501,12 @@ conceived.
 				<dns>212.18.160.134</dns>
 			</apn>
 			<apn value="net2.vodafone.pt">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Vodafone Internet</name>
+				<usage type="mms"/>
+				<name>Vodafone MMS</name>
+				<username>vodafone</username>
+				<password>vodafone</password>
+				<mmsc>http://mms.vodafone.pt/servlets/mms</mmsc>
+				<mmsproxy>213.30.42.196:80</mmsproxy> <!-- iproxy.vodafone.pt -->
 			</apn>
 			<apn value="vas.vodafone.pt">
 				<usage type="mms"/>
