@@ -10996,8 +10996,7 @@ conceived.
 	</provider>
 	<provider>
 		<name>Megafon</name>
-		<name xml:lang="ru">Мегафон</name>
-
+		<name xml:lang="ru">МегаФон</name>
 		<gsm>
 			<network-id mcc="250" mnc="02"/>
 			<balance-check>
@@ -11006,10 +11005,8 @@ conceived.
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>RUS</name>
-				<name xml:lang="ru">Россия</name>
-				<username>gdata</username>
-				<password>gdata</password>
+				<name>Megafon Internet</name>
+				<name xml:lang="ru">МегаФон Интернет</name>
 			</apn>
 			<apn value="mms">
 				<usage type="mms"/>
