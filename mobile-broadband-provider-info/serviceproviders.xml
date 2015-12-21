@@ -5658,28 +5658,16 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<name>T-Mobile</name>
+		<name>Telekom</name>
 		<gsm>
 			<network-id mcc="216" mnc="30"/>
-			<apn value="internet">
-				<plan type="postpaid"/>
+			<apn value="internet.telekom">
 				<usage type="internet"/>
-				<dns>212.51.115.1</dns>
-				<dns>194.176.224.6</dns>
+				<name>Telekom Internet</name>
 			</apn>
-			<apn value="mms-westel">
-				<plan type="postpaid"/>
+			<apn value="internet.telekom">
 				<usage type="mms"/>
-				<name>MMS</name>
-				<username>mms</username>
-				<dns>212.51.115.1</dns>
-				<dns>194.176.224.3</dns>
-			</apn>
-			<apn value="mms">
-				<usage type="mms"/>
-				<name>T-Mobile MMS</name>
-				<username>mms</username>
-				<password>mms</password>
+				<name>Telekom MMS</name>
 				<mmsc>http://mms.t-mobile.hu/servlets/mms</mmsc>
 				<mmsproxy>212.51.126.10:8080</mmsproxy>
 			</apn>
