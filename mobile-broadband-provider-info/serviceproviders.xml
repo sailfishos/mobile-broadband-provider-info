@@ -61,9 +61,11 @@ conceived.
 			</apn>
 			<apn value="etisalat">
 				<usage type="mms"/>
-				<name>Etisalat UAE MMS</name>
+				<name>etisalat mms</name>
+				<username>mms</username>
+				<password>mms</password>
 				<mmsc>http://mms/servlets/mms</mmsc>
-				<mmsproxy>10.12.0.32:8080</mmsproxy>
+				<mmsproxy>10.12.0.30:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -77,6 +79,13 @@ conceived.
 			<apn value="du">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>du internet</name>
+			</apn>
+			<apn value="du">
+				<usage type="mms"/>
+				<name>du mms</name>
+				<mmsc>http://mms.du.ae</mmsc>
+				<mmsproxy>10.19.18.4:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -9244,13 +9253,47 @@ conceived.
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Unrestricted (public)</name>
+				<name>Vodafone NZ</name>
 			</apn>
 			<apn value="live.vodafone.com">
 				<usage type="mms"/>
-				<name>Vodafone NZ MMS</name>
+				<name>VFNZ Gateway</name>
 				<mmsc>http://pxt.vodafone.net.nz/pxtsend</mmsc>
 				<mmsproxy>172.30.38.3:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Spark NZ</name>
+		<gsm>
+			<network-id mcc="530" mnc="05"/>
+			<apn value="internet">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Data</name>
+			</apn>
+			<apn value="internet">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<mmsc>http://lsmmsc.xtra.co.nz</mmsc>
+				<mmsproxy>210.55.11.73:80</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Skinny</name>
+		<gsm>
+			<network-id mcc="530" mnc="05"/>
+			<apn value="wapaccess.co.nz">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>default</name>
+			</apn>
+			<apn value="wapaccess.co.nz">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<mmsc>http://mms.mmsaccess.co.nz</mmsc>
+				<mmsproxy>210.45.9.59:80</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
