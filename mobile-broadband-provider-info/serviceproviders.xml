@@ -10968,12 +10968,6 @@ conceived.
 				<mmsc>http://mms.tre.se</mmsc>
 				<mmsproxy>172.16.53.11:8799</mmsproxy>
 			</apn>
-			<apn value="services.telenor.se">
-				<usage type="mms"/>
-				<name>Telenor MMS</name>
-				<mmsc>http://mms</mmsc>
-				<mmsproxy>172.30.253.241:8799</mmsproxy>
-			</apn>
 		</gsm>
 	</provider>
 	<provider>
