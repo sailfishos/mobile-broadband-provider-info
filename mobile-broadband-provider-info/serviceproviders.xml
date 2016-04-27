@@ -6059,6 +6059,7 @@ conceived.
 			<network-id mcc="404" mnc="03"/>
 			<network-id mcc="404" mnc="06"/>
 			<network-id mcc="404" mnc="10"/>
+			<network-id mcc="404" mnc="16"/>
 			<network-id mcc="404" mnc="28"/>
 			<network-id mcc="404" mnc="31"/>
 			<network-id mcc="404" mnc="37"/>
@@ -6071,12 +6072,16 @@ conceived.
 			<network-id mcc="404" mnc="90"/>
 			<network-id mcc="404" mnc="92"/>
 			<network-id mcc="404" mnc="93"/>
+			<network-id mcc="404" mnc="94"/>
+			<network-id mcc="404" mnc="95"/>
 			<network-id mcc="404" mnc="96"/>
 			<network-id mcc="404" mnc="97"/>
 			<network-id mcc="404" mnc="98"/>
 			<network-id mcc="405" mnc="51"/>
 			<network-id mcc="405" mnc="52"/>
+			<network-id mcc="405" mnc="53"/>
 			<network-id mcc="405" mnc="54"/>
+			<network-id mcc="405" mnc="55"/>
 			<network-id mcc="405" mnc="56"/>
 			<apn value="airtelgprs.com">
 				<plan type="postpaid"/>
