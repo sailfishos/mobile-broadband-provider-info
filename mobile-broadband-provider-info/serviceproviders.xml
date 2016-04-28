@@ -6313,6 +6313,14 @@ conceived.
 				<username>mtnl</username>
 				<password>mtnl123</password>
 			</apn>
+			<apn value="mtnl.net">
+				<usage type="mms"/>
+				<name>MTNL MMS</name>
+				<username>mtnl</username>
+				<password>mtnl123</password>
+				<mmsc>http://mtnlmms/</mmsc>
+				<mmsproxy>10.10.10.10:9401</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
