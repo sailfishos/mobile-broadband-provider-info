@@ -2352,6 +2352,7 @@ conceived.
 		<gsm>
 			<network-id mcc="460" mnc="00"/>
 			<network-id mcc="460" mnc="02"/>
+			<network-id mcc="460" mnc="07"/>
 			<apn value="cmwap">
 				<plan type="postpaid"/>
 				<usage type="wap"/>
