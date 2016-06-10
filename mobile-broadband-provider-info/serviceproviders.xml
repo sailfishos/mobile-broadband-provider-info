@@ -3269,11 +3269,6 @@ conceived.
 				<mmsc>http://mms.telenor.dk</mmsc>
 				<mmsproxy>212.88.64.8:8080</mmsproxy>
 			</apn>
-			<apn value="mms.bibob.dk">
-				<usage type="mms"/>
-				<name>Bibob MMS DK</name>
-				<mmsc>http://mms.telenor.dk</mmsc>
-			</apn>
 		</gsm>
 	</provider>
 
