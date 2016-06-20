@@ -4,7 +4,8 @@ Version:    20130911
 Release:    1
 Group:      Applications/Internet
 License:    Creative Commons Public Domain
-URL:        http://live.gnome.org/NetworkManager/MobileBroadband/ServiceProviders
+BuildArch:  noarch
+URL:        https://git.merproject.org/mer-core/mobile-broadband-provider-info
 Source0:    %{name}-%{version}.tar.xz
 BuildRequires: libxml2
 
@@ -45,12 +46,9 @@ Contains development files for mobile-broadband-provider-info, e.g., .pc file.
 %setup -q -n %{name}-%{version}/%{name}
 
 %build
-chmod a+x autogen.sh
 ./autogen.sh
-chmod a+x configure
-
-%configure --disable-static
-make %{?jobs:-j%jobs}
+%configure
+make
 
 %install
 rm -rf %{buildroot}
@@ -61,7 +59,7 @@ xmllint --noout --dtdvalid serviceproviders.2.dtd serviceproviders.xml
 
 %files
 %defattr(-,root,root,-)
-%{_datadir}/mobile-broadband-provider-info/*
+%{_datadir}/mobile-broadband-provider-info
 
 %files devel
 %defattr(-,root,root,-)
