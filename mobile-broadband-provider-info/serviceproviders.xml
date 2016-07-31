@@ -9032,6 +9032,23 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<provider>
+		<!-- MVNO operating on Telia's network -->
+                <!-- https://onecall.no/kundeservice/oppsett-manuelt -->
+		<name>One Call</name>
+		<gsm>
+			<network-id mcc="242" mnc="02"/>
+			<apn value="internet">
+				<usage type="internet"/>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>OneCall MMS</name>
+				<mmsc>http://mms.nwn.no</mmsc>
+				<mmsproxy>188.149.250.10:80</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
 	<!-- http://www.ice.no/Mobilt-bredb%C3%A5nd-1046.aspx -->
 	<provider>
 		<name>ice.net (Nordisk Mobiltelefon)</name>
