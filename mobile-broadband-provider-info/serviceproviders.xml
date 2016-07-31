@@ -9017,15 +9017,23 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<!-- MVNO operating on NetCom's network -->
+		<!-- MVNO operating on Telia's network -->
+                <!-- https://www.chess.no/hjelp/spoersmaal-svar/hjelp-til-mms-og-internett -->
 		<name>Chess</name>
 		<gsm>
 			<network-id mcc="242" mnc="02"/>
-			<apn value="netcom">
+			<apn value="telia">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<username>chess</username>
-				<password>chess</password>
+				<name>Chess Internet</name>
+			</apn>
+			<apn value="telia">
+				<usage type="mms"/>
+				<name>Chess MMS</name>
+				<username>mms</username>
+				<password>telia</password>
+				<mmsc>http://mm/</mmsc>
+				<mmsproxy>212.169.66.4:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
