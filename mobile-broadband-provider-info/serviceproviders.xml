@@ -8994,8 +8994,8 @@ conceived.
 
 <!-- Norway -->
 <country code="no">
-	<provider>
-		<name>Netcom</name>
+	<provider primary="true">
+		<name>Telia</name>
 		<gsm>
 			<network-id mcc="242" mnc="02"/>
 
@@ -9003,32 +9003,54 @@ conceived.
 				<ussd>*150#</ussd>
 			</balance-check>
 
-			<apn value="internet.netcom.no">
+			<apn value="telia">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<username>netcom</username>
-				<password>netcom</password>
+				<name>Telia Internet</name>
 			</apn>
-			<apn value="mms.netcom.no">
+			<apn value="telia">
 				<usage type="mms"/>
-				<name>Chess MMS</name>
-				<username>chess</username>
-				<password>chess</password>
-				<mmsc>http://mms/</mmsc>
-				<mmsproxy>193.209.134.133:8080</mmsproxy>
+				<name>Telia MMS</name>
+				<mmsc>http://mm/</mmsc>
+				<mmsproxy>212.169.66.4:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<!-- MVNO operating on NetCom's network -->
+		<!-- MVNO operating on Telia's network -->
+                <!-- https://www.chess.no/hjelp/spoersmaal-svar/hjelp-til-mms-og-internett -->
 		<name>Chess</name>
 		<gsm>
 			<network-id mcc="242" mnc="02"/>
-			<apn value="netcom">
+			<apn value="telia">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<username>chess</username>
-				<password>chess</password>
+				<name>Chess Internet</name>
+			</apn>
+			<apn value="telia">
+				<usage type="mms"/>
+				<name>Chess MMS</name>
+				<username>mms</username>
+				<password>telia</password>
+				<mmsc>http://mm/</mmsc>
+				<mmsproxy>212.169.66.4:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<!-- MVNO operating on Telia's network -->
+                <!-- https://onecall.no/kundeservice/oppsett-manuelt -->
+		<name>One Call</name>
+		<gsm>
+			<network-id mcc="242" mnc="02"/>
+			<apn value="internet">
+				<usage type="internet"/>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>OneCall MMS</name>
+				<mmsc>http://mms.nwn.no</mmsc>
+				<mmsproxy>188.149.250.10:80</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
