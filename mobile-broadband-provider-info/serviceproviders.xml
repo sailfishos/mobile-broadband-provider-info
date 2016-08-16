@@ -12318,58 +12318,16 @@ conceived.
 			<network-id mcc="310" mnc="410"/>
 			<network-id mcc="310" mnc="560"/>
 			<network-id mcc="310" mnc="680"/>
-			<!-- http://www.wireless.att.com/answer-center/main.jsp?solutionId=35078&t=solutionTab -->
-			<apn value="wap.cingular">
-				<plan type="postpaid"/>
+			<!-- https://www.att.com/esupport/article.html#!/wireless/KM1062162 -->
+			<apn value="NXTGENPHONE">
 				<usage type="internet"/>
-				<name>MEdia Net (phones)</name>
+				<name>AT&amp;T Internet</name>
 			</apn>
-			<apn value="Broadband">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>LaptopConnect (data cards)</name>
-			</apn>
-			<apn value="isp.cingular">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Data Connect (old)</name>
-			</apn>
-			<apn value="pta">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>LTE</name>
-			</apn>
-			<apn value="mmswap.centennialwireless.com">
+			<apn value="NXTGENPHONE">
 				<usage type="mms"/>
-				<name>myBlue Pix</name>
-				<mmsc>http://mms.myblue.com/servlets/mms</mmsc>
-				<mmsproxy>63.99.231.135:8080</mmsproxy>
-			</apn>
-			<apn value="mms">
-				<usage type="mms"/>
-				<name>MMS</name>
-				<mmsc>http://mms.edgemobile.net/mmsc</mmsc>
-				<mmsproxy>12.108.12.13:3128</mmsproxy>
-			</apn>
-			<apn value="ppmms">
-				<usage type="mms"/>
-				<name>Edge MMS Prepay</name>
-				<mmsc>http://mms.edgemobile.net/mmsc</mmsc>
-				<mmsproxy>12.108.12.13:3128</mmsproxy>
-			</apn>
-			<apn value="wap.cingular">
-				<usage type="mms"/>
-				<name>Cingular MMS</name>
-				<username>WAP@CINGULARGPRS.COM</username>
-				<password>CINGULAR1</password>
-				<mmsc>http://mmsc.cingular.com</mmsc>
-				<mmsproxy>66.209.11.32:8080</mmsproxy>
-			</apn>
-			<apn value="dobsoncellularwap">
-				<usage type="mms"/>
-				<name>DobsonMMS</name>
-				<mmsc>http://mmsc</mmsc>
-				<mmsproxy>172.23.1.252:8799</mmsproxy>
+				<name>AT&amp;T MMS</name>
+				<mmsc>http://mmsc.mobile.att.net</mmsc>
+				<mmsproxy>172.26.39.1:80</mmsproxy>  <!-- proxy.mobile.att.net -->
 			</apn>
 		</gsm>
 	</provider>
