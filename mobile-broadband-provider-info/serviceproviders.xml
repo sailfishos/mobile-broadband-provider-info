@@ -5995,6 +5995,36 @@ conceived.
 <!-- India -->
 <country code="in">
 	<provider>
+		<name>Jio</name>
+		<gsm>
+			<network-id mcc="404" mnc="854"/>
+			<network-id mcc="404" mnc="855"/>
+			<network-id mcc="404" mnc="856"/>
+			<network-id mcc="404" mnc="857"/>
+			<network-id mcc="404" mnc="858"/>
+			<network-id mcc="404" mnc="859"/>
+			<network-id mcc="404" mnc="860"/>
+			<network-id mcc="404" mnc="861"/>
+			<network-id mcc="404" mnc="862"/>
+			<network-id mcc="404" mnc="863"/>
+			<network-id mcc="404" mnc="864"/>
+			<network-id mcc="404" mnc="865"/>
+			<network-id mcc="404" mnc="866"/>
+			<network-id mcc="404" mnc="867"/>
+			<network-id mcc="404" mnc="868"/>
+			<network-id mcc="404" mnc="869"/>
+			<network-id mcc="404" mnc="870"/>
+			<network-id mcc="404" mnc="871"/>
+			<network-id mcc="404" mnc="872"/>
+			<network-id mcc="404" mnc="873"/>
+			<network-id mcc="404" mnc="874"/>
+			<apn value="jionet">
+				<usage type="internet"/>
+				<name>Jio Internet</name>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>AIRCEL</name>
 		<gsm>
 			<network-id mcc="404" mnc="17"/>
