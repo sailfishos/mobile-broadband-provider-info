@@ -9812,14 +9812,6 @@ conceived.
 				<username>internet</username>
 				<password>internet</password>
 			</apn>
-			<apn value="aster.mms">
-				<usage type="mms"/>
-				<name>ASTER MMS</name>
-				<username>mms</username>
-				<password>mms</password>
-				<mmsc>http://mms.aster.pl</mmsc>
-				<mmsproxy>192.168.6.138:8080</mmsproxy>
-			</apn>
 			<apn value="mms">
 				<usage type="mms"/>
 				<name>Orange PL MMS</name>
