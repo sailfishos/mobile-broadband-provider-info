@@ -9750,14 +9750,6 @@ conceived.
 				<mmsc>http:/mms.heyah.pl/servlets/mms</mmsc>
 				<mmsproxy>213.158.194.57:8080</mmsproxy>
 			</apn>
-			<apn value="mmsMOBILKING">
-				<usage type="mms"/>
-				<name>Mobilking MMS</name>
-				<username>mobilking</username>
-				<password>mobilking</password>
-				<mmsc>http://mms.mobilking.pl/servlets/mms</mmsc>
-				<mmsproxy>213.158.194.226:8080</mmsproxy>
-			</apn>
 		</gsm>
 	</provider>
 	<provider primary="true">
@@ -9901,24 +9893,12 @@ conceived.
 				<mmsc>http://mms.fmgmobile.pl:8002/</mmsc>
 				<mmsproxy>212.2.96.16:8080</mmsproxy>
 			</apn>
-			<apn value="mms.gadu-gadu.pl">
-				<usage type="mms"/>
-				<name>GaduAIR MMS</name>
-				<mmsc>http://mms.gadu-gadu.pl:8002/</mmsc>
-				<mmsproxy>212.2.96.16:8080</mmsproxy>
-			</apn>
 			<apn value="mms.mobile.pl">
 				<usage type="mms"/>
 				<name>mBank mobile MMS</name>
 				<username>true</username>
 				<password>true</password>
 				<mmsc>http://mms.mobile.pl:8080</mmsc>
-				<mmsproxy>212.2.96.16:8080</mmsproxy>
-			</apn>
-			<apn value="mms.mova.pl">
-				<usage type="mms"/>
-				<name>Carrefour Mova MMS</name>
-				<mmsc>http://mms.mova.pl:8002/</mmsc>
 				<mmsproxy>212.2.96.16:8080</mmsproxy>
 			</apn>
 			<apn value="mms.plusgsm.pl">
@@ -10021,31 +10001,6 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider primary="false">
-		<name>GaduAIR</name>
-		<gsm>
-			<network-id mcc="260" mnc="01"/>
-			<balance-check>
-				<ussd>*101#</ussd>
-			</balance-check>
-			<apn value="internet.gadu-gadu.pl">
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-			</apn>
-		</gsm>
-	</provider>
-	<provider primary="false">
-		<name>Aster</name>
- 		<gsm>
- 			<network-id mcc="260" mnc="03"/>
-			<apn value="aster.internet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
- 				<username>internet</username>
- 				<password>internet</password>
- 			</apn>
- 		</gsm>
- 	</provider>
  	<provider primary="false">
 		<name>Netia</name>
 		<gsm>
@@ -10090,18 +10045,6 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>
- 	<provider primary="false">
-		<name>Mobilking</name>
-		<gsm>
-			<network-id mcc="260" mnc="02"/>
-			<apn value="wapMOBILKING">
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-				<username>mobilking</username>
-				<password>mobilking</password>
-			</apn>
-		</gsm>
-	</provider>
 	<provider primary="false">
 		<name>SamiSwoi</name>
  		<gsm>
