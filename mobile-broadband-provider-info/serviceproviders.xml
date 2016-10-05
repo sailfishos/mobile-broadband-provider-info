@@ -9071,7 +9071,7 @@ conceived.
 	<provider>
 		<!-- MVNO operating on Telia's network -->
                 <!-- https://onecall.no/kundeservice/oppsett-manuelt -->
-		<name>One Call</name>
+		<name>OneCall</name>
 		<gsm>
 			<network-id mcc="242" mnc="02"/>
 			<apn value="internet">
