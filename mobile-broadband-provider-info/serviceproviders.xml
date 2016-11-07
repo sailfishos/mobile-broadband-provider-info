@@ -9896,26 +9896,10 @@ conceived.
 				<mmsc>http://mms.fmgmobile.pl:8002/</mmsc>
 				<mmsproxy>212.2.96.16:8080</mmsproxy>
 			</apn>
-			<apn value="mms.mobile.pl">
-				<usage type="mms"/>
-				<name>mBank mobile MMS</name>
-				<username>true</username>
-				<password>true</password>
-				<mmsc>http://mms.mobile.pl:8080</mmsc>
-				<mmsproxy>212.2.96.16:8080</mmsproxy>
-			</apn>
 			<apn value="mms.plusgsm.pl">
 				<usage type="mms"/>
 				<name>Plus MMS</name>
 				<mmsc>http://mms.plusgsm.pl:8002</mmsc>
-				<mmsproxy>212.2.96.16:8080</mmsproxy>
-			</apn>
-			<apn value="mms.mobile.pl">
-				<usage type="mms"/>
-				<name>mBank mobile MMS</name>
-				<username></username>
-				<password></password>
-				<mmsc>http://mms.mobile.pl:8002</mmsc>
 				<mmsproxy>212.2.96.16:8080</mmsproxy>
 			</apn>
 		</gsm>
@@ -9976,16 +9960,6 @@ conceived.
 			<password>orange</password>
 		</cdma>
 	</provider>
-	<provider primary="false">
-		<name>FreeM</name>
-		<gsm>
-			<network-id mcc="260" mnc="01"/>
-			<apn value="freedata.pl">
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-			</apn>
- 		</gsm>
- 	</provider>
  	<provider primary="false">
  		<name>Heyah</name>
  		<gsm>
@@ -10025,19 +9999,6 @@ conceived.
 		</gsm>
 	</provider>
 	<provider primary="false">
-		<name>mBank mobile</name>
- 		<gsm>
- 			<network-id mcc="260" mnc="01"/>
-			<balance-check>
-				<ussd>*100#</ussd>
-			</balance-check>
-			<apn value="www.mobile.pl">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-			</apn>
-		</gsm>
-	</provider>
-	<provider primary="false">
 		<name>INEA</name>
 		<gsm>
 			<network-id mcc="260" mnc="03"/>
@@ -10046,18 +10007,6 @@ conceived.
 				<usage type="internet"/>
 				<username>internet</username>
  			</apn>
- 		</gsm>
- 	</provider>
-	<provider primary="false">
-		<name>SamiSwoi</name>
- 		<gsm>
- 			<network-id mcc="260" mnc="01"/>
-			<apn value="www.plusgsm.pl">
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-				<username>internet</username>
-				<password>internet</password>
-			</apn>
  		</gsm>
  	</provider>
 	<provider primary="false">
