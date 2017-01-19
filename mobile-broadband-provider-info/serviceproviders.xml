@@ -4309,25 +4309,17 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<name>Free Mobile</name>
+		<name>Free</name>
 		<gsm>
-			<!-- http://mobile.free.fr/faq-config-apn-autres.html -->
+			<!-- https://mobile.free.fr/assistance/64.html -->
 			<network-id mcc="208" mnc="15"/>
 			<apn value="free">
-				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Free-Mobile</name>
-				<username>free</username>
-				<password>free</password>
-			</apn>
-			<apn value="mmsfree">
-				<plan type="postpaid"/>
-				<usage type="mms"/>
-				<name>Free-Mobile</name>
+				<name>Free</name>
 			</apn>
 			<apn value="mmsfree">
 				<usage type="mms"/>
-				<name>Free Mobile MMS</name>
+				<name>Free MMS</name>
 				<mmsc>http://mms.free.fr</mmsc>
 				<mmsproxy>212.27.40.225:80</mmsproxy>
 			</apn>
