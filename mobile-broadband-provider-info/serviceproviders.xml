@@ -6747,9 +6747,14 @@ conceived.
 		<gsm>
 			<network-id mcc="222" mnc="99"/>
 			<apn value="tre.it">
-				<plan type="postpaid"/>
+				<usage type="mms"/>
+				<name>3 ITA MMS</name>
+				<mmsc>http://10.216.59.240:10021/mmsc</mmsc>
+				<mmsproxy>62.13.171.3:8799</mmsproxy>
+			</apn>
+			<apn value="tre.it">
 				<usage type="internet"/>
-				<name>Ricaricabile</name>
+				<name>3 ITA</name>
 			</apn>
 			<apn value="datacard.tre.it">
 				<plan type="postpaid"/>
