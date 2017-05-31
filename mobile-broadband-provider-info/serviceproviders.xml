@@ -10073,6 +10073,26 @@ conceived.
 			<password>CDMA</password>
 		</cdma>
 	</provider>
+    <provider primary="false">
+		<name>Mobile Vikings</name>
+		<gsm>
+			<network-id mcc="260" mnc="06"/>
+			<balance-check>
+				<ussd>*101#</ussd>
+			</balance-check>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<mmsc>http://mmsc.play.pl/mms/wapenc</mmsc>
+				<mmsproxy>10.10.25.5:8080</mmsproxy>
+			</apn>
+			<apn value="internet">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
+
 </country>
 
 <!-- Portugal -->
