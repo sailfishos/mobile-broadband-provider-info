@@ -10066,12 +10066,24 @@ conceived.
 			<password>sferia</password>
 		</cdma>
 	</provider>
-	<provider primary="false">
-		<name>Nordisk Polska</name>
-		<cdma>
-			<username>CDMA</username>
-			<password>CDMA</password>
-		</cdma>
+	 <provider primary="false">
+		<name>a2mobile</name>
+		<gsm>
+			<network-id mcc="260" mnc="08"/>
+			<balance-check>
+				<ussd>*111#</ussd>
+			</balance-check>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>a2mms</name>
+				<mmsc>http://mms.aero2.pl:8002</mmsc>
+				<mmsproxy>212.2.96.16:8080</mmsproxy>
+			</apn>
+			<apn value="a2mobile.pl">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+			</apn>
+		</gsm>
 	</provider>
 </country>
 
