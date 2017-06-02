@@ -2467,10 +2467,10 @@ conceived.
 		<name>eTb</name>
 		<gsm>
 			<apn value="moviletb.net.co">
-			     <plan type="postpaid"/>
-			     <usage type="internet"/>
-			     <username>etb</username>
-			     <password>etb</password>
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<username>etb</username>
+				<password>etb</password>
 			</apn>
 		</gsm>
 	</provider>
@@ -4981,15 +4981,14 @@ conceived.
 
 <!-- Greenland -->
 <country code="gl">
-    <!-- http://www.tele.gl/da-DK/Privat/Info/Selvbetjening/Mobilopsaetning/Sider/ManuelOpsaetning.aspx -->
-    <provider>
-        <name>Tele Greenland A/S</name>
-        <gsm>
-             <apn value="internet">
+	<provider>
+		<name>Tele Greenland A/S</name>
+		<gsm>
+			<apn value="internet">
 				<usage type="internet"/>
-             </apn>
-        </gsm>
-    </provider>
+			</apn>
+		</gsm>
+	</provider>
 </country>
 
 <!-- Greece -->
@@ -5487,7 +5486,7 @@ conceived.
 	</provider>
 	<provider>
 		<name>Invitel</name>
-                <!-- MVNO operating on Telenor's network -->
+		<!-- MVNO operating on Telenor's network -->
 		<gsm>
 			<apn value="invitel.mobilnet">
 				<plan type="postpaid"/>
@@ -9072,7 +9071,7 @@ conceived.
 	</provider>
 	<provider>
 		<!-- MVNO operating on Telia's network -->
-                <!-- https://www.chess.no/hjelp/spoersmaal-svar/hjelp-til-mms-og-internett -->
+		<!-- https://www.chess.no/hjelp/spoersmaal-svar/hjelp-til-mms-og-internett -->
 		<name>Chess</name>
 		<gsm>
 			<network-id mcc="242" mnc="02"/>
@@ -9093,7 +9092,7 @@ conceived.
 	</provider>
 	<provider>
 		<!-- MVNO operating on Telia's network -->
-                <!-- https://onecall.no/kundeservice/oppsett-manuelt -->
+		<!-- https://onecall.no/kundeservice/oppsett-manuelt -->
 		<name>OneCall</name>
 		<gsm>
 			<network-id mcc="242" mnc="02"/>
@@ -10028,7 +10027,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
- 	<provider primary="false">
+ 	<provider>
 		<name>Netia</name>
 		<gsm>
 			<network-id mcc="260" mnc="06"/>
@@ -10038,7 +10037,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider primary="false">
+	<provider>
 		<name>Vectra</name>
 		<gsm>
 			<network-id mcc="260" mnc="06"/>
@@ -10048,7 +10047,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider primary="false">
+	<provider>
 		<name>INEA</name>
 		<gsm>
 			<network-id mcc="260" mnc="03"/>
@@ -10059,14 +10058,14 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>
-	<provider primary="false">
+	<provider>
 		<name>Sferia</name>
 		<cdma>
 			<username>sferia</username>
 			<password>sferia</password>
 		</cdma>
 	</provider>
-	 <provider primary="false">
+	<provider>
 		<name>a2mobile</name>
 		<gsm>
 			<network-id mcc="260" mnc="08"/>
@@ -10085,7 +10084,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider primary="false">
+	<provider>
 		<name>Mobile Vikings</name>
 		<gsm>
 			<network-id mcc="260" mnc="06"/>
@@ -12281,7 +12280,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider>
+	<provider>
 		<name>Orange</name>
 		<gsm>
 			<network-id mcc="641" mnc="14"/>
@@ -12291,7 +12290,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider>
+	<provider>
 		<name>UTL</name>
 		<gsm>
 			<network-id mcc="641" mnc="11"/>
@@ -12307,7 +12306,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider>
+	<provider>
 		<name>Warid</name>
 		<gsm>
 			<network-id mcc="641" mnc="22"/>
@@ -12318,7 +12317,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-    <provider>
+	<provider>
 		<name>Zain</name>
 		<gsm>
 			<network-id mcc="641" mnc="01"/>
@@ -12413,7 +12412,7 @@ conceived.
 				<usage type="internet"/>
 				<name>Internet with VPN (old)</name>
 			</apn>
-                        <!--http://support.t-mobile.com/docs/DOC-2090#non -->
+			<!--http://support.t-mobile.com/docs/DOC-2090#non -->
 			<apn value="internet2.voicestream.com">
 				<usage type="mms"/>
 				<name>T-Mobile MMS</name>
@@ -13706,4 +13705,3 @@ conceived.
 </country>
 
 </serviceproviders>
-
