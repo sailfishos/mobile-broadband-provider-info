@@ -10750,6 +10750,23 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<name>YOTA</name>
+		<gsm>
+			<network-id mcc="250" mnc="11"/>
+			<network-id mcc="250" mnc="50"/>
+			<apn value="internet.yota">
+				<usage type="internet"/>
+				<name>YOTA Internet</name>
+			</apn>
+			<apn value="mms.yota">
+				<usage type="mms"/>
+				<name>YOTA MMS</name>
+				<mmsc>http://mmsc:8002</mmsc>
+				<mmsproxy>10.10.10.10:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Skylink</name>
 		<name xml:lang="ru">Скайлинк</name>
 		<cdma>
