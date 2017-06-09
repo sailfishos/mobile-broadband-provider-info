@@ -10556,7 +10556,6 @@ conceived.
 	</provider>
 	<provider>
 		<name>Beeline</name>
-		<name xml:lang="ru">Билайн</name>
 		<gsm>
 			<network-id mcc="250" mnc="11"/>
 			<network-id mcc="250" mnc="28"/>
@@ -10568,16 +10567,14 @@ conceived.
 			<apn value="internet.beeline.ru">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Mobile phone</name>
-				<name xml:lang="ru">Мобильный телефон</name>
+				<name>Beeline Internet</name>
 				<username>beeline</username>
 				<password>beeline</password>
 			</apn>
 			<apn value="home.beeline.ru">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>3G modem</name>
-				<name xml:lang="ru">USB-модем</name>
+				<name>Beeline modem</name>
 				<username>beeline</username>
 				<password>beeline</password>
 			</apn>
