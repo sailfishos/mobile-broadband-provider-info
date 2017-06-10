@@ -4098,31 +4098,17 @@ conceived.
 		</gsm>
 	</provider>
 	<provider primary="true">
-		<name>Sonera</name>
+		<name>Telia FI</name>
 		<gsm>
 			<network-id mcc="244" mnc="91"/>
-
-			<!-- Phone number dependent:
-				 - Numbers beginning with 040 XXXXXXX turns in to 042 XXXXXXX
-				 - Others case by case
-			<voicemail/> -->
-			<balance-check>
-					<sms text="EASY SALDO">15400</sms>
-			</balance-check>
-
 			<apn value="internet">
-				<plan type="postpaid"/>
 				<usage type="internet"/>
-			</apn>
-			<apn value="prointernet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Prointernet (public IP)</name>
+				<name>Telia Internet</name>
 			</apn>
 			<apn value="mms">
 				<usage type="mms"/>
-				<name>Sonera MMS</name>
-				<mmsc>http://mms.sonera.fi:8002</mmsc>
+				<name>Telia MMS</name>
+				<mmsc>http://mms/</mmsc>
 				<mmsproxy>195.156.25.33:8080</mmsproxy>
 			</apn>
 		</gsm>
