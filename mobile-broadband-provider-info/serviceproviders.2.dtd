@@ -16,6 +16,7 @@
                usage?,
                name*,
                gateway?,
+               authentication?,
                username?,
                password?,
                dns*,
@@ -111,6 +112,9 @@
 
 <!ELEMENT name (#PCDATA)>
 <!ATTLIST name xml:lang CDATA #IMPLIED>
+
+<!ELEMENT authentication EMPTY>
+<!ATTLIST authentication method (chap|pap|any) #REQUIRED>
 
 <!-- MMS proxy in HOST:PORT format -->
 <!ELEMENT mmsproxy (#PCDATA)>
