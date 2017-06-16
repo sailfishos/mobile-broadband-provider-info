@@ -10598,6 +10598,7 @@ conceived.
 			<apn value="mms.beeline.ru">
 				<usage type="mms"/>
 				<name>Beeline MMS</name>
+				<authentication method="pap"/>
 				<username>beeline</username>
 				<password>beeline</password>
 				<mmsc>http://mms/</mmsc>
