@@ -16,6 +16,7 @@
                usage?,
                name*,
                gateway?,
+               protocol?,
                authentication?,
                username?,
                password?,
@@ -112,6 +113,9 @@
 
 <!ELEMENT name (#PCDATA)>
 <!ATTLIST name xml:lang CDATA #IMPLIED>
+
+<!ELEMENT protocol EMPTY>
+<!ATTLIST protocol type (ip|ipv6|ipv4v6) #REQUIRED>
 
 <!ELEMENT authentication EMPTY>
 <!ATTLIST authentication method (chap|pap|any) #REQUIRED>
