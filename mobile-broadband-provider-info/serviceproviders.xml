@@ -4545,6 +4545,8 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Contract</name>
+				<protocol type="ip"/>
+				<authentication method="pap"/>
 				<username>o2web</username>
 				<password>password</password>
 			</apn>
@@ -4585,11 +4587,12 @@ conceived.
 			</apn>
 			<apn value="wap.o2.co.uk">
 				<usage type="mms"/>
-				<name>O2 MMS postpay</name>
+				<name>O2 UK Pay Monthly MMS</name>
+				<authentication method="pap"/>
 				<username>o2wap</username>
 				<password>password</password>
 				<mmsc>http://mmsc.mms.o2.co.uk:8002</mmsc>
-				<mmsproxy>193.113.200.195:8080</mmsproxy>
+				<mmsproxy>82.132.254.1:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
