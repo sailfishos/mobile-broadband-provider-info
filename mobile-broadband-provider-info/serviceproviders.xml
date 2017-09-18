@@ -6744,17 +6744,17 @@ conceived.
 	</provider>
 	<provider>
 		<!-- http://www.noverca.it/configurazione-internet-wap-mms -->
-		<name>Noverca</name>
+		<name>Kena Mobile</name>
 		<gsm>
 			<network-id mcc="222" mnc="07"/>
-			<apn value="web.noverca.it">
+			<apn value="web.kenamobile.it">
 				<usage type="internet"/>
-				<name>Noverca Web</name>
+				<name>Kenamobile web</name>
 			</apn>
 			<apn value="mms.noverca.it">
 				<usage type="mms"/>
-				<name>Noverca MMS</name>
-				<mmsc>http://mms.noverca.it/</mmsc>
+				<name>Kenamobile MMS</name>
+				<mmsc>http://mms.kenamobile.it/</mmsc>
 				<mmsproxy>10.248.1.12:80</mmsproxy>
 			</apn>
 		</gsm>
