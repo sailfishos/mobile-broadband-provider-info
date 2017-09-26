@@ -1450,6 +1450,7 @@ conceived.
 			<apn value="internet.nuevatel.com">
 				<usage type="internet"/>
 				<name>Viva Internet</name>
+				<protocol type="ip"/>
 			</apn>
 			<apn value="mms.nuevatel.com">
 				<usage type="mms"/>
@@ -1466,13 +1467,11 @@ conceived.
 			<apn value="4g.entel">
 				<usage type="internet"/>
 				<name>Entel Internet</name>
+				<protocol type="ip"/>
 			</apn>
 			<apn value="mms.movil.com.bo">
 				<usage type="mms"/>
 				<name>Entel MMS</name>
-				<authentication method="pap"/>
-				<username>Vacío</username>
-				<password>Vacío</password>
 				<mmsc>http://mms.movil.com.bo/servlets/mms</mmsc>
 				<mmsproxy>172.27.7.10:8080</mmsproxy>
 			</apn>
@@ -1485,6 +1484,7 @@ conceived.
 			<apn value="internet.tigo.bo">
 				<usage type="internet"/>
 				<name>Tigo Internet</name>
+				<protocol type="ip"/>
 			</apn>
 			<apn value="mms.tigo.bo">
 				<usage type="mms"/>
