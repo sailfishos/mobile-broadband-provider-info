@@ -11230,7 +11230,7 @@ conceived.
 				<usage type="mms"/>
 				<name>Telenor MMS</name>
 				<mmsc>http://mms</mmsc>
-				<mmsproxy>173.30.253.241:8799</mmsproxy>
+				<mmsproxy>172.30.253.241:8799</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
