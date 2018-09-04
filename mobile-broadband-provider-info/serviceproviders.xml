@@ -11190,7 +11190,6 @@ conceived.
 			<network-id mcc="240" mnc="01"/>
 			<network-id mcc="240" mnc="05"/>
 			
-			<!-- http://multicomsecurity.se/produkter-tjanster/mobil-datakommunikation/mobiflex/ -->
 			<apn value="mobiflex.telia.se">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
@@ -11210,16 +11209,10 @@ conceived.
 				<ussd>*222#</ussd>
 			</balance-check>
 
-			<!-- http://www.telenor.se/privat/mobiltelefoni/alla-mobiltjanster/alla-mobiltjanster.html#C45-2100 -->
 			<apn value="internet.telenor.se">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Mobilt Internet</name>
-			</apn>
-			<apn value="services.telenor.se">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Mobilsurf med maxtaxa</name>
 			</apn>
 			<apn value="bredband.telenor.se">
 				<plan type="postpaid"/>
@@ -11229,6 +11222,7 @@ conceived.
 			<apn value="services.telenor.se">
 				<usage type="mms"/>
 				<name>Telenor MMS</name>
+				<authentication method="pap"/>
 				<mmsc>http://mms</mmsc>
 				<mmsproxy>172.30.253.241:8799</mmsproxy>
 			</apn>
