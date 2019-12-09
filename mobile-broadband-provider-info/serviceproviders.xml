@@ -13494,10 +13494,10 @@ conceived.
 			<apn value="m-i090">
 				<usage type="mms"/>
 				<name>Mobifone MMS</name>
-				<username>wap</username>
-				<password>wap</password>
+				<username>mms</username>
+				<password>mms</password>
 				<mmsc>http://203.162.21.114/mmsc</mmsc>
-				<mmsproxy>203.162.21.114:8000</mmsproxy>
+				<mmsproxy>203.162.21.114:3130</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -13512,20 +13512,13 @@ conceived.
 				<username>mms</username>
 				<password>mms</password>
 			</apn>
-			<apn value="m3-card">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Mobile Broadband</name>
-				<username>mms</username>
-				<password>mms</password>
-			</apn>
 			<apn value="m3-mms">
 				<usage type="mms"/>
 				<name>Vinaphone MMS</name>
 				<username>mms</username>
 				<password>mms</password>
-				<mmsc>http://mms.vinaphone.vnn.vn:8002</mmsc>
-				<mmsproxy>10.1.10.46:9201</mmsproxy>
+				<mmsc>http://mms.vinaphone.com.vn</mmsc>
+				<mmsproxy>10.1.10.46:8000</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -13549,16 +13542,11 @@ conceived.
 				<usage type="internet"/>
 				<name>Mobile Internet</name>
 			</apn>
-			<apn value="e-connect">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>D-com 3G</name>
-			</apn>
 			<apn value="v-mms">
 				<usage type="mms"/>
 				<name>Viettel MMS</name>
-				<mmsc>http://mms.viettelmobile.com.vn/mms</mmsc>
-				<mmsproxy>192.168.233.10:9201</mmsproxy>
+				<mmsc>http://mms.viettelmobile.com.vn/mms/wapenc</mmsc>
+				<mmsproxy>192.168.233.10:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -13572,7 +13560,7 @@ conceived.
 			</apn>
 			<apn value="mms">
 				<usage type="mms"/>
-				<name>VIETNAMOBILE MMS</name>
+				<name>Vietnamobile MMS</name>
 				<mmsc>http://10.10.128.58/servlets/mms</mmsc>
 				<mmsproxy>10.10.128.44:8080</mmsproxy>
 			</apn>
@@ -13587,6 +13575,12 @@ conceived.
 				<usage type="internet"/>
 				<name>EVNTelecomNet</name>
 			</apn>
+			<apn value="e-wap">
+				<usage type="mms"/>
+				<name>EVNTelecom MMS</name>
+				<mmsc>http://10.18.2.172:38090</mmsc>
+				<mmsproxy>10.18.2.183:8080</mmsproxy>
+			</apn>
 		</gsm>
 		<cdma>
 			<username>evntelecom</username>
@@ -13594,16 +13588,16 @@ conceived.
 		</cdma>
 	</provider>
 	<provider>
-		<name>Beeline VN</name>
+		<name>Gmobile VN</name>
 		<gsm>
 			<network-id mcc="452" mnc="07"/>
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
-			<apn value="MMS">
+			<apn value="mms">
 				<usage type="mms"/>
-				<name>Beeline VN MMS</name>
+				<name>Gmobile VN MMS</name>
 				<username>mms</username>
 				<password>mms</password>
 				<mmsc>http://mms</mmsc>
