@@ -10035,22 +10035,20 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<name>Virgin Mobile</name>
+		<name>Virgin Mobile Polska</name>
 		<gsm>
-			<network-id mcc="260" mnc="45"/>
-			<balance-check>
-				<ussd>*101#</ussd>
-			</balance-check>
-			<apn value="internet">
+			<network-id mcc="260" mnc="06"/>
+			<apn value="virgin-internet">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
+				<name></name>
 			</apn>
-			<apn value="mms">
+			<apn value="mms.virginpol.jsc">
 				<usage type="mms"/>
-				<name>mms</name>
-				<mmsc>http://mmsc.net.pl/mms/wapenc</mmsc>
-				<mmsproxy>10.10.25.5:8080</mmsproxy>
-			</apn>			
+				<name>virgin-mms</name>
+				<mmsc>http://mms.virginpol.jsc</mmsc>
+				<mmsproxy>10.1.201.100:8080</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
