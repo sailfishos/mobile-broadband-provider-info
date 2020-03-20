@@ -9839,7 +9839,6 @@ conceived.
 				<usage type="mms"/>
 				<name>Play MMS</name>
 				<mmsc>http://10.10.28.164/mms/wapenc</mmsc>
-				<mmsproxy>10.10.25.5:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -9878,14 +9877,6 @@ conceived.
 				<password>mms</password>
 				<mmsc>http://mms.orange.pl</mmsc>
 				<mmsproxy>192.168.6.104:8080</mmsproxy>
-			</apn>
-			<apn value="mni.mms">
-				<usage type="mms"/>
-				<name>MNI MMS</name>
-				<username>mni.mms</username>
-				<password>mni.mms</password>
-				<mmsc>http://mms.mni.pl/</mmsc>
-				<mmsproxy>192.168.6.135:8080</mmsproxy>
 			</apn>
 		</gsm>
 		<cdma>
@@ -9933,13 +9924,6 @@ conceived.
 				<username>plusgsm</username>
 				<password>plusgsm</password>
 			</apn>
-			<apn value="optimizer">
-				<plan type="postpaid"/>
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-				<name>iPlus optimizer with data compression</name>
-				<name xml:lang="pl">iPlus optimizer z kompresją danych</name>
-			</apn>
 			<apn value="mms">
 				<usage type="mms"/>
 				<name>Plus MMS</name>
@@ -9952,19 +9936,13 @@ conceived.
 				<mmsc>http://mms.fmgmobile.pl:8002/</mmsc>
 				<mmsproxy>212.2.96.16:8080</mmsproxy>
 			</apn>
-			<apn value="mms.plusgsm.pl">
-				<usage type="mms"/>
-				<name>Plus MMS</name>
-				<mmsc>http://mms.plusgsm.pl:8002</mmsc>
-				<mmsproxy>212.2.96.16:8080</mmsproxy>
-			</apn>
 		</gsm>
 	</provider>
 	<provider primary="true">
 		<name>Cyfrowy Polsat</name>
 		<gsm>
 			<network-id mcc="260" mnc="12"/>
-			<apn value="multi.internet">
+			<apn value="internet.cyfrowypolsat.pl">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
@@ -9997,18 +9975,6 @@ conceived.
 				<name>Default APN</name>
 				<username>internet</username>
 				<password>internet</password>
-			</apn>
-			<apn value="mni.internet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>APN: mni.internet</name>
-				<username>mni.internet</username>
-			</apn>
-			<apn value="telogic.internet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>APN: telogic.internet</name>
-				<username>telogic.internet</username>
 			</apn>
 		</gsm>
 		<cdma>
@@ -10077,6 +10043,12 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
+			<apn value="netia.mms">
+				<usage type="mms"/>
+				<name>Netia MMS</name>
+				<mmsc>http://netia.mms:8002</mmsc>
+				<mmsproxy>212.2.96.16:8080</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
@@ -10087,16 +10059,20 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
+			<apn value="MMS">
+				<usage type="mms"/>
+				<name>Vectra MMS</name>
+				<mmsc>http://mmsc.play.pl/mms/wapenc</mmsc>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
 		<name>INEA</name>
 		<gsm>
 			<network-id mcc="260" mnc="03"/>
-			<apn value="telogic.internet">
+			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<username>internet</username>
  			</apn>
  		</gsm>
  	</provider>
@@ -11676,6 +11652,84 @@ conceived.
 			<username>sudani</username>
 			<password>sudani</password>
 		</cdma>
+	</provider>
+</country>
+
+<!-- Tajikistan -->
+<country code="tj">
+	<provider>
+		<name>Beeline TJ</name>
+		<gsm>
+			<network-id mcc="436" mnc="05"/>
+			<apn value="internet.beeline.tj">
+				<plan type="postpaid"/>
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+				<username>beeline</username>
+				<password>beeline</password>
+			</apn>
+			<apn value="mms.beeline.tj">
+				<usage type="mms"/>
+				<name>Beeline TJ MMS</name>
+				<username>beeline</username>
+				<password>beeline</password>
+				<mmsc>http://172.28.253.211/mms/wapenc</mmsc>
+				<mmsproxy>172.28.253.69:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Megafon</name>
+		<gsm>
+			<network-id mcc="436" mnc="03"/>
+			<apn value="internet">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<apn value="megafon mms">
+				<usage type="mms"/>
+				<name>megafon mms</name>
+				<username>mms</username>
+				<password>mms</password>
+				<mmsc>http://mmsc:8002</mmsc>
+				<mmsproxy>10.10.10.10:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Tcell</name>
+		<gsm>
+			<network-id mcc="436" mnc="01"/>
+			<network-id mcc="436" mnc="02"/>
+			<network-id mcc="436" mnc="12"/>
+			<apn value="tcell">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<apn value="tcell">
+				<usage type="mms"/>
+				<name>megafon mms</name>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Babilon Mobile</name>
+		<gsm>
+			<network-id mcc="436" mnc="04"/>
+			<network-id mcc="436" mnc="10"/>
+			<apn value="babilon">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Babilon MMS</name>
+				<username>mms</username>
+				<password>mms</password>
+				<mmsc>http://mmscdb</mmsc>
+				<mmsproxy>129.9.0.50:8080</mmsproxy>
+			</apn>
+		</gsm>
 	</provider>
 </country>
 
