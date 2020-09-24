@@ -10584,7 +10584,6 @@ conceived.
 	<provider>
 		<name>Beeline</name>
 		<gsm>
-			<network-id mcc="250" mnc="11"/>
 			<network-id mcc="250" mnc="28"/>
 			<network-id mcc="250" mnc="44"/>
 			<network-id mcc="250" mnc="99"/>
