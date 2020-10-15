@@ -10791,6 +10791,23 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
+		<name>Letai</name>
+		<name xml:lang="ru">Летай</name>
+		<gsm>
+			<network-id mcc="250" mnc="27"/>
+			<apn value="internet.letai.ru">
+				<usage type="internet"/>
+				<name>Letai Internet</name>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Letai MMS</name>
+				<mmsc>https://mmsc:8002</mmsc>
+				<mmsproxy>172.24.121.5:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
 		<name>Skylink</name>
 		<name xml:lang="ru">Скайлинк</name>
 		<cdma>
