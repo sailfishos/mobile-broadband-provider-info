@@ -59,7 +59,7 @@ xmllint --noout --dtdvalid serviceproviders.2.dtd serviceproviders.xml
 
 %files
 %defattr(-,root,root,-)
-$license COPYING
+%license COPYING
 %{_datadir}/mobile-broadband-provider-info
 
 %files devel
