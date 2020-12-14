@@ -3,9 +3,9 @@ Summary:    Mobile Broadband Dataprovider Database
 Version:    20130911
 Release:    1
 Group:      Applications/Internet
-License:    Creative Commons Public Domain
+License:    Public Domain
 BuildArch:  noarch
-URL:        https://git.merproject.org/mer-core/mobile-broadband-provider-info
+URL:        https://git.sailfishos.org/mer-core/mobile-broadband-provider-info
 Source0:    %{name}-%{version}.tar.xz
 BuildRequires: libxml2
 
@@ -59,9 +59,10 @@ xmllint --noout --dtdvalid serviceproviders.2.dtd serviceproviders.xml
 
 %files
 %defattr(-,root,root,-)
+$license COPYING
 %{_datadir}/mobile-broadband-provider-info
 
 %files devel
 %defattr(-,root,root,-)
-%doc ChangeLog COPYING NEWS README
+%doc ChangeLog NEWS README
 %{_datadir}/pkgconfig/mobile-broadband-provider-info.pc
