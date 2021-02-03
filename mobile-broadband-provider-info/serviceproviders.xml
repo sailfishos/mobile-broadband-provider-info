@@ -10756,7 +10756,7 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-	<provider>
+	<provider primary="true">
 		<name>Tele2</name>
 		<name xml:lang="ru">Теле2</name>
 		<gsm>
@@ -10764,11 +10764,33 @@ conceived.
 			<apn value="internet.tele2.ru">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Tele2 RU</name>
 			</apn>
 			<apn value="mms.tele2.ru">
 				<usage type="mms"/>
 				<name>Tele2 RU MMS</name>
 				<mmsc>http://mmsc.tele2.ru</mmsc>
+				<mmsproxy>193.12.40.65:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>ROSTELECOM</name>
+		<name xml:lang="ru">Ростелеком</name>
+		<gsm>
+			<network-id mcc="250" mnc="20"/>
+			<balance-check>
+				<ussd>*102#</ussd>
+			</balance-check>
+			<apn value="internet.rtk.ru">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>ROSTELECOM</name>
+			</apn>
+			<apn value="mms.rtk.ru">
+				<usage type="mms"/>
+				<name>ROSTELECOM MMS</name>
+				<mmsc>http://mmsc.rtk.ru</mmsc>
 				<mmsproxy>193.12.40.65:8080</mmsproxy>
 			</apn>
 		</gsm>
