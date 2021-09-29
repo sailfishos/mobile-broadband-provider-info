@@ -9798,7 +9798,7 @@ conceived.
 		</gsm>
 	</provider>
 	<provider primary="true">
-		<name>Play Online</name>
+		<name>Play</name>
 		<gsm>
 			<network-id mcc="260" mnc="06"/>
 			<balance-check>
@@ -9816,7 +9816,8 @@ conceived.
 			<apn value="mms">
 				<usage type="mms"/>
 				<name>Play MMS</name>
-				<mmsc>http://10.10.28.164/mms/wapenc</mmsc>
+				<mmsc>http://mmsc.play.pl/mms/wapenc</mmsc>
+				<mmsproxy>10.10.25.5:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
