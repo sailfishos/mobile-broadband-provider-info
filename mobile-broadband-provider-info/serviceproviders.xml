@@ -9918,22 +9918,6 @@ conceived.
 		</gsm>
 	</provider>
 	<provider primary="true">
-		<name>Cyfrowy Polsat</name>
-		<gsm>
-			<network-id mcc="260" mnc="12"/>
-			<apn value="internet.cyfrowypolsat.pl">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-			</apn>
-			<apn value="mms.cyfrowypolsat.pl">
-				<usage type="mms"/>
-				<name>Cyfrowy Polsat MMS</name>
-				<mmsc>http://mms.cyfrowypolsat.pl:8002/</mmsc>
-				<mmsproxy>79.171.2.33:8080</mmsproxy>
-			</apn>
-		</gsm>
-	</provider>
-	<provider primary="true">
 		<name>aero2</name>
 		<gsm>
 			<network-id mcc="260" mnc="17"/>
@@ -9956,10 +9940,6 @@ conceived.
 				<password>internet</password>
 			</apn>
 		</gsm>
-		<cdma>
-			<username>cdma@orange</username>
-			<password>orange</password>
-		</cdma>
 	</provider>
  	<provider>
  		<name>Heyah</name>
