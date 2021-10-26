@@ -1,3 +1,3 @@
 [submodule "upstream"]
 	path = upstream
-	url = https://git.merproject.org/mirror/mobile-broadband-provider-info.git
+	url = https://github.com/sailfishos-mirror/mobile-broadband-provider-info.git
