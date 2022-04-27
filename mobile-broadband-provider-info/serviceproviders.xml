@@ -4462,7 +4462,7 @@ conceived.
 				<usage type="internet"/>
 				<name>Internet (Neuf Telecom)</name>
 			</apn>
-			<apn value="mmssfr">
+			<apn value="sl2sfr">
 				<usage type="mms"/>
 				<name>SFR MMS</name>
 				<mmsc>http://mms1</mmsc>
