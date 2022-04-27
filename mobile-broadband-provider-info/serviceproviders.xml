@@ -11284,6 +11284,26 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<provider>
+		<name>Fello</name>
+		<gsm>
+			<network-id mcc="240" mnc="01"/>
+			<!-- https://www.fello.se/felloservice/ -->
+			<apn value="online.telia.se">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<apn value="mms.telia.se">
+				<usage type="mms"/>
+				<name>Telia MMS</name>
+				<username>mms</username>
+				<password>telia</password>
+				<mmsc>http://mmss</mmsc>
+				<mmsproxy>193.209.134.132:80</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+
 </country>
 
 <!-- Singapore -->
