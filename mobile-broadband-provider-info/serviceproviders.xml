@@ -10080,6 +10080,37 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<provider>
+		<name>UPC Polska</name>
+		<gsm>
+			<network-id mcc="260" mnc="06"/>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<mmsc>http://mmsc.play.pl/mms/wapenc</mmsc>
+			</apn>
+			<apn value="internet">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>OTVARTA</name>
+		<gsm>
+			<network-id mcc="260" mnc="01"/>
+			<apn value="mms.mobilny.pl">
+				<usage type="mms"/>
+				<name>MMS</name>
+				<mmsc>http://mms.plusgsm.pl:8002</mmsc>
+				<mmsproxy>212.2.96.16:8080</mmsproxy>
+			</apn>
+			<apn value="www.mobilny.pl">
+				<plan type="prepaid"/>
+				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
 
 </country>
 
