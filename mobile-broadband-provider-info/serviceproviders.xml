@@ -9858,10 +9858,6 @@ conceived.
 				<mmsproxy>192.168.6.104:8080</mmsproxy>
 			</apn>
 		</gsm>
-		<cdma>
-			<username>cdma@orange</username>
-			<password>orange</password>
-		</cdma>
 	</provider>
 	<provider primary="true">
 		<name>Plus</name>
