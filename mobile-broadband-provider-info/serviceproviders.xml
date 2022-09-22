@@ -4860,9 +4860,49 @@ conceived.
 		<name>Geocell</name>
 		<gsm>
 			<network-id mcc="282" mnc="01"/>
-			<apn value="Internet">
+			<apn value="internet">
+				<name>Geocell</name>
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+			</apn>
+			<apn value="mms">
+				<usage type="mms"/>
+				<name>Geocell</name>
+				<mmsc>http://mms.geocell.com.ge/cmmsc/post</mmsc>
+				<mmsproxy>10.11.240.7:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>MagtiCom</name>
+		<gsm>
+			<network-id mcc="282" mnc="02"/>
+			<apn value="3g.ge">
+				<name>MagtiCom</name>
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<apn value="mms.ge">
+				<usage type="mms"/>
+				<name>MagtiCom MMS</name>
+				<mmsc>http://mms.magticom.ge</mmsc>
+				<mmsproxy>81.95.160.016:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>Beeline</name>
+		<gsm>
+			<network-id mcc="282" mnc="04"/>
+			<apn value="internet.ge.beeline.net">
+				<name>Beeline</name>
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<apn value="mms.ge.beeline.net">
+				<usage type="mms"/>
+				<name>Beeline</name>
+				<mmsproxy>172.30.141.119</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
