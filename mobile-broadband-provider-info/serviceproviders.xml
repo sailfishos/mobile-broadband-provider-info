@@ -943,22 +943,30 @@ conceived.
 		<name>Bakcell</name>
 		<gsm>
 			<network-id mcc="400" mnc="02"/>
-			<apn value="mms">
+			<apn value="internet.bakcell.com">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+			</apn>
+			<apn value="mms">
+				<usage type="mmsbakcell.com"/>
+				<name>Bakcell</name>
+				<mmsc>http://mms.mmsc.bakcell.com</mmsc>
 			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<name>Azerfon</name>
+		<name>Nar/name>
 		<gsm>
 			<network-id mcc="400" mnc="04"/>
-			<msisdn-query>
-				<ussd>*100#3#</ussd>
-			</msisdn-query>
-			<apn value="azerfon">
+			<apn value="nar">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+			</apn>
+			<apn value="nar">
+				<usage type="mms"/>
+				<name>Nar MMS</name>
+				<mmsc>http://mmsc</mmsc>
+				<mmsproxy>010.020.000.040:9401</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
