@@ -948,14 +948,14 @@ conceived.
 				<usage type="internet"/>
 			</apn>
 			<apn value="mms">
-				<usage type="mmsbakcell.com"/>
+				<usage type="mms"/>
 				<name>Bakcell</name>
 				<mmsc>http://mms.mmsc.bakcell.com</mmsc>
 			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<name>Nar/name>
+		<name>Nar</name>
 		<gsm>
 			<network-id mcc="400" mnc="04"/>
 			<apn value="nar">
@@ -966,7 +966,7 @@ conceived.
 				<usage type="mms"/>
 				<name>Nar MMS</name>
 				<mmsc>http://mmsc</mmsc>
-				<mmsproxy>010.020.000.040:9401</mmsproxy>
+				<mmsproxy>10.20.0.40:9401</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -4877,9 +4877,9 @@ conceived.
 		<gsm>
 			<network-id mcc="282" mnc="01"/>
 			<apn value="internet">
-				<name>Geocell</name>
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Geocell</name>
 			</apn>
 			<apn value="mms">
 				<usage type="mms"/>
@@ -4894,9 +4894,9 @@ conceived.
 		<gsm>
 			<network-id mcc="282" mnc="02"/>
 			<apn value="3g.ge">
-				<name>MagtiCom</name>
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>MagtiCom</name>
 			</apn>
 			<apn value="mms.ge">
 				<usage type="mms"/>
@@ -4911,9 +4911,9 @@ conceived.
 		<gsm>
 			<network-id mcc="282" mnc="04"/>
 			<apn value="internet.ge.beeline.net">
-				<name>Beeline</name>
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Beeline</name>
 			</apn>
 			<apn value="mms.ge.beeline.net">
 				<usage type="mms"/>
