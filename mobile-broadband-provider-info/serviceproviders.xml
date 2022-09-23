@@ -8003,23 +8003,24 @@ conceived.
 <!-- Morocco -->
 <country code="ma">
 	<provider>
-		<name>Ittissalat Al Maghrib (IAM)</name>
+		<name>Maroc Telecom (IAM)</name>
 		<gsm>
 			<network-id mcc="604" mnc="01"/>
-			<apn value="www.iamgprs1.ma">
+			<apn value="iam">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Abonnement</name>
+				<name>IAM 4G</name>
 			</apn>
-			<apn value="www.iamgprs2.ma">
-				<plan type="prepaid"/>
-				<usage type="internet"/>
-				<name>Pre-payé</name>
+			<apn value="mmsiam">
+				<usage type="mms"/>
+				<name>Meditel MMS</name>
+				<mmsc>http://mms:8002</mmsc>
+				<mmsproxy>10.16.35.50:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<name>Medi Telecom</name>
+		<name>Orange</name>
 		<gsm>
 			<network-id mcc="604" mnc="00"/>
 			<apn value="internet1.meditel.ma">
@@ -8038,7 +8039,7 @@ conceived.
 			</apn>
 			<apn value="mms.meditel.ma">
 				<usage type="mms"/>
-				<name>Meditel MMS</name>
+				<name>Orange MMS</name>
 				<username>MEDIMMS</username>
 				<password>MEDIMMS</password>
 				<mmsc>http://mms.meditel.ma:8088/mms</mmsc>
@@ -8047,13 +8048,19 @@ conceived.
 		</gsm>
 	</provider>
 	<provider>
-		<name>WANA</name>
+		<name>Inwi</name>
 		<gsm>
 			<network-id mcc="604" mnc="02"/>
-			<apn value="www.wana.ma">
+			<apn value="www.invi.ma">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>INWI</name>
+			</apn>
+			<apn value="mms.wana.ma">
+				<usage type="mms"/>
+				<name>Invi MMS</name>
+				<mmsc>http://mms.wana.ma:38090/mms</mmsc>
+				<mmsproxy>10.86.0.10:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
