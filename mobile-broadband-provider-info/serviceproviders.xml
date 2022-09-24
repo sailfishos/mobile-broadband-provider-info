@@ -8140,19 +8140,19 @@ conceived.
 <!-- Montenegro -->
 <country code="me">
 	<provider>
-		<name>ProMonte GSM</name>
+		<name>One</name>
 		<gsm>
 			<network-id mcc="297" mnc="01"/>
-			<apn value="gprs.promonte.com">
+			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
-			<apn value="mms.promonte.com">
+			<apn value="mms">
 				<usage type="mms"/>
-				<name>ProMonte MMS</name>
+				<name>One MMS</name>
 				<username>mms</username>
 				<password>mms</password>
-				<mmsc>http://mm.vor.promonte.com</mmsc>
+				<mmsc>http://mm.vor.telenor.com</mmsc>
 				<mmsproxy>192.168.246.5:8080</mmsproxy>
 			</apn>
 		</gsm>
@@ -8199,9 +8199,17 @@ conceived.
 		<name>m:tel</name>
 		<gsm>
 			<network-id mcc="297" mnc="03"/>
-			<apn value="gprsinternet">
+			<apn value="mtelinternet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+			</apn>
+			<apn value="mtelmms">
+				<usage type="mms"/>
+				<name>M:tel MMS</name>
+				<username>mms</username>
+				<password>068</password>
+				<mmsc>http://mm.mmsmtel.com</mmsc>
+				<mmsproxy>175.25.25.23:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
