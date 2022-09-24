@@ -6721,7 +6721,7 @@ conceived.
 		<name>Nova</name>
 		<gsm>
 			<network-id mcc="274" mnc="11"/>
-			<apn value="internet.nova.is">
+			<apn value="net.nova.is">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
@@ -6737,7 +6737,7 @@ conceived.
 		<name>Síminn</name>
 		<gsm>
 			<network-id mcc="274" mnc="01"/>
-			<apn value="wap.simi.is">
+			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
@@ -6745,7 +6745,7 @@ conceived.
 				<usage type="mms"/>
 				<name>Siminn MMS</name>
 				<mmsc>http://mms.simi.is/servlets/mms</mmsc>
-				<mmsproxy>213.167.138.200:9201</mmsproxy>
+				<mmsproxy>213.167.138.200:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
