@@ -4924,6 +4924,27 @@ conceived.
 	</provider>
 </country>
 
+<!-- Gibraltar -->
+<country code="gi">
+	<provider>
+		<name>Gibtelcom</name>
+		<gsm>
+			<network-id mcc="266" mnc="01"/>
+			<apn value="www.gibtele.com">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+				<name>Gibtelecom</name>
+			</apn>
+			<apn value="mms.gibtele.com">
+				<usage type="mms"/>
+				<name>Gibtelecom</name>
+				<mmsc>http://mms:8081</mmsc>
+				<mmsproxy>172.17.0.5:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+</country>
+	
 <!-- Guernsey -->
 <country code="gg">
 	<provider>
