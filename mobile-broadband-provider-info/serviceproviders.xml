@@ -6651,27 +6651,6 @@ conceived.
 <!-- Iraq -->
 <country code="iq">
 	<provider>
-		<name>Itisaluna</name>
-		<cdma>
-			<username>itisaluna</username>
-			<password>itisaluna</password>
-			<sid value="15456"/>
-		</cdma>
-	</provider>
-	<provider>
-		<name>Omnea Telecom</name>
-		<cdma>
-			<username>omnea</username>
-			<password>omnea</password>
-		</cdma>
-	</provider>
-	<provider>
-		<name>Kalimat Telecom</name>
-		<cdma>
-			<sid value="15470"/>
-		</cdma>
-	</provider>
-	<provider>
 		<name>Korek</name>
 		<gsm>
 			<network-id mcc="418" mnc="40"/>
@@ -6693,25 +6672,57 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<provider>
+		<name>Mobitel</name>
+		<gsm>
+			<network-id mcc="418" mnc="45"/>
+			<apn value="om">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
 </country>
 
 <!-- Iran -->
 <country code="ir">
 	<provider>
-		<name>همراه اول</name>
+		<name>Hamrahe Aval</name>
 		<gsm>
 			<network-id mcc="432" mnc="11"/>
 			<apn value="mcinet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
+			<apn value="mcinet">
+				<usage type="mms"/>
+				<name>Hamrahe Aval MMS</name>
+				<mmsc>http://192.168.193.134:38090/was</mmsc>
+				<mmsproxy>192.168.194.73:8080</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<name>ایرانسل</name>
+		<name>MNT Irancell</name>
 		<gsm>
 			<network-id mcc="432" mnc="35"/>
 			<apn value="mtnirancell">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<apn value="mtnirancell">
+				<usage type="mms"/>
+				<name>MNT Irancell MMS</name>
+				<mmsc>http://mms:8002</mmsc>
+				<mmsproxy>10.131.26.138:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>RighTel</name>
+		<gsm>
+			<network-id mcc="432" mnc="20"/>
+			<apn value="RighTel">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
