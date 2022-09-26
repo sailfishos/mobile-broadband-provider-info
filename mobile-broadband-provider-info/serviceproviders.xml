@@ -45,27 +45,17 @@ conceived.
 		<name>Etisalat</name>
 		<gsm>
 			<network-id mcc="424" mnc="02"/>
-			<apn value="mnet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Etisalat</name>
-				<username>mnet</username>
-				<password>mnet</password>
 			</apn>
 			<apn value="etisalat.ae">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Etisalat 3G</name>
-				<username>etisalat.ae</username>
-				<password>etisalat.ae</password>
 			</apn>
 			<apn value="etisalat">
 				<usage type="mms"/>
 				<name>etisalat mms</name>
-				<username>mms</username>
-				<password>mms</password>
 				<mmsc>http://mms/servlets/mms</mmsc>
-				<mmsproxy>10.12.0.30:8080</mmsproxy>
+				<mmsproxy>10.12.0.32:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
