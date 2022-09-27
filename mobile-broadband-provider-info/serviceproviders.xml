@@ -45,27 +45,17 @@ conceived.
 		<name>Etisalat</name>
 		<gsm>
 			<network-id mcc="424" mnc="02"/>
-			<apn value="mnet">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Etisalat</name>
-				<username>mnet</username>
-				<password>mnet</password>
 			</apn>
 			<apn value="etisalat.ae">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<name>Etisalat 3G</name>
-				<username>etisalat.ae</username>
-				<password>etisalat.ae</password>
 			</apn>
 			<apn value="etisalat">
 				<usage type="mms"/>
 				<name>etisalat mms</name>
-				<username>mms</username>
-				<password>mms</password>
 				<mmsc>http://mms/servlets/mms</mmsc>
-				<mmsproxy>10.12.0.30:8080</mmsproxy>
+				<mmsproxy>10.12.0.32:8080</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -100,8 +90,12 @@ conceived.
 			<apn value="internet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<username>awcc</username>
-				<password>1111</password>
+			</apn>
+			<apn value="mms1">
+				<usage type="mms"/>
+				<name>AWCC MMS</name>
+				<mmsc>http://172.17.81.2:8002</mmsc>
+				<mmsproxy>172.17.81.2:8002</mmsproxy>
 			</apn>
 		</gsm>
 	</provider>
@@ -648,15 +642,6 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
-<!-- Not validated yet
-	<provider>
-		<name>GRL / Red Bull Mobile</name>
-		<gsm>
-			<network-id mcc="505" mnc="03"/>
-			<apn value="purtona.net"/>
-		</gsm>
-	</provider>
--->
 	<provider>
 		<name>Highway1</name>
 		<gsm>
@@ -6651,27 +6636,6 @@ conceived.
 <!-- Iraq -->
 <country code="iq">
 	<provider>
-		<name>Itisaluna</name>
-		<cdma>
-			<username>itisaluna</username>
-			<password>itisaluna</password>
-			<sid value="15456"/>
-		</cdma>
-	</provider>
-	<provider>
-		<name>Omnea Telecom</name>
-		<cdma>
-			<username>omnea</username>
-			<password>omnea</password>
-		</cdma>
-	</provider>
-	<provider>
-		<name>Kalimat Telecom</name>
-		<cdma>
-			<sid value="15470"/>
-		</cdma>
-	</provider>
-	<provider>
 		<name>Korek</name>
 		<gsm>
 			<network-id mcc="418" mnc="40"/>
@@ -6693,25 +6657,57 @@ conceived.
 			</apn>
 		</gsm>
 	</provider>
+	<provider>
+		<name>Mobitel</name>
+		<gsm>
+			<network-id mcc="418" mnc="45"/>
+			<apn value="om">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+		</gsm>
+	</provider>
 </country>
 
 <!-- Iran -->
 <country code="ir">
 	<provider>
-		<name>همراه اول</name>
+		<name>Hamrahe Aval</name>
 		<gsm>
 			<network-id mcc="432" mnc="11"/>
 			<apn value="mcinet">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
+			<apn value="mcinet">
+				<usage type="mms"/>
+				<name>Hamrahe Aval MMS</name>
+				<mmsc>http://192.168.193.134:38090/was</mmsc>
+				<mmsproxy>192.168.194.73:8080</mmsproxy>
+			</apn>
 		</gsm>
 	</provider>
 	<provider>
-		<name>ایرانسل</name>
+		<name>MNT Irancell</name>
 		<gsm>
 			<network-id mcc="432" mnc="35"/>
 			<apn value="mtnirancell">
+				<plan type="postpaid"/>
+				<usage type="internet"/>
+			</apn>
+			<apn value="mtnirancell">
+				<usage type="mms"/>
+				<name>MNT Irancell MMS</name>
+				<mmsc>http://mms:8002</mmsc>
+				<mmsproxy>10.131.26.138:8080</mmsproxy>
+			</apn>
+		</gsm>
+	</provider>
+	<provider>
+		<name>RighTel</name>
+		<gsm>
+			<network-id mcc="432" mnc="20"/>
+			<apn value="RighTel">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
