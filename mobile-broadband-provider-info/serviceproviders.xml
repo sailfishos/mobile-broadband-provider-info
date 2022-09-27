@@ -45,7 +45,6 @@ conceived.
 		<name>Etisalat</name>
 		<gsm>
 			<network-id mcc="424" mnc="02"/>
-			</apn>
 			<apn value="etisalat.ae">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
