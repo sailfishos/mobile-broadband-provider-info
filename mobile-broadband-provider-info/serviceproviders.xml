@@ -2927,18 +2927,12 @@ conceived.
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<password>t-d1</password>
-				<dns>193.254.160.1</dns>
-				<dns>193.254.160.130</dns>
 			</apn>
 			<apn value="internet.t-mobile">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 				<username>t-mobile</username>
 				<password>tm</password>
-				<dns>10.74.83.22</dns>
-				<dns>193.254.160.1</dns>
-				<mmsc>http://mms.t-mobile.de/servlets/mms</mmsc>
-				<mmsproxy>172.28.23.131:8008</mmsproxy>
 			</apn>
 			<!-- https://telekomhilft.telekom.de/t5/Blog/Neuer-IPv6-Zugang-zum-mobilen-Internet-im-Netz-der-Telekom/ba-p/4254741 -->
 			<!-- IPv6-only APN, type ipv6 or ipv4v6  -->
