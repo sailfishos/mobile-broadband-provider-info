@@ -4681,31 +4681,18 @@ conceived.
 		</gsm>
 	</provider>
 	<provider primary="true">
-		<name>T-Mobile</name>
+		<name>EE</name>
 		<gsm>
 			<network-id mcc="234" mnc="30"/>
 			<voicemail>222</voicemail>
-			<balance-check>
-				<dtmf>150</dtmf>
-				<sms text="BA">150</sms>
-				<sms text="AL">150</sms>
-			</balance-check>
-			<apn value="general.t-mobile.uk">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<username>User</username>
-				<password>mms</password>
-			</apn>
-			<apn value="general.t-mobile.uk">
+			<apn value="everywhere">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
 			</apn>
-			<apn value="general.t-mobile.uk">
+			<apn value="everywhere">
 				<usage type="mms"/>
-				<name>Picture Message</name>
-				<username>user</username>
-				<password>wap</password>
-				<mmsc>http://mmsc.t-mobile.co.uk:8002</mmsc>
+				<name>MMS</name>
+				<mmsc>http://mms/</mmsc>
 				<mmsproxy>149.254.201.135:8080</mmsproxy>
 			</apn>
 			<apn value="goto.virginmobile.uk">
