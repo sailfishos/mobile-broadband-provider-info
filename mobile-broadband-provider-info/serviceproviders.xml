@@ -4692,6 +4692,8 @@ conceived.
 			<apn value="everywhere">
 				<usage type="mms"/>
 				<name>MMS</name>
+				<username>eesecure</username>
+				<password>secure</password>
 				<mmsc>http://mms/</mmsc>
 				<mmsproxy>149.254.201.135:8080</mmsproxy>
 			</apn>
