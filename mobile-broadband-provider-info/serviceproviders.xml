@@ -9186,27 +9186,6 @@ conceived.
 	</provider>
 	<provider>
 		<!-- MVNO operating on Telia's network -->
-		<!-- https://www.chess.no/hjelp/spoersmaal-svar/hjelp-til-mms-og-internett -->
-		<name>Chess</name>
-		<gsm>
-			<network-id mcc="242" mnc="02"/>
-			<apn value="telia">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
-				<name>Chess Internet</name>
-			</apn>
-			<apn value="telia">
-				<usage type="mms"/>
-				<name>Chess MMS</name>
-				<username>mms</username>
-				<password>telia</password>
-				<mmsc>http://mm/</mmsc>
-				<mmsproxy>212.169.66.4:8080</mmsproxy>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<!-- MVNO operating on Telia's network -->
 		<!-- https://onecall.no/kundeservice/oppsett-manuelt -->
 		<name>OneCall</name>
 		<gsm>
@@ -9330,16 +9309,6 @@ conceived.
 				<password>1111</password>
 				<mmsc>http://mmsc/</mmsc>
 				<mmsproxy>10.10.10.11:8080</mmsproxy>
-			</apn>
-		</gsm>
-	</provider>
-	<provider>
-		<name>Ludo Mobil</name>
-		<gsm>
-			<network-id mcc="242" mnc="07"/>
-			<apn value="internet.ventelo.no">
-				<plan type="postpaid"/>
-				<usage type="internet"/>
 			</apn>
 		</gsm>
 	</provider>
