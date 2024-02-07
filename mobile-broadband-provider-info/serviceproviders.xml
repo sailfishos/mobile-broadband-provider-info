@@ -1198,9 +1198,10 @@ conceived.
 		<name>Orange</name>
 		<gsm>
 			<network-id mcc="206" mnc="10"/>
-			<apn value="orangeinternet">
+			<apn value="mworld.be">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
+				<name>Internet mobile</name>
 			</apn>
 		</gsm>
 	</provider>
