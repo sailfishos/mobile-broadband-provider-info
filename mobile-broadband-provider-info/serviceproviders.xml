@@ -1198,6 +1198,8 @@ conceived.
 		<name>Orange</name>
 		<gsm>
 			<network-id mcc="206" mnc="10"/>
+		        <voicemail>5555</voicemail>
+			<!-- no balancecheck method ('auto-recharge') -->
 			<apn value="mworld.be">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
