@@ -1203,7 +1203,7 @@ conceived.
 			<apn value="mworld.be">
 				<plan type="postpaid"/>
 				<usage type="internet"/>
-				<name>Internet mobile</name>
+				<name>Orange Mobile Internet</name>
 			</apn>
 		</gsm>
 	</provider>
@@ -1253,26 +1253,19 @@ conceived.
 				<mmsc>http://mmsc.base.be</mmsc>
 				<mmsproxy>217.72.235.1:8080</mmsproxy>
 			</apn>
-			<apn value="mms.be">
-				<usage type="mms"/>
-				<name>Mobile Vikings MMS</name>
-				<username>mms</username>
-				<password>mms</password>
-				<mmsc>http://mmsc.be</mmsc>
-				<mmsproxy>217.72.235.1:8080</mmsproxy>
-			</apn>
 		</gsm>
 	</provider>
 	<provider>
 		<name>Mobile Vikings</name>
 		<gsm>
-			<network-id mcc="206" mnc="20"/>
+			<network-id mcc="206" mnc="01"/>
 			<voicemail>1933</voicemail>
-			<apn value="web.be">
+			<apn value="internet.proximus.be">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
 				<username>web</username>
 				<password>web</password>
+				<name>Mobile Vikings Internet</name>
 			</apn>
 		</gsm>
 	</provider>
