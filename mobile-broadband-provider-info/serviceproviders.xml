@@ -1271,9 +1271,9 @@ conceived.
 			<apn value="internet.proximus.be">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
+			        <name>Mobile Vikings Internet</name>
 				<username>web</username>
 				<password>web</password>
-				<name>Mobile Vikings Internet</name>
 			</apn>
 		</gsm>
 	</provider>
