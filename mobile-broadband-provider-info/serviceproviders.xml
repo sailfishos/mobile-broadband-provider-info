@@ -1266,11 +1266,12 @@ conceived.
 	<provider>
 		<name>Mobile Vikings</name>
 		<gsm>
-			<network-id mcc="206" mnc="20"/>
+			<network-id mcc="206" mnc="01"/>
 			<voicemail>1933</voicemail>
-			<apn value="web.be">
+			<apn value="internet.proximus.be">
 				<plan type="prepaid"/>
 				<usage type="internet"/>
+			        <name>Mobile Vikings Internet</name>
 				<username>web</username>
 				<password>web</password>
 			</apn>
