@@ -2,10 +2,9 @@ Name:       mobile-broadband-provider-info
 Summary:    Mobile Broadband Dataprovider Database
 Version:    20130911
 Release:    1
-Group:      Applications/Internet
 License:    Public Domain
 BuildArch:  noarch
-URL:        https://git.sailfishos.org/mer-core/mobile-broadband-provider-info
+URL:        https://github.com/sailfishos/mobile-broadband-provider-info/
 Source0:    %{name}-%{version}.tar.xz
 BuildRequires: libxml2
 
@@ -36,7 +35,6 @@ The database is released under Creative Commons Public Domain (CC-PD).
 
 %package devel
 Summary:    Development files for mobile-broadband-provider-info package
-Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
 
 %description devel
@@ -51,7 +49,6 @@ Contains development files for mobile-broadband-provider-info, e.g., .pc file.
 make
 
 %install
-rm -rf %{buildroot}
 %make_install
 
 %check
