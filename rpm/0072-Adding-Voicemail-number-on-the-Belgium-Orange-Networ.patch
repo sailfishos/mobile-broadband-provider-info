@@ -8,7 +8,7 @@ Subject: [PATCH] Adding Voicemail number on the Belgium Orange Network
  1 file changed, 2 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index a179abe99..4f21de9d3 100644
+index 301aec385..64841d2cc 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -1606,6 +1606,8 @@ conceived.

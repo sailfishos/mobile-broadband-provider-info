@@ -8,7 +8,7 @@ Subject: [PATCH] Add O2 Germany MMS settings
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 10bfd1446..c7feb5c16 100644
+index a44b3a6a3..31ed2ed65 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -3640,7 +3640,7 @@ conceived.

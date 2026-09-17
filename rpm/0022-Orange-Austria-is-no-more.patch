@@ -9,7 +9,7 @@ Merged with Drei (3)
  1 file changed, 2 insertions(+), 3 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 3759678ff..38d70cf55 100644
+index 1e3fa508f..41ecdca06 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -631,14 +631,13 @@ conceived.

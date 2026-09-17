@@ -10,7 +10,7 @@ And removed a few unnecessary and obsolete things
  1 file changed, 1 insertion(+), 7 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index aa7c5bc10..70ace3c1d 100644
+index 6c73437d5..56bf86a0a 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -13181,7 +13181,6 @@ conceived.

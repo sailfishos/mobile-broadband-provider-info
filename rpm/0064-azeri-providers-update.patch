@@ -8,7 +8,7 @@ Subject: [PATCH] azeri providers update
  1 file changed, 17 insertions(+), 11 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 7820f5ddb..5e4e56de0 100644
+index 9f7b47b76..9762d6d85 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -1200,23 +1200,31 @@ conceived.

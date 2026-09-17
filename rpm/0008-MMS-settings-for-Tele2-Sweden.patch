@@ -8,7 +8,7 @@ Subject: [PATCH] MMS settings for Tele2 Sweden
  1 file changed, 7 insertions(+), 2 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 9f133af46..8f51e0bc1 100644
+index cd5a8df4b..16b3c5a1d 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -12969,11 +12969,10 @@ conceived.

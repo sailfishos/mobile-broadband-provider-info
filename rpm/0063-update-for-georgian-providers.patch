@@ -8,7 +8,7 @@ Subject: [PATCH] update for georgian providers
  1 file changed, 41 insertions(+), 1 deletion(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 501805862..7820f5ddb 100644
+index ac9b24189..9f7b47b76 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -6021,12 +6021,52 @@ conceived.

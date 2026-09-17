@@ -8,7 +8,7 @@ Subject: [PATCH] Montenegro providers update
  1 file changed, 9 insertions(+), 9 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 291d61fbd..75dca8722 100644
+index ce30c8e24..a723c9252 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -9665,19 +9665,19 @@ conceived.

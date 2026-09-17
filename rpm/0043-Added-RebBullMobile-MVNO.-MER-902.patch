@@ -8,7 +8,7 @@ Subject: [PATCH] Added RebBullMobile MVNO. MER#902
  1 file changed, 20 insertions(+), 2 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 301f306a1..be50bddd6 100644
+index 505257a33..f967bc179 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -11803,7 +11803,7 @@ conceived.

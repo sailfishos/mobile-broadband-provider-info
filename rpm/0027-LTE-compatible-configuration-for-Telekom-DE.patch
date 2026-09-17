@@ -8,7 +8,7 @@ Subject: [PATCH] LTE compatible configuration for Telekom DE
  1 file changed, 8 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index ac4764711..b48ec5fa5 100644
+index 28d97563c..7ff13ce27 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -3722,6 +3722,14 @@ conceived.

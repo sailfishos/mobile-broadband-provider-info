@@ -8,7 +8,7 @@ Subject: [PATCH] Added Mobile Vikings MVNO
  1 file changed, 22 insertions(+), 3 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 95c78f1d7..6bfc9dc7b 100644
+index f0c5d98ea..9b956a7f9 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -1687,11 +1687,12 @@ conceived.

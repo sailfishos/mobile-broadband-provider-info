@@ -9,7 +9,7 @@ Fello added in Swedish providers section
  1 file changed, 19 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 8a05e8cf1..f7831d34e 100644
+index 632c25f3e..d5ae9ca30 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -13321,6 +13321,25 @@ conceived.

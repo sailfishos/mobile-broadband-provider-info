@@ -8,7 +8,7 @@ Subject: [PATCH] Cleaned up Free (France) settings. MER#902
  1 file changed, 4 insertions(+), 12 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 146c3b10f..451654c61 100644
+index 8cccc9ef2..609462229 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -5274,9 +5274,9 @@ conceived.

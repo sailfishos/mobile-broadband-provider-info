@@ -8,7 +8,7 @@ Subject: [PATCH] Added MMS settings for MTNL India. Contributes to JB#34083
  1 file changed, 5 insertions(+), 3 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index edf84b2ed..7f6563c19 100644
+index 5228ec5e4..644f1b9bd 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -7690,11 +7690,13 @@ conceived.

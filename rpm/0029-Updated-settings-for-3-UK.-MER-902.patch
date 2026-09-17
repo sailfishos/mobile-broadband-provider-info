@@ -8,7 +8,7 @@ Subject: [PATCH] Updated settings for 3 UK. MER#902
  1 file changed, 8 insertions(+), 5 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 44605d070..1a374db43 100644
+index 6dc11b003..7d1d1c39a 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -5959,17 +5959,20 @@ conceived.

@@ -8,7 +8,7 @@ Subject: [PATCH] Added setup for SKTelecom (South Korea). MER#902
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index caa5e858b..9360d4869 100644
+index f2d3e63bc..c9b6f61bb 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -8881,9 +8881,9 @@ conceived.

@@ -8,7 +8,7 @@ Subject: [PATCH] Updated settings for CSL Hong Kong
  1 file changed, 3 insertions(+), 14 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 3c9aad827..7dbd7d237 100644
+index 13b9de34b..3c95fbccb 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -6374,11 +6374,10 @@ conceived.

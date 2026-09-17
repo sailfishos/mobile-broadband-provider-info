@@ -8,7 +8,7 @@ Subject: [PATCH] Added a2mobile MVNO and remove Nordisk Polska (POLAND)
  1 file changed, 18 insertions(+), 6 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 6bfc9dc7b..4d733660e 100644
+index 9b956a7f9..5854e25c8 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -11929,12 +11929,24 @@ conceived.

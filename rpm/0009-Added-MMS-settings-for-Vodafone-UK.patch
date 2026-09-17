@@ -8,7 +8,7 @@ Subject: [PATCH] Added MMS settings for Vodafone UK
  1 file changed, 8 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 8f51e0bc1..41aa1cd0e 100644
+index 16b3c5a1d..a81ff7ee6 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -5856,6 +5856,14 @@ conceived.

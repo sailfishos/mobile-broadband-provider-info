@@ -9,7 +9,7 @@ Iceland providers update
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 5e4e56de0..f465d3ed9 100644
+index 9762d6d85..c9742a02d 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -7873,7 +7873,7 @@ conceived.

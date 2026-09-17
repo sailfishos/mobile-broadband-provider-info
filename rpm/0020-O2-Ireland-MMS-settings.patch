@@ -9,7 +9,7 @@ http://community.o2online.ie/t5/Help-Support/Mobile-Internet-and-MMS-Settings/ta
  1 file changed, 6 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index aa3e1b47b..87cc05015 100644
+index 0b5a5dbea..445a4b397 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -7025,6 +7025,12 @@ conceived.

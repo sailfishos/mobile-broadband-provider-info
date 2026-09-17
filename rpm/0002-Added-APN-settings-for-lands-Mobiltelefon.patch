@@ -12,7 +12,7 @@ Content-Transfer-Encoding: 8bit
  1 file changed, 16 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 4f710519f..01256282d 100644
+index fefc4cfc6..27f18ffa1 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -5125,6 +5125,22 @@ conceived.

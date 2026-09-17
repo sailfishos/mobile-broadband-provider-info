@@ -8,7 +8,7 @@ Subject: [PATCH] Added MMS settings
  1 file changed, 1431 insertions(+), 486 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 9b1d28a69..4f710519f 100644
+index 9b1d28a69..fefc4cfc6 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -90,13 +90,7 @@ conceived.
@@ -3075,7 +3075,7 @@ index 9b1d28a69..4f710519f 100644
 +				<usage type="mms"/>
 +				<name>3 SE MMS</name>
 +				<mmsc>http://mms.tre.se</mmsc>
-+				<mmsproxy>172.16.53.11:8799</mmsproxy>
++				<mmsproxy>80.251.201.193:8799</mmsproxy>
 +			</apn>
  		</gsm>
  	</provider>

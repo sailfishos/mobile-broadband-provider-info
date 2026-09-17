@@ -8,7 +8,7 @@ Subject: [PATCH] Updated settings for Telekom HU. MER#902
  1 file changed, 5 insertions(+), 17 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index a1cfb1e0a..5ecf7d02f 100644
+index 382957f9d..5d2c31360 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -6736,28 +6736,16 @@ conceived.

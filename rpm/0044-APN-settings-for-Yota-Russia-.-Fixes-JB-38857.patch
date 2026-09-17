@@ -8,7 +8,7 @@ Subject: [PATCH] APN settings for Yota (Russia). Fixes JB#38857
  1 file changed, 17 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index be50bddd6..95c78f1d7 100644
+index f967bc179..f0c5d98ea 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -12767,6 +12767,23 @@ conceived.

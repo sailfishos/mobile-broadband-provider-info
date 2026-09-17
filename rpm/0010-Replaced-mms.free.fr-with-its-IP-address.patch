@@ -9,7 +9,7 @@ As recommended by the operator. That takes DNS out of the picture.
  1 file changed, 1 insertion(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 41aa1cd0e..d7be0cabb 100644
+index a81ff7ee6..15b7e19a7 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -5268,6 +5268,7 @@ conceived.

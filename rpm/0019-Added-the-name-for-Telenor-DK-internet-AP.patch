@@ -8,7 +8,7 @@ Subject: [PATCH] Added the name for Telenor DK internet AP
  1 file changed, 1 insertion(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 6c5a27e4a..aa3e1b47b 100644
+index da5c58122..0b5a5dbea 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -4038,6 +4038,7 @@ conceived.

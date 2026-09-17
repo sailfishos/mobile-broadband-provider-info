@@ -16,7 +16,7 @@ Changes to Polish networks:
  1 file changed, 13 insertions(+), 36 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index a1c99749f..8697128a3 100644
+index 580b8ebb9..ddca1aeca 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -11635,7 +11635,6 @@ conceived.

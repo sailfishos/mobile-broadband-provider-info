@@ -8,7 +8,7 @@ Subject: [PATCH] Added missing MNC for China Mobile. Contributes to MER#902
  1 file changed, 1 insertion(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 8ca1a5065..edf84b2ed 100644
+index 311817fdc..5228ec5e4 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -3011,6 +3011,7 @@ conceived.

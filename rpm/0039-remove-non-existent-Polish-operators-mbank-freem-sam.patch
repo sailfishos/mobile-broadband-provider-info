@@ -8,7 +8,7 @@ Subject: [PATCH] remove non-existent Polish operators(mbank, freem, samiswoi)
  1 file changed, 16 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 9360d4869..68c6c3d87 100644
+index c9b6f61bb..a16dce4fc 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -11762,28 +11762,12 @@ conceived.

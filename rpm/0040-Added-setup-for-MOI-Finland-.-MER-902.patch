@@ -8,7 +8,7 @@ Subject: [PATCH] Added setup for MOI (Finland). MER#902
  1 file changed, 18 insertions(+), 7 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 68c6c3d87..146c3b10f 100644
+index a16dce4fc..8cccc9ef2 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -4955,7 +4955,7 @@ conceived.

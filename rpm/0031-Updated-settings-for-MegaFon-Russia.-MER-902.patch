@@ -8,7 +8,7 @@ Subject: [PATCH] Updated settings for MegaFon Russia. MER#902
  1 file changed, 2 insertions(+), 4 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 677beeec7..a1cfb1e0a 100644
+index ddd5571b0..382957f9d 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -12636,10 +12636,8 @@ conceived.

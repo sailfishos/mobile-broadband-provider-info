@@ -8,7 +8,7 @@ Subject: [PATCH] Marocco providers update
  1 file changed, 14 insertions(+), 13 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index f465d3ed9..291d61fbd 100644
+index c9742a02d..ce30c8e24 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -9537,18 +9537,19 @@ conceived.

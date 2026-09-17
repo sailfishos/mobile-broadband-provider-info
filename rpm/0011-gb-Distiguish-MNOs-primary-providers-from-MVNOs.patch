@@ -9,7 +9,7 @@ Checked from http://www.ofcom.org.uk/static/numbering/#mnc
  1 file changed, 6 insertions(+), 5 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index d7be0cabb..3c9aad827 100644
+index 15b7e19a7..13b9de34b 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -5576,7 +5576,7 @@ conceived.

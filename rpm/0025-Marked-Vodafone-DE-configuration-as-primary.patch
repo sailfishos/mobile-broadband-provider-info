@@ -9,7 +9,7 @@ O.tel.o, BildMobil etc. are MVNO's on Vodafone network
  1 file changed, 3 insertions(+), 2 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index f89ed818d..c84013bee 100644
+index f96510ea6..a928e31ee 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -3757,7 +3757,7 @@ conceived.

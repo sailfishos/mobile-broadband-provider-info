@@ -9,7 +9,7 @@ Update Afgan provider and remove Red bull mobile from Australia providers
  1 file changed, 6 insertions(+), 11 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index bea21e48e..44e962693 100644
+index 8fd7e1576..fca83b1d5 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -146,8 +146,12 @@ conceived.
