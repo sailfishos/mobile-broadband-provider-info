@@ -1,0 +1,44 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Atlochowski <hucul@o2.pl>
+Date: Mon, 26 Sep 2022 21:05:01 +0200
+Subject: [PATCH] United Arab Emirates providers update
+
+---
+ serviceproviders.xml | 15 +--------------
+ 1 file changed, 1 insertion(+), 14 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 44e962693..0b037b56b 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -72,29 +72,16 @@ conceived.
+ 		<name>Etisalat</name>
+ 		<gsm>
+ 			<network-id mcc="424" mnc="02"/>
+-			<apn value="mnet">
+-				<plan type="postpaid"/>
+-				<usage type="internet"/>
+-				<name>Etisalat</name>
+-				<username>mnet</username>
+-				<password>mnet</password>
+-				<dns>194.170.1.6</dns>
+-				<dns>194.170.1.7</dns>
+-			</apn>
+ 			<apn value="etisalat.ae">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+ 				<name>Etisalat 3G</name>
+-				<username>etisalat.ae</username>
+-				<password>etisalat.ae</password>
+ 			</apn>
+ 			<apn value="etisalat">
+ 				<usage type="mms"/>
+ 				<name>etisalat mms</name>
+-				<username>mms</username>
+-				<password>mms</password>
+ 				<mmsc>http://mms/servlets/mms</mmsc>
+-				<mmsproxy>10.12.0.30:8080</mmsproxy>
++				<mmsproxy>10.12.0.32:8080</mmsproxy>
+ 			</apn>
+ 		</gsm>
+ 	</provider>

@@ -1,0 +1,21 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Thu, 28 Apr 2016 12:06:01 +0300
+Subject: [PATCH] Added missing MNC for China Mobile. Contributes to MER#902
+
+---
+ serviceproviders.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 8ca1a5065..edf84b2ed 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -3011,6 +3011,7 @@ conceived.
+ 		<gsm>
+ 			<network-id mcc="460" mnc="00"/>
+ 			<network-id mcc="460" mnc="02"/>
++			<network-id mcc="460" mnc="07"/>
+ 			<apn value="cmwap">
+ 				<plan type="postpaid"/>
+ 				<usage type="wap"/>

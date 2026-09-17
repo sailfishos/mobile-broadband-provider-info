@@ -1,0 +1,106 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Atlochowski <hucul@o2.pl>
+Date: Mon, 26 Sep 2022 15:09:36 +0200
+Subject: [PATCH] Iran and Iraq providers update
+
+---
+ serviceproviders.xml | 57 ++++++++++++++++++++++++++------------------
+ 1 file changed, 34 insertions(+), 23 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 75dca8722..bea21e48e 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -7762,27 +7762,6 @@ conceived.
+ 
+ <country code="iq">
+ 	<name>Iraq</name>
+-	<provider>
+-		<name>Itisaluna</name>
+-		<cdma>
+-			<username>itisaluna</username>
+-			<password>itisaluna</password>
+-			<sid value="15456"/>
+-		</cdma>
+-	</provider>
+-	<provider>
+-		<name>Omnea Telecom</name>
+-		<cdma>
+-			<username>omnea</username>
+-			<password>omnea</password>
+-		</cdma>
+-	</provider>
+-	<provider>
+-		<name>Kalimat Telecom</name>
+-		<cdma>
+-			<sid value="15470"/>
+-		</cdma>
+-	</provider>
+ 	<provider>
+ 		<name>Korek</name>
+ 		<gsm>
+@@ -7811,6 +7790,16 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Mobitel</name>
++		<gsm>
++			<network-id mcc="418" mnc="45"/>
++			<apn value="om">
++				<plan type="postpaid"/>
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="ir">
+@@ -7827,23 +7816,45 @@ conceived.
+ 		</emergency-number>
+ 	</emergency-numbers>
+ 	<provider>
+-		<name>همراه اول</name>
++		<name>Hamrahe Aval</name>
+ 		<gsm>
+ 			<network-id mcc="432" mnc="11"/>
+ 			<apn value="mcinet">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+ 			</apn>
++			<apn value="mcinet">
++				<usage type="mms"/>
++				<name>Hamrahe Aval MMS</name>
++				<mmsc>http://192.168.193.134:38090/was</mmsc>
++				<mmsproxy>192.168.194.73:8080</mmsproxy>
++			</apn>
+ 		</gsm>
+ 	</provider>
+ 	<provider>
+-		<name>ایرانسل</name>
++		<name>MNT Irancell</name>
+ 		<gsm>
+ 			<network-id mcc="432" mnc="35"/>
+ 			<apn value="mtnirancell">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+ 			</apn>
++			<apn value="mtnirancell">
++				<usage type="mms"/>
++				<name>MNT Irancell MMS</name>
++				<mmsc>http://mms:8002</mmsc>
++				<mmsproxy>10.131.26.138:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>RighTel</name>
++		<gsm>
++			<network-id mcc="432" mnc="20"/>
++			<apn value="RighTel">
++				<plan type="postpaid"/>
++				<usage type="internet"/>
++			</apn>
+ 		</gsm>
+ 	</provider>
+ </country>

@@ -1,0 +1,47 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Atlochowski <hucul@o2.pl>
+Date: Thu, 21 Oct 2021 12:21:29 +0200
+Subject: [PATCH] Remove Polish mobile network Cyfrowy Polsat
+
+---
+ serviceproviders.xml | 20 --------------------
+ 1 file changed, 20 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 29a653667..8a05e8cf1 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -11759,22 +11759,6 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
+-	<provider primary="true">
+-		<name>Cyfrowy Polsat</name>
+-		<gsm>
+-			<network-id mcc="260" mnc="12"/>
+-			<apn value="internet.cyfrowypolsat.pl">
+-				<plan type="postpaid"/>
+-				<usage type="internet"/>
+-			</apn>
+-			<apn value="mms.cyfrowypolsat.pl">
+-				<usage type="mms"/>
+-				<name>Cyfrowy Polsat MMS</name>
+-				<mmsc>http://mms.cyfrowypolsat.pl:8002/</mmsc>
+-				<mmsproxy>79.171.2.33:8080</mmsproxy>
+-			</apn>
+-		</gsm>
+-	</provider>
+ 	<provider primary="true">
+ 		<name>aero2</name>
+ 		<gsm>
+@@ -11798,10 +11782,6 @@ conceived.
+ 				<password>internet</password>
+ 			</apn>
+ 		</gsm>
+-		<cdma>
+-			<username>cdma@orange</username>
+-			<password>orange</password>
+-		</cdma>
+ 	</provider>
+ 	<provider primary="false">
+ 		<name>Heyah</name>

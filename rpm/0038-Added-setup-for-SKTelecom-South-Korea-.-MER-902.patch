@@ -1,0 +1,25 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Sun, 9 Oct 2016 14:37:43 +0300
+Subject: [PATCH] Added setup for SKTelecom (South Korea). MER#902
+
+---
+ serviceproviders.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index caa5e858b..9360d4869 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -8881,9 +8881,9 @@ conceived.
+ 			</apn>
+ 			<apn value="lte.sktelecom.com">
+ 				<usage type="mms"/>
+-				<name>SKT MMS</name>
++				<name>SKTelecom MMS</name>
+ 				<mmsc>http://omms.nate.com:9082/oma_mms</mmsc>
+-				<mmsproxy>smart.nate.com:9093</mmsproxy>
++				<mmsproxy>211.188.197.41:9093</mmsproxy>
+ 			</apn>
+ 		</gsm>
+ 		<cdma>

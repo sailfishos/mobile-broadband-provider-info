@@ -1,0 +1,27 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Tommi Kenakkala <tommi.kenakkala@oss.tieto.com>
+Date: Thu, 30 Oct 2014 14:49:25 +0200
+Subject: [PATCH] O2 Ireland MMS settings
+
+http://community.o2online.ie/t5/Help-Support/Mobile-Internet-and-MMS-Settings/ta-p/519247
+---
+ serviceproviders.xml | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index aa3e1b47b..87cc05015 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -7025,6 +7025,12 @@ conceived.
+ 				<dns>62.40.32.33</dns>
+ 				<dns>62.40.32.34</dns>
+ 			</apn>
++			<apn value="internet">
++				<usage type="mms"/>
++				<name>O2.ie Internet</name>
++				<mmsc>http://mmsc.mms.o2.ie:8002</mmsc>
++				<mmsproxy>62.40.32.40:8080</mmsproxy>
++			</apn>
+ 			<apn value="pp.internet">
+ 				<plan type="prepaid"/>
+ 				<usage type="internet"/>

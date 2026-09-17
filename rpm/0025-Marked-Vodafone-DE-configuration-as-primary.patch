@@ -1,0 +1,40 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Sat, 21 Feb 2015 12:29:00 +0200
+Subject: [PATCH] Marked Vodafone DE configuration as primary
+
+O.tel.o, BildMobil etc. are MVNO's on Vodafone network
+---
+ serviceproviders.xml | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index f89ed818d..c84013bee 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -3757,7 +3757,7 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
+-	<provider>
++	<provider primary="true">
+ 		<name>Vodafone</name>
+ 		<gsm>
+ 			<network-id mcc="262" mnc="02"/>
+@@ -3775,6 +3775,7 @@ conceived.
+ 			<apn value="web.vodafone.de">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
++				<name>Vodafone Internet</name>
+ 				<dns>139.7.30.125</dns>
+ 				<dns>139.7.30.126</dns>
+ 			</apn>
+@@ -3789,7 +3790,7 @@ conceived.
+ 			</apn>
+ 			<apn value="event.vodafone.de">
+ 				<usage type="mms"/>
+-				<name>Vodafone DE-MMS</name>
++				<name>Vodafone MMS</name>
+ 				<mmsc>http://139.7.24.1/servlets/mms</mmsc>
+ 				<mmsproxy>139.7.29.17:80</mmsproxy>
+ 			</apn>

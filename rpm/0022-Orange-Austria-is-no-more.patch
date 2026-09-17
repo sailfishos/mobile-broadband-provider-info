@@ -1,0 +1,31 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Mon, 12 Jan 2015 12:27:43 +0300
+Subject: [PATCH] Orange Austria is no more
+
+Merged with Drei (3)
+---
+ serviceproviders.xml | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 3759678ff..38d70cf55 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -631,14 +631,13 @@ conceived.
+ 		<name>Drei (3)</name>
+ 		<name xml:lang="de">Drei</name>
+ 		<gsm>
++			<network-id mcc="232" mnc="05"/>
+ 			<network-id mcc="232" mnc="10"/>
+ 			<network-id mcc="232" mnc="05"/>
+ 			<gid1>0303</gid1>
+ 			<apn value="drei.at">
+-				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+-				<dns>213.94.78.17</dns>
+-				<dns>213.94.78.16</dns>
++				<name>Planet3</name>
+ 			</apn>
+ 			<apn value="drei.at">
+ 				<usage type="mms"/>

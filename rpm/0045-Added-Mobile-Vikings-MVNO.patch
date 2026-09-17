@@ -1,0 +1,62 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: atlochowski <hucul@o2.pl>
+Date: Wed, 31 May 2017 09:09:46 +0000
+Subject: [PATCH] Added Mobile Vikings MVNO
+
+---
+ serviceproviders.xml | 25 ++++++++++++++++++++++---
+ 1 file changed, 22 insertions(+), 3 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 95c78f1d7..6bfc9dc7b 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -1687,11 +1687,12 @@ conceived.
+ 	<provider>
+ 		<name>Mobile Vikings</name>
+ 		<gsm>
+-			<network-id mcc="206" mnc="20"/>
++			<network-id mcc="206" mnc="01"/>
+ 			<voicemail>1933</voicemail>
+-			<apn value="web.be">
++			<apn value="internet.proximus.be">
+ 				<plan type="prepaid"/>
+ 				<usage type="internet"/>
++			        <name>Mobile Vikings Internet</name>
+ 				<username>web</username>
+ 				<password>web</password>
+ 			</apn>
+@@ -12000,7 +12001,6 @@ conceived.
+ 		<name>Virgin Mobile</name>
+ 		<gsm>
+ 			<network-id mcc="260" mnc="02"/>
+-			<network-id mcc="260" mnc="06"/>
+ 			<balance-check>
+ 				<ussd>*101#</ussd>
+ 			</balance-check>
+@@ -12032,6 +12032,25 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Mobile Vikings</name>
++		<gsm>
++			<network-id mcc="260" mnc="06"/>
++			<balance-check>
++				<ussd>*101#</ussd>
++			</balance-check>
++			<apn value="mms">
++				<usage type="mms"/>
++				<name>MMS</name>
++				<mmsc>http://mmsc.play.pl/mms/wapenc</mmsc>
++				<mmsproxy>10.10.25.5:8080</mmsproxy>
++			</apn>
++			<apn value="internet">
++				<plan type="prepaid"/>
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="pt">

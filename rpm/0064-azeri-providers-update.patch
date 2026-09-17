@@ -1,0 +1,86 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Atlochowski <hucul@o2.pl>
+Date: Thu, 22 Sep 2022 21:37:09 +0200
+Subject: [PATCH] azeri providers update
+
+---
+ serviceproviders.xml | 28 +++++++++++++++++-----------
+ 1 file changed, 17 insertions(+), 11 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 7820f5ddb..5e4e56de0 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -1200,23 +1200,31 @@ conceived.
+ 		<name>Bakcell</name>
+ 		<gsm>
+ 			<network-id mcc="400" mnc="02"/>
+-			<apn value="mms">
++			<apn value="internet.bakcell.com">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+ 			</apn>
++			<apn value="mms">
++				<usage type="mms"/>
++				<name>Bakcell</name>
++				<mmsc>http://mms.mmsc.bakcell.com</mmsc>
++			</apn>
+ 		</gsm>
+ 	</provider>
+ 	<provider>
+-		<name>Azerfon</name>
++		<name>Nar</name>
+ 		<gsm>
+ 			<network-id mcc="400" mnc="04"/>
+-			<msisdn-query>
+-				<ussd>*100#3#</ussd>
+-			</msisdn-query>
+-			<apn value="azerfon">
++			<apn value="nar">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+ 			</apn>
++			<apn value="nar">
++				<usage type="mms"/>
++				<name>Nar MMS</name>
++				<mmsc>http://mmsc</mmsc>
++				<mmsproxy>10.20.0.40:9401</mmsproxy>
++			</apn>
+ 		</gsm>
+ 	</provider>
+ </country>
+@@ -6022,11 +6030,9 @@ conceived.
+ 		<gsm>
+ 			<network-id mcc="282" mnc="01"/>
+ 			<apn value="internet">
+-				<name>Geocell</name>
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+-				<dns>212.72.130.20</dns>
+-				<dns>212.72.152.1</dns>
++				<name>Geocell</name>
+ 			</apn>
+ 			<apn value="mms">
+ 				<usage type="mms"/>
+@@ -6041,9 +6047,9 @@ conceived.
+ 		<gsm>
+ 			<network-id mcc="282" mnc="02"/>
+ 			<apn value="3g.ge">
+-				<name>MagtiCom</name>
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
++				<name>MagtiCom</name>
+ 			</apn>
+ 			<apn value="mms.ge">
+ 				<usage type="mms"/>
+@@ -6058,9 +6064,9 @@ conceived.
+ 		<gsm>
+ 			<network-id mcc="282" mnc="04"/>
+ 			<apn value="internet.ge.beeline.net">
+-				<name>Beeline</name>
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
++				<name>Beeline</name>
+ 			</apn>
+ 			<apn value="mms.ge.beeline.net">
+ 				<usage type="mms"/>

@@ -1,0 +1,32 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Wed, 17 May 2017 17:20:47 +0300
+Subject: [PATCH] Added MMS settings for 3 (Italy). MER#902
+
+---
+ serviceproviders.xml | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 451654c61..301f306a1 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -7962,11 +7962,14 @@ conceived.
+ 		<gsm>
+ 			<network-id mcc="222" mnc="99"/>
+ 			<apn value="tre.it">
+-				<plan type="postpaid"/>
++				<usage type="mms"/>
++				<name>3 ITA MMS</name>
++				<mmsc>http://10.216.59.240:10021/mmsc</mmsc>
++				<mmsproxy>62.13.171.3:8799</mmsproxy>
++			</apn>
++			<apn value="tre.it">
+ 				<usage type="internet"/>
+-				<name>Ricaricabile</name>
+-				<dns>62.13.169.92</dns>
+-				<dns>62.13.169.93</dns>
++				<name>3 ITA</name>
+ 			</apn>
+ 			<apn value="datacard.tre.it">
+ 				<plan type="postpaid"/>

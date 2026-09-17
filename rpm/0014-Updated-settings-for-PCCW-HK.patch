@@ -8,10 +8,10 @@ Subject: [PATCH] Updated settings for PCCW HK
  1 file changed, 10 insertions(+), 3 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 7de2d4210..02729f017 100644
+index f744f9a05..35ce7fbaa 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -6254,10 +6254,16 @@ conceived.
+@@ -6432,10 +6432,16 @@ conceived.
  		</gsm>
  	</provider>
  	<provider>
@@ -28,7 +28,7 @@ index 7de2d4210..02729f017 100644
  			<apn value="internet">
  				<plan type="postpaid"/>
  				<usage type="internet"/>
-@@ -6269,9 +6275,10 @@ conceived.
+@@ -6447,9 +6453,10 @@ conceived.
  				<name>PCCW 2G/GPRS</name>
  			</apn>
  			<apn value="pccw">

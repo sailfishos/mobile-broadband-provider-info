@@ -1,0 +1,45 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Atlochowski <hucul@o2.pl>
+Date: Mon, 26 Sep 2022 17:59:32 +0200
+Subject: [PATCH] Update Afgan provider and remove one from Australia
+
+Update Afgan provider and remove Red bull mobile from Australia providers
+---
+ serviceproviders.xml | 17 ++++++-----------
+ 1 file changed, 6 insertions(+), 11 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index bea21e48e..44e962693 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -146,8 +146,12 @@ conceived.
+ 			<apn value="internet">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+-				<username>awcc</username>
+-				<password>1111</password>
++			</apn>
++			<apn value="mms1">
++				<usage type="mms"/>
++				<name>AWCC MMS</name>
++				<mmsc>http://172.17.81.2:8002</mmsc>
++				<mmsproxy>172.17.81.2:8002</mmsproxy>
+ 			</apn>
+ 			<apn value="mms1">
+ 				<usage type="mms"/>
+@@ -856,15 +860,6 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
+-<!-- Not validated yet
+-	<provider>
+-		<name>GRL / Red Bull Mobile</name>
+-		<gsm>
+-			<network-id mcc="505" mnc="03"/>
+-			<apn value="purtona.net"/>
+-		</gsm>
+-	</provider>
+--->
+ 	<provider>
+ 		<name>Highway1</name>
+ 		<gsm>

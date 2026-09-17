@@ -1,0 +1,47 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Mon, 21 Dec 2015 12:17:24 +0300
+Subject: [PATCH] Updated settings for Telekom HU. MER#902
+
+---
+ serviceproviders.xml | 22 +++++-----------------
+ 1 file changed, 5 insertions(+), 17 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index a1cfb1e0a..5ecf7d02f 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -6736,28 +6736,16 @@ conceived.
+ 		</gsm>
+ 	</provider>
+ 	<provider>
+-		<name>T-Mobile</name>
++		<name>Telekom</name>
+ 		<gsm>
+ 			<network-id mcc="216" mnc="30"/>
+-			<apn value="internet">
+-				<plan type="postpaid"/>
++			<apn value="internet.telekom">
+ 				<usage type="internet"/>
+-				<dns>212.51.115.1</dns>
+-				<dns>194.176.224.6</dns>
+-			</apn>
+-			<apn value="mms-westel">
+-				<plan type="postpaid"/>
+-				<usage type="mms"/>
+-				<name>MMS</name>
+-				<username>mms</username>
+-				<dns>212.51.115.1</dns>
+-				<dns>194.176.224.3</dns>
++				<name>Telekom Internet</name>
+ 			</apn>
+-			<apn value="mms">
++			<apn value="internet.telekom">
+ 				<usage type="mms"/>
+-				<name>T-Mobile MMS</name>
+-				<username>mms</username>
+-				<password>mms</password>
++				<name>Telekom MMS</name>
+ 				<mmsc>http://mms.t-mobile.hu/servlets/mms</mmsc>
+ 				<mmsproxy>212.51.126.10:8080</mmsproxy>
+ 			</apn>

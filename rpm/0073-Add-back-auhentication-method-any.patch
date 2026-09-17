@@ -1,0 +1,26 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Pekka Vuorela <pekka.vuorela@jolla.com>
+Date: Wed, 13 Aug 2025 09:13:27 +0300
+Subject: [PATCH] Add back auhentication method 'any'
+
+Originally introduced in our version of the 'auhtentication' element,
+but briefly dropped when switching to upstream declaration.
+It's not used in the data but sailfish ofono does have handling,
+so keeping the declaration here as well.
+---
+ serviceproviders.2.dtd | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/serviceproviders.2.dtd b/serviceproviders.2.dtd
+index 09239cc83..ebea6e95b 100644
+--- a/serviceproviders.2.dtd
++++ b/serviceproviders.2.dtd
+@@ -114,7 +114,7 @@
+ <!-- password required for authentication when starting a packet data session -->
+ 
+ <!ELEMENT authentication EMPTY>
+-<!ATTLIST authentication method (chap|pap) #REQUIRED>
++<!ATTLIST authentication method (chap|pap|any) #REQUIRED>
+ <!-- method to use for authentication when starting a packet data session -->
+ 
+ <!ELEMENT dns (#PCDATA)>

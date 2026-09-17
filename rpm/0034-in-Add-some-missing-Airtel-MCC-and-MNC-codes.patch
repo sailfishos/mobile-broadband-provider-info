@@ -1,0 +1,43 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Marko Saukko <marko.saukko@jolla.com>
+Date: Wed, 27 Apr 2016 16:48:22 +0300
+Subject: [PATCH] in: Add some missing Airtel MCC and MNC codes.
+
+[in] Add some missing Airtel MCC and MNC codes. Contributes to JB#34982
+
+http://www.indiantelecomnews.com/airtel-gprs-3g-settings-manual-internet-configuration-apn
+
+Signed-off-by: Marko Saukko <marko.saukko@jolla.com>
+---
+ serviceproviders.xml | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 028ee38a3..8ca1a5065 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -7460,6 +7460,7 @@ conceived.
+ 			<network-id mcc="404" mnc="03"/>
+ 			<network-id mcc="404" mnc="06"/>
+ 			<network-id mcc="404" mnc="10"/>
++			<network-id mcc="404" mnc="16"/>
+ 			<network-id mcc="404" mnc="28"/>
+ 			<network-id mcc="404" mnc="31"/>
+ 			<network-id mcc="404" mnc="37"/>
+@@ -7472,13 +7473,16 @@ conceived.
+ 			<network-id mcc="404" mnc="90"/>
+ 			<network-id mcc="404" mnc="92"/>
+ 			<network-id mcc="404" mnc="93"/>
++			<network-id mcc="404" mnc="94"/>
+ 			<network-id mcc="404" mnc="95"/>
+ 			<network-id mcc="404" mnc="96"/>
+ 			<network-id mcc="404" mnc="97"/>
+ 			<network-id mcc="404" mnc="98"/>
+ 			<network-id mcc="405" mnc="51"/>
+ 			<network-id mcc="405" mnc="52"/>
++			<network-id mcc="405" mnc="53"/>
+ 			<network-id mcc="405" mnc="54"/>
++			<network-id mcc="405" mnc="55"/>
+ 			<network-id mcc="405" mnc="56"/>
+ 
+ 			<apn value="airtelgprs.com">

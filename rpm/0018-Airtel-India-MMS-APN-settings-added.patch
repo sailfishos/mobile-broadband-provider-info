@@ -4,18 +4,14 @@ Date: Fri, 5 Sep 2014 13:11:04 +0300
 Subject: [PATCH] Airtel India MMS APN settings added
 
 ---
- serviceproviders.xml | 8 +++++++-
- 1 file changed, 7 insertions(+), 1 deletion(-)
+ serviceproviders.xml | 7 +++++++
+ 1 file changed, 7 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index b5cfb5390..02808d3f2 100644
+index c7feb5c16..6c5a27e4a 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -7231,13 +7231,19 @@ conceived.
- 			<network-id mcc="405" mnc="52"/>
- 			<network-id mcc="405" mnc="54"/>
- 			<network-id mcc="405" mnc="56"/>
--
+@@ -7448,9 +7448,16 @@ conceived.
  			<apn value="airtelgprs.com">
  				<plan type="postpaid"/>
  				<usage type="internet"/>
