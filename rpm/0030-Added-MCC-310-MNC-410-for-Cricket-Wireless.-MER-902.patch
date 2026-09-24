@@ -1,0 +1,31 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Wed, 19 Aug 2015 23:35:28 +0300
+Subject: [PATCH] Added MCC=310 MNC=410 for Cricket Wireless. MER#902
+
+AT&T has been marked as the primary provider. They share MNC with Cricket.
+---
+ serviceproviders.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 7d1d1c39a..ddd5571b0 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -14624,7 +14624,7 @@ conceived.
+ 			<callee type="fire-brigade"/>
+ 		</emergency-number>
+ 	</emergency-numbers>
+-	<provider>
++	<provider primary="true">
+ 		<name>AT&amp;T</name>
+ 		<gsm>
+ 			<network-id mcc="310" mnc="030"/>
+@@ -14689,6 +14689,7 @@ conceived.
+ 		<name>Cricket Wireless</name>
+ 		<gsm>
+ 			<network-id mcc="310" mnc="150"/>
++			<network-id mcc="310" mnc="410"/>
+ 			<!-- https://www.cricketwireless.com/support/apps-and-services/bring-your-own-device-byod/customer/bring-your-own-windows-device.html -->
+ 			<apn value="ndo">
+ 				<usage type="internet"/>

@@ -1,0 +1,35 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Atlochowski <hucul@o2.pl>
+Date: Thu, 22 Sep 2022 17:43:50 +0200
+Subject: [PATCH] Update for french auchan telecom
+
+---
+ serviceproviders.xml | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 7ba59cd9e..ac9b24189 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -5211,11 +5211,19 @@ conceived.
+ <country code="fr">
+ 	<name>France</name>
+ 	<provider>
+-		<name>A Mobile (Auchan Telecom)</name>
++		<name>Auchan Telecom</name>
+ 		<gsm>
+-			<apn value="wap65">
++			<network-id mcc="208" mnc="299"/>
++			<apn value="fnetnrj">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
++				<name>NRJWEB</name>
++			</apn>
++			<apn value="mmsnrj">
++				<usage type="mms"/>
++				<name>nrjmms</name>
++				<mmsc>http://mmsnrj</mmsc>
++				<mmsproxy>10.143.156.5:8080</mmsproxy>
+ 			</apn>
+ 		</gsm>
+ 	</provider>

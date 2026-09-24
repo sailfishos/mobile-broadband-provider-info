@@ -1,0 +1,23 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Atlochowski <hucul@o2.pl>
+Date: Wed, 29 Sep 2021 23:55:26 +0200
+Subject: [PATCH] Update Polish network Play
+
+---
+ serviceproviders.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 084bfa258..0c3a74c2b 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -11637,7 +11637,8 @@ conceived.
+ 			<apn value="mms">
+ 				<usage type="mms"/>
+ 				<name>Play MMS</name>
+-				<mmsc>http://10.10.28.164/mms/wapenc</mmsc>
++				<mmsc>http://mmsc.play.pl/mms/wapenc</mmsc>
++				<mmsproxy>10.10.25.5:8080</mmsproxy>
+ 			</apn>
+ 		</gsm>
+ 	</provider>

@@ -1,0 +1,39 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Mon, 25 May 2015 12:08:26 +0300
+Subject: [PATCH] Updated settings for 3 UK. MER#902
+
+---
+ serviceproviders.xml | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 6dc11b003..7d1d1c39a 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -5959,17 +5959,20 @@ conceived.
+ 		<name>3</name>
+ 		<gsm>
+ 			<network-id mcc="234" mnc="20"/>
++			<apn value="three.co.uk">
++				<usage type="internet"/>
++				<name>3 Internet</name>
++			</apn>
+ 			<apn value="3internet">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+ 				<name>Internet</name>
+ 			</apn>
+ 			<apn value="three.co.uk">
+-				<plan type="postpaid"/>
+-				<usage type="internet"/>
+-				<name>Handsets</name>
+-				<dns>172.30.139.17</dns>
+-				<dns>172.31.139.17</dns>
++				<usage type="mms"/>
++				<name>3 MMS</name>
++				<mmsc>http://mms.um.three.co.uk:10021/mmsc</mmsc>
++				<mmsproxy>217.171.129.2:8799</mmsproxy> <!-- mms.three.co.uk -->
+ 			</apn>
+ 		</gsm>
+ 	</provider>

@@ -1,0 +1,66 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Wed, 30 Nov 2016 11:46:09 +0200
+Subject: [PATCH] Added setup for MOI (Finland). MER#902
+
+---
+ serviceproviders.xml | 25 ++++++++++++++++++-------
+ 1 file changed, 18 insertions(+), 7 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index a16dce4fc..8cccc9ef2 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -4955,7 +4955,7 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
+-	<provider>
++	<provider primary="true">
+ 		<name>DNA</name>
+ 		<gsm>
+ 			<network-id mcc="244" mnc="03"/>
+@@ -4976,11 +4976,6 @@ conceived.
+ 				<usage type="internet"/>
+ 				<name>Postpaid (contract) public IP address (Nov 2016 and earlier individual, and all company subscriptions)</name>
+ 			</apn>
+-			<apn value="data.moimobile.fi">
+-				<plan type="postpaid"/>
+-				<usage type="internet"/>
+-				<name>Moi Mobiili</name>
+-			</apn>
+ 			<apn value="mms">
+ 				<usage type="mms"/>
+ 				<name>MMS</name>
+@@ -4991,6 +4986,22 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>MOI</name>
++		<gsm>
++			<network-id mcc="244" mnc="12"/>
++			<apn value="data.moimobile.fi">
++				<usage type="internet"/>
++				<name>MOI Internet</name>
++			</apn>
++			<apn value="mms">
++				<usage type="mms"/>
++				<name>MOI MMS</name>
++				<mmsc>http://mmsc.dna.fi</mmsc>
++				<mmsproxy>10.1.1.2:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ 	<provider>
+ 		<name>Elisa</name>
+ 		<gsm>
+@@ -5080,7 +5091,7 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
+-	<provider>
++	<provider primary="true">
+ 		<name>Telia</name>
+ 		<gsm>
+ 			<network-id mcc="244" mnc="91"/>

@@ -1,0 +1,42 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: atlochowski <hucul@o2.pl>
+Date: Mon, 7 Nov 2016 14:33:14 +0000
+Subject: [PATCH] remove non-existent Polish operators(mbank, freem, samiswoi)
+
+---
+ serviceproviders.xml | 16 ----------------
+ 1 file changed, 16 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index c9b6f61bb..a16dce4fc 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -11762,28 +11762,12 @@ conceived.
+ 				<mmsc>http://mms.fmgmobile.pl:8002/</mmsc>
+ 				<mmsproxy>212.2.96.16:8080</mmsproxy>
+ 			</apn>
+-			<apn value="mms.mobile.pl">
+-				<usage type="mms"/>
+-				<name>mBank mobile MMS</name>
+-				<username>true</username>
+-				<password>true</password>
+-				<mmsc>http://mms.mobile.pl:8080</mmsc>
+-				<mmsproxy>212.2.96.16:8080</mmsproxy>
+-			</apn>
+ 			<apn value="mms.plusgsm.pl">
+ 				<usage type="mms"/>
+ 				<name>Plus MMS</name>
+ 				<mmsc>http://mms.plusgsm.pl:8002</mmsc>
+ 				<mmsproxy>212.2.96.16:8080</mmsproxy>
+ 			</apn>
+-			<apn value="mms.mobile.pl">
+-				<usage type="mms"/>
+-				<name>mBank mobile MMS</name>
+-				<username></username>
+-				<password></password>
+-				<mmsc>http://mms.mobile.pl:8002</mmsc>
+-				<mmsproxy>212.2.96.16:8080</mmsproxy>
+-			</apn>
+ 		</gsm>
+ 	</provider>
+ 	<provider primary="true">

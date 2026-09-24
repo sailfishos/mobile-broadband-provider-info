@@ -1,0 +1,45 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: atlochowski <hucul@o2.pl>
+Date: Thu, 15 Sep 2016 13:06:48 +0000
+Subject: [PATCH] Deleted Polish mobile operators which don't exist anymore.
+ MER#902
+
+Mobilking is no more.
+gadu-gadu is no more.
+mova PL is no more.
+GaduAIR is no more.
+Aster is no more.
+---
+ serviceproviders.xml | 12 ------------
+ 1 file changed, 12 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 644f1b9bd..f2d3e63bc 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -11762,12 +11762,6 @@ conceived.
+ 				<mmsc>http://mms.fmgmobile.pl:8002/</mmsc>
+ 				<mmsproxy>212.2.96.16:8080</mmsproxy>
+ 			</apn>
+-			<apn value="mms.gadu-gadu.pl">
+-				<usage type="mms"/>
+-				<name>GaduAIR MMS</name>
+-				<mmsc>http://mms.gadu-gadu.pl:8002/</mmsc>
+-				<mmsproxy>212.2.96.16:8080</mmsproxy>
+-			</apn>
+ 			<apn value="mms.mobile.pl">
+ 				<usage type="mms"/>
+ 				<name>mBank mobile MMS</name>
+@@ -11776,12 +11770,6 @@ conceived.
+ 				<mmsc>http://mms.mobile.pl:8080</mmsc>
+ 				<mmsproxy>212.2.96.16:8080</mmsproxy>
+ 			</apn>
+-			<apn value="mms.mova.pl">
+-				<usage type="mms"/>
+-				<name>Carrefour Mova MMS</name>
+-				<mmsc>http://mms.mova.pl:8002/</mmsc>
+-				<mmsproxy>212.2.96.16:8080</mmsproxy>
+-			</apn>
+ 			<apn value="mms.plusgsm.pl">
+ 				<usage type="mms"/>
+ 				<name>Plus MMS</name>

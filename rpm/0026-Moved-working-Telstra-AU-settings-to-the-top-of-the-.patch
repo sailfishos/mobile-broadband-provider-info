@@ -1,0 +1,71 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Thu, 12 Mar 2015 21:49:15 +0200
+Subject: [PATCH] Moved working Telstra AU settings to the top of the list
+
+---
+ serviceproviders.xml | 31 ++++++++++++++++++-------------
+ 1 file changed, 18 insertions(+), 13 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index a928e31ee..28d97563c 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -1025,6 +1025,13 @@ conceived.
+ 				<dtmf>1258888</dtmf>
+ 				<ussd-response>*100#</ussd-response>
+ 			</balance-check>
++			<apn value="telstra.internet">
++				<plan type="postpaid"/>
++				<usage type="internet"/>
++				<name>Telstra Internet</name>
++				<dns>10.4.85.138</dns>
++				<dns>10.4.176.234</dns>
++			</apn>
+ 			<apn value="telstra.wap">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+@@ -1039,13 +1046,6 @@ conceived.
+ 				<dns>139.130.4.4</dns>
+ 				<dns>203.50.2.71</dns>
+ 			</apn>
+-			<apn value="telstra.internet">
+-				<plan type="postpaid"/>
+-				<usage type="internet"/>
+-				<name>Telstra (Next G)</name>
+-				<dns>10.4.85.138</dns>
+-				<dns>10.4.176.234</dns>
+-			</apn>
+ 			<apn value="telstra.pcpack">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+@@ -1059,18 +1059,23 @@ conceived.
+ 				<usage type="wap"/>
+ 				<name>Telstra Internet/Wap</name>
+ 			</apn>
+-			<apn value="telstra.bigpond">
+-				<plan type="postpaid"/>
+-				<usage type="internet"/>
+-				<name>Telstra BigPond</name>
+-				<!-- username/password per-user -->
+-			</apn>
+ 			<apn value="Telstra.mms">
+ 				<usage type="mms"/>
+ 				<name>Telstra MMS</name>
+ 				<mmsc>http://mmsc.telstra.com:8002</mmsc>
+ 				<mmsproxy>10.1.1.180:80</mmsproxy>
+ 			</apn>
++			<apn value="telstra.mms">
++				<plan type="postpaid"/>
++				<usage type="mms"/>
++				<name>Telstra MMS</name>
++			</apn>
++			<apn value="telstra.bigpond">
++				<plan type="postpaid"/>
++				<usage type="internet"/>
++				<name>Telstra BigPond</name>
++				<!-- username/password per-user -->
++			</apn>
+ 		</gsm>
+ 	</provider>
+ 	<provider>

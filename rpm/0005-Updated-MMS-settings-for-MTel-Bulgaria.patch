@@ -8,10 +8,10 @@ Subject: [PATCH] Updated MMS settings for MTel (Bulgaria)
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 7463c2c67..190c9abbe 100644
+index 208279fbd..0922fd6ed 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -1719,10 +1719,10 @@ conceived.
+@@ -1758,10 +1758,10 @@ conceived.
  			<apn value="mms-gprs.mtel.bg">
  				<usage type="mms"/>
  				<name>MobiTel BG MMS</name>

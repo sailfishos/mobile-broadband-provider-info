@@ -1,0 +1,37 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Fabio Isgro <fabio.isgro@par-tec.it>
+Date: Mon, 18 Sep 2017 13:12:58 +0200
+Subject: [PATCH] Noverca acquired by TIM S.p.A and now is a Full MVNO called
+ Kena Mobile MER#902
+
+---
+ serviceproviders.xml | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 19908b4c6..6c73437d5 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -7913,17 +7913,17 @@ conceived.
+ 	</provider>
+ 	<provider>
+ 		<!-- http://www.noverca.it/configurazione-internet-wap-mms -->
+-		<name>Noverca</name>
++		<name>Kena Mobile</name>
+ 		<gsm>
+ 			<network-id mcc="222" mnc="07"/>
+-			<apn value="web.noverca.it">
++			<apn value="web.kenamobile.it">
+ 				<usage type="internet"/>
+-				<name>Noverca Web</name>
++				<name>Kenamobile web</name>
+ 			</apn>
+ 			<apn value="mms.noverca.it">
+ 				<usage type="mms"/>
+-				<name>Noverca MMS</name>
+-				<mmsc>http://mms.noverca.it/</mmsc>
++				<name>Kenamobile MMS</name>
++				<mmsc>http://mms.kenamobile.it/</mmsc>
+ 				<mmsproxy>10.248.1.12:80</mmsproxy>
+ 			</apn>
+ 		</gsm>

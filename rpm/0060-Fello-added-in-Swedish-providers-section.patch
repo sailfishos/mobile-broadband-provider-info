@@ -1,0 +1,40 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Atlochowski <hucul@o2.pl>
+Date: Wed, 27 Apr 2022 09:14:37 +0200
+Subject: [PATCH] Fello added in Swedish providers section
+
+Fello added in Swedish providers section
+---
+ serviceproviders.xml | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 632c25f3e..d5ae9ca30 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -13321,6 +13321,25 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Fello</name>
++		<gsm>
++			<network-id mcc="240" mnc="01"/>
++			<!-- https://www.fello.se/felloservice/ -->
++			<apn value="online.telia.se">
++				<plan type="postpaid"/>
++				<usage type="internet"/>
++			</apn>
++			<apn value="mms.telia.se">
++				<usage type="mms"/>
++				<name>Telia MMS</name>
++				<username>mms</username>
++				<password>telia</password>
++				<mmsc>http://mmss</mmsc>
++				<mmsproxy>193.209.134.132:80</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="sg">

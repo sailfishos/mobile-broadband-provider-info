@@ -1,0 +1,74 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: atlochowski <hucul@o2.pl>
+Date: Fri, 20 Mar 2020 20:31:43 +0000
+Subject: [PATCH] Update of Kazakh and Kyrgyz operators. MER#902
+
+---
+ serviceproviders.xml | 31 +++++++++++++++++--------------
+ 1 file changed, 17 insertions(+), 14 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index ddca1aeca..12d934fea 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -8674,12 +8674,18 @@ conceived.
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+ 			</apn>
++			<apn value="mms1">
++				<usage type="mms"/>
++				<name>mms</name>
++				<mmsc>http://mms1.megacom.kg</mmsc>
++				<mmsproxy>10.240.89.119:8080</mmsproxy>
++			</apn>
+ 		</gsm>
+ 	</provider>
+ 	<provider>
+ 		<name>O!</name>
+ 		<gsm>
+-			<network-id mcc="437" mnc="09"/>
++			<network-id mcc="437" mnc="03"/>
+ 			<balance-check>
+ 				<ussd>*100#</ussd>
+ 			</balance-check>
+@@ -8980,13 +8986,20 @@ conceived.
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+ 				<username>@internet.beeline</username>
+-				<dns>212.19.149.53</dns>
+-				<dns>194.226.128.1</dns>
++				<password>beeline</password>
++			</apn>
++			<apn value="mms.beeline.kz">
++				<usage type="mms"/>
++				<name>MMS</name>
++				<username>@mms.beeline</username>
++				<password>beeline</password>
++				<mmsc>http://mms.beeline.kz/mms/wapenc</mmsc>
++				<mmsproxy>172.27.6.93:8080</mmsproxy>
+ 			</apn>
+ 		</gsm>
+ 	</provider>
+ 	<provider>
+-		<name>K&apos;CELL</name>
++		<name>KCELL</name>
+ 		<gsm>
+ 			<network-id mcc="401" mnc="02"/>
+ 			<apn value="internet">
+@@ -9012,16 +9025,6 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
+-	<provider>
+-		<name>Tele2</name>
+-		<gsm>
+-			<network-id mcc="401" mnc="77"/>
+-			<apn value="internet">
+-				<plan type="postpaid"/>
+-				<usage type="internet"/>
+-			</apn>
+-		</gsm>
+-	</provider>
+ 	<provider>
+ 		<name>Altel 4G</name>
+ 		<gsm>

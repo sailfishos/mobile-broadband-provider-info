@@ -1,0 +1,72 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Tue, 14 Apr 2015 21:12:42 +0300
+Subject: [PATCH] Telecom Italia settings. Fixes MER#896
+
+Also separated Noverca settings from Telecom Italia.
+MVNO or not, Noverca seems to have MNC of its own these days.
+---
+ serviceproviders.xml | 31 ++++++++++++++++++-------------
+ 1 file changed, 18 insertions(+), 13 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 7ff13ce27..6dc11b003 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -7873,14 +7873,14 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
+-	<provider>
++	<provider primary="true">
+ 		<name>TIM</name>
+ 		<gsm>
+ 			<network-id mcc="222" mnc="01"/>
+ 			<apn value="ibox.tim.it">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+-				<name>Maxxi Alice/Internet</name>
++				<name>TIM Internet</name>
+ 				<dns>217.200.200.42</dns>
+ 				<dns>213.230.129.10</dns>
+ 			</apn>
+@@ -7892,23 +7892,28 @@ conceived.
+ 				<dns>213.230.155.94</dns>
+ 				<dns>213.230.130.222</dns>
+ 			</apn>
+-			<apn value="mms.noverca.it">
+-				<usage type="mms"/>
+-				<name>NOVERCA MMS</name>
+-				<mmsc>http://mms.noverca.it/</mmsc>
+-				<mmsproxy>213.230.130.89:80</mmsproxy>
+-			</apn>
+-			<apn value="mms.tim.it">
++			<apn value="unico.tim.it">
+ 				<usage type="mms"/>
+ 				<name>TIM MMS</name>
+ 				<mmsc>http://mms.tim.it/servlets/mms</mmsc>
+ 				<mmsproxy>213.230.130.89:80</mmsproxy>
+ 			</apn>
+-			<apn value="unico.tim.it">
++		</gsm>
++	</provider>
++	<provider>
++		<!-- http://www.noverca.it/configurazione-internet-wap-mms -->
++		<name>Noverca</name>
++		<gsm>
++			<network-id mcc="222" mnc="07"/>
++			<apn value="web.noverca.it">
++				<usage type="internet"/>
++				<name>Noverca Web</name>
++			</apn>
++			<apn value="mms.noverca.it">
+ 				<usage type="mms"/>
+-				<name>iTIM</name>
+-				<mmsc>http://mms.tim.it/servlets/mms</mmsc>
+-				<mmsproxy>213.230.130.89:80</mmsproxy>
++				<name>Noverca MMS</name>
++				<mmsc>http://mms.noverca.it/</mmsc>
++				<mmsproxy>10.248.1.12:80</mmsproxy>
+ 			</apn>
+ 		</gsm>
+ 	</provider>

@@ -8,10 +8,10 @@ Subject: [PATCH] Add O2 Germany MMS settings
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 86ddfde00..b5cfb5390 100644
+index a44b3a6a3..31ed2ed65 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -3536,7 +3536,7 @@ conceived.
+@@ -3640,7 +3640,7 @@ conceived.
  				<usage type="mms"/>
  				<name>o2 MMS</name>
  				<mmsc>http://10.81.0.7:8002</mmsc>

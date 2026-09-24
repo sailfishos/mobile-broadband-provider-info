@@ -1,0 +1,33 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Slava Monich <slava.monich@jolla.com>
+Date: Thu, 24 Aug 2017 17:48:20 +0300
+Subject: [PATCH] Added apn protocol tag. JB#39520
+
+<!ELEMENT protocol EMPTY>
+<!ATTLIST protocol type (ip|ipv6|ipv4v6) #REQUIRED>
+---
+ serviceproviders.2.dtd | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/serviceproviders.2.dtd b/serviceproviders.2.dtd
+index a204868ec..09239cc83 100644
+--- a/serviceproviders.2.dtd
++++ b/serviceproviders.2.dtd
+@@ -23,6 +23,7 @@
+                usage?,
+                name*,
+                gateway?,
++               protocol?,
+                username?,
+                password?,
+                authentication?,
+@@ -147,6 +148,9 @@
+ <!ELEMENT name (#PCDATA)>
+ <!ATTLIST name xml:lang CDATA #IMPLIED>
+ 
++<!ELEMENT protocol EMPTY>
++<!ATTLIST protocol type (ip|ipv6|ipv4v6) #REQUIRED>
++
+ <!-- MMS proxy in HOST:PORT format -->
+ <!ELEMENT mmsproxy (#PCDATA)>
+ 
