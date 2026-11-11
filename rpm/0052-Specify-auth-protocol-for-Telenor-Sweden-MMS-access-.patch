@@ -10,10 +10,10 @@ And removed a few unnecessary and obsolete things
  1 file changed, 1 insertion(+), 7 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 6c73437d5..56bf86a0a 100644
+index a286912..b8d6b3c 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -13181,7 +13181,6 @@ conceived.
+@@ -13199,7 +13199,6 @@ conceived.
  			<network-id mcc="240" mnc="01"/>
  			<network-id mcc="240" mnc="05"/>
  
@@ -21,7 +21,7 @@ index 6c73437d5..56bf86a0a 100644
  			<apn value="mobiflex.telia.se">
  				<plan type="postpaid"/>
  				<usage type="internet"/>
-@@ -13207,17 +13206,11 @@ conceived.
+@@ -13225,17 +13224,11 @@ conceived.
  				<ussd>*222#</ussd>
  			</balance-check>
  
@@ -39,7 +39,7 @@ index 6c73437d5..56bf86a0a 100644
  			<apn value="bredband.telenor.se">
  				<plan type="postpaid"/>
  				<usage type="internet"/>
-@@ -13226,6 +13219,7 @@ conceived.
+@@ -13244,6 +13237,7 @@ conceived.
  			<apn value="services.telenor.se">
  				<usage type="mms"/>
  				<name>Telenor MMS</name>

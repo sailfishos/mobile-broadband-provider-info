@@ -9,10 +9,10 @@ Signed-off-by: Matti Kosola <matti.kosola@jolla.com>
  1 file changed, 17 insertions(+), 23 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 56bf86a0a..580b8ebb9 100644
+index b8d6b3c..d8399c4 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -16067,10 +16067,10 @@ conceived.
+@@ -16135,10 +16135,10 @@ conceived.
  			<apn value="m-i090">
  				<usage type="mms"/>
  				<name>Mobifone MMS</name>
@@ -26,7 +26,7 @@ index 56bf86a0a..580b8ebb9 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -16085,20 +16085,13 @@ conceived.
+@@ -16153,20 +16153,13 @@ conceived.
  				<username>mms</username>
  				<password>mms</password>
  			</apn>
@@ -49,7 +49,7 @@ index 56bf86a0a..580b8ebb9 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -16122,16 +16115,11 @@ conceived.
+@@ -16190,16 +16183,11 @@ conceived.
  				<usage type="internet"/>
  				<name>Mobile Internet</name>
  			</apn>
@@ -68,7 +68,7 @@ index 56bf86a0a..580b8ebb9 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -16145,7 +16133,7 @@ conceived.
+@@ -16213,7 +16201,7 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -77,7 +77,7 @@ index 56bf86a0a..580b8ebb9 100644
  				<mmsc>http://10.10.128.58/servlets/mms</mmsc>
  				<mmsproxy>10.10.128.44:8080</mmsproxy>
  			</apn>
-@@ -16160,6 +16148,12 @@ conceived.
+@@ -16228,6 +16216,12 @@ conceived.
  				<usage type="internet"/>
  				<name>EVNTelecomNet</name>
  			</apn>
@@ -90,7 +90,7 @@ index 56bf86a0a..580b8ebb9 100644
  		</gsm>
  		<cdma>
  			<username>evntelecom</username>
-@@ -16167,16 +16161,16 @@ conceived.
+@@ -16235,16 +16229,16 @@ conceived.
  		</cdma>
  	</provider>
  	<provider>

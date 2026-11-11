@@ -8,7 +8,7 @@ Subject: [PATCH] Added MMS settings
  1 file changed, 1431 insertions(+), 486 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 9b1d28a69..fefc4cfc6 100644
+index 15edccd..1e6fa4b 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
 @@ -90,13 +90,7 @@ conceived.
@@ -720,7 +720,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms.mobilicity.net</mmsc>
  				<mmsproxy>10.100.3.4:8080</mmsproxy>
  			</apn>
-@@ -2749,6 +2737,12 @@ conceived.
+@@ -2767,6 +2755,12 @@ conceived.
  				<mmsc>http://192.168.151.3:8002</mmsc>
  				<mmsproxy>192.168.151.2:8080</mmsproxy>
  			</apn>
@@ -733,7 +733,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -2847,20 +2841,11 @@ conceived.
+@@ -2865,20 +2859,11 @@ conceived.
  				<usage type="internet"/>
  				<dns>172.16.100.5</dns>
  			</apn>
@@ -758,7 +758,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -3030,7 +3015,7 @@ conceived.
+@@ -3048,7 +3033,7 @@ conceived.
  			</apn>
  			<apn value="cmwap">
  				<usage type="mms"/>
@@ -767,7 +767,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mmsc.monternet.com</mmsc>
  				<mmsproxy>10.0.0.172:80</mmsproxy>
  			</apn>
-@@ -3047,7 +3032,13 @@ conceived.
+@@ -3065,7 +3050,13 @@ conceived.
  			</apn>
  			<apn value="3gwap">
  				<usage type="mms"/>
@@ -782,7 +782,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mmsc.myuni.com.cn</mmsc>
  				<mmsproxy>10.0.0.172:80</mmsproxy>
  			</apn>
-@@ -3140,6 +3131,14 @@ conceived.
+@@ -3158,6 +3149,14 @@ conceived.
  				<username>COMCELWEB</username>
  				<password>COMCELWEB</password>
  			</apn>
@@ -797,7 +797,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -3175,13 +3174,19 @@ conceived.
+@@ -3193,13 +3192,19 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -822,7 +822,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -3263,9 +3268,11 @@ conceived.
+@@ -3281,9 +3286,11 @@ conceived.
  			</apn>
  			<apn value="cytamobile">
  				<usage type="mms"/>
@@ -836,7 +836,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -3279,6 +3286,14 @@ conceived.
+@@ -3297,6 +3304,14 @@ conceived.
  				<username>wap</username>
  				<password>wap</password>
  			</apn>
@@ -851,7 +851,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -3298,6 +3313,14 @@ conceived.
+@@ -3316,6 +3331,14 @@ conceived.
  				<dns>217.77.161.130</dns>
  				<dns>217.77.161.131</dns>
  			</apn>
@@ -866,7 +866,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -3329,7 +3352,7 @@ conceived.
+@@ -3347,7 +3370,7 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -875,7 +875,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms.o2active.cz:8002</mmsc>
  				<mmsproxy>160.218.160.218:8080</mmsproxy>
  			</apn>
-@@ -3351,6 +3374,14 @@ conceived.
+@@ -3369,6 +3392,14 @@ conceived.
  				<dns>62.141.0.1</dns>
  				<dns>213.162.65.1</dns>
  			</apn>
@@ -890,7 +890,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<!-- Czech MVNO operators -->
-@@ -3446,12 +3477,20 @@ conceived.
+@@ -3464,12 +3495,20 @@ conceived.
  			</apn>
  			<apn value="mms.eplus.de">
  				<usage type="mms"/>
@@ -912,7 +912,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -3508,7 +3547,13 @@ conceived.
+@@ -3526,7 +3565,13 @@ conceived.
  			</apn>
  			<apn value="event.vodafone.de">
  				<usage type="mms"/>
@@ -927,7 +927,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://139.7.24.1/servlets/mms</mmsc>
  				<mmsproxy>139.7.29.17:80</mmsproxy>
  			</apn>
-@@ -3743,6 +3788,12 @@ conceived.
+@@ -3761,6 +3806,12 @@ conceived.
  				<dns>139.7.30.125</dns>
  				<dns>139.7.30.126</dns>
  			</apn>
@@ -940,7 +940,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -4033,11 +4084,11 @@ conceived.
+@@ -4051,11 +4102,11 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -955,7 +955,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -4055,6 +4106,7 @@ conceived.
+@@ -4073,6 +4124,7 @@ conceived.
  	<provider>
  		<name>Telia</name>
  		<gsm>
@@ -963,7 +963,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<network-id mcc="238" mnc="30"/>
  
  			<voicemail>28184000</voicemail>
-@@ -4068,7 +4120,7 @@ conceived.
+@@ -4086,7 +4138,7 @@ conceived.
  			</apn>
  			<apn value="www.mms.mtelia.dk">
  				<usage type="mms"/>
@@ -972,7 +972,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms.telia.dk</mmsc>
  				<mmsproxy>193.209.134.131:8080</mmsproxy>
  			</apn>
-@@ -4163,6 +4215,12 @@ conceived.
+@@ -4181,6 +4233,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -985,7 +985,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -4212,9 +4270,8 @@ conceived.
+@@ -4230,9 +4288,8 @@ conceived.
  			</apn>
  			<apn value="djezzy.mms">
  				<usage type="mms"/>
@@ -997,7 +997,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>172.24.97.158:8799</mmsproxy>
  			</apn>
  		</gsm>
-@@ -4256,7 +4313,7 @@ conceived.
+@@ -4274,7 +4331,7 @@ conceived.
  				<username>mms</username>
  				<password>mms</password>
  				<mmsc>http://10.10.111.1</mmsc>
@@ -1006,7 +1006,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -4320,7 +4377,6 @@ conceived.
+@@ -4338,7 +4395,6 @@ conceived.
  				<usage type="mms"/>
  				<name>EMT MMS</name>
  				<mmsc>http://mms.emt.ee/servlets/mms</mmsc>
@@ -1014,7 +1014,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -4345,13 +4401,7 @@ conceived.
+@@ -4363,13 +4419,7 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -1029,7 +1029,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://194.204.2.10</mmsc>
  				<mmsproxy>194.204.2.6:8000</mmsproxy>
  			</apn>
-@@ -4362,18 +4412,13 @@ conceived.
+@@ -4380,18 +4430,13 @@ conceived.
  		<gsm>
  			<network-id mcc="248" mnc="03"/>
  			<apn value="internet.tele2.ee">
@@ -1051,7 +1051,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -4435,9 +4480,9 @@ conceived.
+@@ -4453,9 +4498,9 @@ conceived.
  			</apn>
  			<apn value="mobinilmms">
  				<usage type="mms"/>
@@ -1064,7 +1064,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -4510,11 +4555,19 @@ conceived.
+@@ -4528,11 +4573,19 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -1089,7 +1089,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<network-id mcc="214" mnc="17"/>
  			<apn value="internet.mundo-r.com">
  				<plan type="postpaid"/>
-@@ -4561,6 +4614,21 @@ conceived.
+@@ -4579,6 +4632,21 @@ conceived.
  				<usage type="internet"/>
  				<name>Pepephone (Mobile)</name>
  			</apn>
@@ -1111,7 +1111,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -4596,6 +4664,13 @@ conceived.
+@@ -4614,6 +4682,13 @@ conceived.
  				<dns>195.230.105.134</dns>
  				<dns>195.230.105.135</dns>
  			</apn>
@@ -1125,7 +1125,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -4638,6 +4713,14 @@ conceived.
+@@ -4656,6 +4731,14 @@ conceived.
  				<username>movistar</username>
  				<password>movistar</password>
  			</apn>
@@ -1140,7 +1140,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -4668,7 +4751,7 @@ conceived.
+@@ -4686,7 +4769,7 @@ conceived.
  			</apn>
  			<apn value="mms.vodafone.net">
  				<usage type="mms"/>
@@ -1149,7 +1149,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>wap@wap</username>
  				<password>wap125</password>
  				<mmsc>http://mmsc.vodafone.es/servlets/mms</mmsc>
-@@ -4695,7 +4778,7 @@ conceived.
+@@ -4713,7 +4796,7 @@ conceived.
  			<apn value="mms">
  				<usage type="mms"/>
  				<name>Yoigo MMS</name>
@@ -1158,7 +1158,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>193.209.134.141:80</mmsproxy>
  			</apn>
  		</gsm>
-@@ -4710,6 +4793,12 @@ conceived.
+@@ -4728,6 +4811,12 @@ conceived.
  				<dns>87.216.1.65</dns>
  				<dns>87.216.1.66</dns>
  			</apn>
@@ -1171,7 +1171,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -4848,7 +4937,9 @@ conceived.
+@@ -4866,7 +4955,9 @@ conceived.
  	<provider>
  		<name>DNA</name>
  		<gsm>
@@ -1181,7 +1181,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<apn value="internet">
  				<plan type="postpaid"/>
  				<usage type="internet"/>
-@@ -4894,6 +4985,30 @@ conceived.
+@@ -4912,6 +5003,30 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -1212,7 +1212,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -4939,7 +5054,7 @@ conceived.
+@@ -4957,7 +5072,7 @@ conceived.
  			<apn value="mms.saunalahti.fi">
  				<usage type="mms"/>
  				<name>Saunalahti MMS</name>
@@ -1221,7 +1221,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>62.142.4.197:8080</mmsproxy>
  			</apn>
  		</gsm>
-@@ -4948,7 +5063,6 @@ conceived.
+@@ -4966,7 +5081,6 @@ conceived.
  		<name>Telia</name>
  		<gsm>
  			<network-id mcc="244" mnc="91"/>
@@ -1229,7 +1229,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<!-- Phone number dependent:
  				 - Numbers beginning with 040 XXXXXXX turns in to 042 XXXXXXX
  				 - Others case by case
-@@ -4958,8 +5072,8 @@ conceived.
+@@ -4976,8 +5090,8 @@ conceived.
  			</balance-check>
  
  			<apn value="internet">
@@ -1239,7 +1239,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<dns>192.89.123.230</dns>
  				<dns>192.89.123.231</dns>
  			</apn>
-@@ -4995,6 +5109,22 @@ conceived.
+@@ -5013,6 +5127,22 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>
@@ -1262,7 +1262,7 @@ index 9b1d28a69..fefc4cfc6 100644
  </country>
  
  <country code="fj">
-@@ -5019,6 +5149,12 @@ conceived.
+@@ -5037,6 +5167,12 @@ conceived.
  				<plan type="prepaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -1275,7 +1275,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -5039,6 +5175,7 @@ conceived.
+@@ -5057,6 +5193,7 @@ conceived.
  		<gsm>
  			<network-id mcc="208" mnc="20"/>
  			<network-id mcc="208" mnc="21"/>
@@ -1283,7 +1283,7 @@ index 9b1d28a69..fefc4cfc6 100644
  
  			<voicemail>660</voicemail>
  			<visual-voicemail>
-@@ -5116,9 +5253,8 @@ conceived.
+@@ -5134,9 +5271,8 @@ conceived.
  			</apn>
  			<apn value="mmsfree">
  				<usage type="mms"/>
@@ -1294,7 +1294,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -5155,7 +5291,7 @@ conceived.
+@@ -5173,7 +5309,7 @@ conceived.
  		<name>Orange</name>
  		<gsm>
  			<network-id mcc="208" mnc="01"/>
@@ -1303,7 +1303,7 @@ index 9b1d28a69..fefc4cfc6 100644
  
  			<voicemail>888</voicemail>
  			<balance-check>
-@@ -5211,6 +5347,22 @@ conceived.
+@@ -5229,6 +5365,22 @@ conceived.
  				<usage type="internet"/>
  				<name>Internet Everywhere 3G</name>
  			</apn>
@@ -1326,7 +1326,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -5253,6 +5405,7 @@ conceived.
+@@ -5271,6 +5423,7 @@ conceived.
  			<!-- http://assistance.sfr.fr/internet-partout/Mobile/difference-wap-web/fc-2302-62196 -->
  			<network-id mcc="208" mnc="10"/>
  			<network-id mcc="208" mnc="11"/>
@@ -1334,7 +1334,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<msisdn-query>
  				<sms text="ABCd84367">9445</sms>
  			</msisdn-query>
-@@ -5300,11 +5453,17 @@ conceived.
+@@ -5318,11 +5471,17 @@ conceived.
  				<usage type="internet"/>
  				<name>Internet (Neuf Telecom)</name>
  			</apn>
@@ -1356,7 +1356,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -5583,19 +5742,20 @@ conceived.
+@@ -5601,19 +5760,20 @@ conceived.
  				<ussd>*100#</ussd>
  			</balance-check>
  			<apn value="giffgaff.com">
@@ -1386,7 +1386,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -5641,19 +5801,13 @@ conceived.
+@@ -5659,19 +5819,13 @@ conceived.
  				<usage type="internet"/>
  				<username>user</username>
  			</apn>
@@ -1412,7 +1412,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -5713,12 +5867,12 @@ conceived.
+@@ -5731,12 +5885,12 @@ conceived.
  				<username>web</username>
  				<password>web</password>
  			</apn>
@@ -1429,7 +1429,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>212.183.137.12:8799</mmsproxy>
  			</apn>
  		</gsm>
-@@ -5796,12 +5950,6 @@ conceived.
+@@ -5814,12 +5968,6 @@ conceived.
  				<dns>212.72.130.20</dns>
  				<dns>212.72.152.1</dns>
  			</apn>
@@ -1442,7 +1442,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -5832,9 +5980,15 @@ conceived.
+@@ -5850,9 +5998,15 @@ conceived.
  				<usage type="internet"/>
  				<name>Internet</name>
  			</apn>
@@ -1459,7 +1459,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mmsc.gprs.cw.com/</mmsc>
  				<mmsproxy>10.0.3.101:80</mmsproxy>
  			</apn>
-@@ -5852,9 +6006,10 @@ conceived.
+@@ -5870,9 +6024,10 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -1472,7 +1472,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>212.9.19.199:3130</mmsproxy>
  			</apn>
  		</gsm>
-@@ -6013,6 +6168,18 @@ conceived.
+@@ -6031,6 +6186,18 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -1491,7 +1491,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6037,10 +6204,18 @@ conceived.
+@@ -6055,10 +6222,18 @@ conceived.
  				<dns>213.249.17.10</dns>
  				<dns>213.249.17.11</dns>
  			</apn>
@@ -1511,7 +1511,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		<gsm>
  			<network-id mcc="202" mnc="09"/>
  			<network-id mcc="202" mnc="10"/>
-@@ -6057,12 +6232,17 @@ conceived.
+@@ -6075,12 +6250,17 @@ conceived.
  			<apn value="gint.b-online.gr">
  				<plan type="postpaid"/>
  				<usage type="internet"/>
@@ -1532,7 +1532,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms.myq.gr</mmsc>
  				<mmsproxy>192.168.80.134:8080</mmsproxy>
  			</apn>
-@@ -6217,15 +6397,27 @@ conceived.
+@@ -6235,15 +6415,27 @@ conceived.
  		<name>China Mobile</name>
  		<gsm>
  			<network-id mcc="454" mnc="12"/>
@@ -1564,7 +1564,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -6261,16 +6453,10 @@ conceived.
+@@ -6279,16 +6471,10 @@ conceived.
  			</apn>
  			<apn value="pccwmms">
  				<usage type="mms"/>
@@ -1582,7 +1582,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6291,6 +6477,12 @@ conceived.
+@@ -6309,6 +6495,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -1595,7 +1595,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6368,6 +6560,12 @@ conceived.
+@@ -6386,6 +6578,12 @@ conceived.
  				<usage type="internet"/>
  				<dns>10.12.0.1</dns>
  			</apn>
@@ -1608,7 +1608,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6406,7 +6604,7 @@ conceived.
+@@ -6424,7 +6622,7 @@ conceived.
  			</apn>
  			<apn value="mms.vipnet.hr">
  				<usage type="mms"/>
@@ -1617,7 +1617,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms.vipnet.hr/servlets/mms</mmsc>
  				<mmsproxy>212.91.99.91:8080</mmsproxy>
  			</apn>
-@@ -6434,12 +6632,6 @@ conceived.
+@@ -6452,12 +6650,6 @@ conceived.
  				<username>AAIEDU</username>
  				<password/>
  			</apn>
@@ -1630,7 +1630,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6470,8 +6662,8 @@ conceived.
+@@ -6488,8 +6680,8 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -1641,7 +1641,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>84.225.255.1:8080</mmsproxy>
  			</apn>
  		</gsm>
-@@ -6506,6 +6698,14 @@ conceived.
+@@ -6524,6 +6716,14 @@ conceived.
  				<dns>212.51.115.1</dns>
  				<dns>194.176.224.3</dns>
  			</apn>
@@ -1656,7 +1656,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6543,6 +6743,12 @@ conceived.
+@@ -6561,6 +6761,12 @@ conceived.
  				<dns>80.244.97.30</dns>
  				<dns>80.244.96.1</dns>
  			</apn>
@@ -1669,7 +1669,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6579,6 +6785,14 @@ conceived.
+@@ -6597,6 +6803,14 @@ conceived.
  				<username>3data</username>
  				<password>3data</password>
  			</apn>
@@ -1684,7 +1684,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6593,10 +6807,10 @@ conceived.
+@@ -6611,10 +6825,10 @@ conceived.
  			</apn>
  			<apn value="AXISmms">
  				<usage type="mms"/>
@@ -1698,7 +1698,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>10.8.3.8:8080</mmsproxy>
  			</apn>
  		</gsm>
-@@ -6635,7 +6849,7 @@ conceived.
+@@ -6653,7 +6867,7 @@ conceived.
  			</apn>
  			<apn value="indosatmms">
  				<usage type="mms"/>
@@ -1707,7 +1707,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>indosat</username>
  				<password>indosat</password>
  				<mmsc>http://mmsc.indosat.com</mmsc>
-@@ -6683,11 +6897,11 @@ conceived.
+@@ -6701,11 +6915,11 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -1721,7 +1721,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -6705,7 +6919,7 @@ conceived.
+@@ -6723,7 +6937,7 @@ conceived.
  			</apn>
  			<apn value="www.xlmms.net">
  				<usage type="mms"/>
@@ -1730,7 +1730,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>xlgprs</username>
  				<password>proxl</password>
  				<mmsc>http://mmc.xl.net.id/servlets/mms</mmsc>
-@@ -6840,6 +7054,12 @@ conceived.
+@@ -6858,6 +7072,12 @@ conceived.
  				<password>vodafone</password>
  				<dns>10.24.59.100</dns>
  			</apn>
@@ -1743,7 +1743,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6856,12 +7076,20 @@ conceived.
+@@ -6874,12 +7094,20 @@ conceived.
  			</apn>
  			<apn value="mms.mymeteor.ie">
  				<usage type="mms"/>
@@ -1765,7 +1765,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -6966,9 +7194,11 @@ conceived.
+@@ -6984,9 +7212,11 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -1779,7 +1779,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -7005,12 +7235,13 @@ conceived.
+@@ -7023,12 +7253,13 @@ conceived.
  			<apn value="net.hotm">
  				<plan type="postpaid"/>
  				<usage type="internet"/>
@@ -1795,7 +1795,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -7044,12 +7275,12 @@ conceived.
+@@ -7062,12 +7293,12 @@ conceived.
  				<username>pcl@3g</username>
  				<password>pcl</password>
  			</apn>
@@ -1811,7 +1811,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>10.170.9.54:9093</mmsproxy>
  			</apn>
  		</gsm>
-@@ -7126,11 +7357,19 @@ conceived.
+@@ -7144,11 +7375,19 @@ conceived.
  			</apn>
  			<apn value="mms.manxpronto.net">
  				<usage type="mms"/>
@@ -1833,7 +1833,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -7248,6 +7487,20 @@ conceived.
+@@ -7266,6 +7505,20 @@ conceived.
  				<mmsc>http://10.4.42.21:8002</mmsc>
  				<mmsproxy>10.4.42.15:8080</mmsproxy>
  			</apn>
@@ -1854,7 +1854,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -7281,11 +7534,13 @@ conceived.
+@@ -7299,11 +7552,13 @@ conceived.
  				<name>GRPS</name>
  				<authentication method="pap"/>
  			</apn>
@@ -1871,7 +1871,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -7319,6 +7574,14 @@ conceived.
+@@ -7337,6 +7592,14 @@ conceived.
  				<usage type="internet"/>
  				<name>Internet</name>
  			</apn>
@@ -1886,7 +1886,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -7468,6 +7731,12 @@ conceived.
+@@ -7486,6 +7749,12 @@ conceived.
  				<dns>213.176.128.51</dns>
  				<dns>213.176.128.50</dns>
  			</apn>
@@ -1899,7 +1899,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -7482,7 +7751,7 @@ conceived.
+@@ -7500,7 +7769,7 @@ conceived.
  			</apn>
  			<apn value="mms.nova.is">
  				<usage type="mms"/>
@@ -1908,7 +1908,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mmsc.nova.is</mmsc>
  				<mmsproxy>10.10.2.60:8080</mmsproxy>
  			</apn>
-@@ -7531,6 +7800,12 @@ conceived.
+@@ -7549,6 +7818,12 @@ conceived.
  				<dns>83.224.70.62</dns>
  				<dns>83.224.70.78</dns>
  			</apn>
@@ -1921,7 +1921,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -7552,6 +7827,24 @@ conceived.
+@@ -7570,6 +7845,24 @@ conceived.
  				<dns>213.230.155.94</dns>
  				<dns>213.230.130.222</dns>
  			</apn>
@@ -1946,7 +1946,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -7578,9 +7871,9 @@ conceived.
+@@ -7596,9 +7889,9 @@ conceived.
  			</apn>
  			<apn value="mms.wind">
  				<usage type="mms"/>
@@ -1958,7 +1958,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -7856,6 +8149,14 @@ conceived.
+@@ -7874,6 +8167,14 @@ conceived.
  				<dns>208.131.176.126</dns>
  				<dns>200.10.152.232</dns>
  			</apn>
@@ -1973,7 +1973,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -7873,6 +8174,14 @@ conceived.
+@@ -7891,6 +8192,14 @@ conceived.
  				<username>net</username>
  				<password>net</password>
  			</apn>
@@ -1988,7 +1988,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -7886,11 +8195,29 @@ conceived.
+@@ -7904,11 +8213,29 @@ conceived.
  				<username>Zain</username>
  				<password>Zain</password>
  			</apn>
@@ -2022,7 +2022,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -8214,6 +8541,12 @@ conceived.
+@@ -8232,6 +8559,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -2035,7 +2035,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -8501,6 +8834,22 @@ conceived.
+@@ -8519,6 +8852,22 @@ conceived.
  				<usage type="internet"/>
  				<name>Corporate</name>
  			</apn>
@@ -2058,7 +2058,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -8513,7 +8862,7 @@ conceived.
+@@ -8531,7 +8880,7 @@ conceived.
  			</apn>
  			<apn value="mms.wataniya.com">
  				<usage type="mms"/>
@@ -2067,7 +2067,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://action.wataniya.com</mmsc>
  				<mmsproxy>194.126.53.64:8080</mmsproxy>
  			</apn>
-@@ -8529,7 +8878,7 @@ conceived.
+@@ -8547,7 +8896,7 @@ conceived.
  			</apn>
  			<apn value="viva">
  				<usage type="mms"/>
@@ -2076,7 +2076,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://172.16.128.80:38090/was</mmsc>
  				<mmsproxy>172.16.128.228:8080</mmsproxy>
  			</apn>
-@@ -8562,9 +8911,9 @@ conceived.
+@@ -8580,9 +8929,9 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -2089,7 +2089,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -8665,12 +9014,20 @@ conceived.
+@@ -8683,12 +9032,20 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -2113,7 +2113,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -8820,10 +9177,10 @@ conceived.
+@@ -8838,10 +9195,10 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -2126,7 +2126,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>192.168.150.2:8080</mmsproxy>
  			</apn>
  		</gsm>
-@@ -8838,19 +9195,15 @@ conceived.
+@@ -8856,19 +9213,15 @@ conceived.
  			</apn>
  			<apn value="mms.tele2.lt">
  				<usage type="mms"/>
@@ -2152,7 +2152,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -8916,15 +9269,9 @@ conceived.
+@@ -8934,15 +9287,9 @@ conceived.
  				<name>Tango MMS</name>
  				<username>tango</username>
  				<password>tango</password>
@@ -2169,7 +2169,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -8979,12 +9326,11 @@ conceived.
+@@ -8997,12 +9344,11 @@ conceived.
  				<usage type="internet"/>
  				<name>O!Karte</name>
  			</apn>
@@ -2184,7 +2184,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -9013,6 +9359,14 @@ conceived.
+@@ -9031,6 +9377,14 @@ conceived.
  				<username>wap</username>
  				<password>wap</password>
  			</apn>
@@ -2199,7 +2199,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -9029,6 +9383,12 @@ conceived.
+@@ -9047,6 +9401,12 @@ conceived.
  				<usage type="internet"/>
  				<name>Prepaid/Contract</name>
  			</apn>
@@ -2212,7 +2212,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -9077,11 +9437,11 @@ conceived.
+@@ -9095,11 +9455,11 @@ conceived.
  			</apn>
  			<apn value="mms.meditel.ma">
  				<usage type="mms"/>
@@ -2226,7 +2226,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -9172,7 +9532,7 @@ conceived.
+@@ -9190,7 +9550,7 @@ conceived.
  			</apn>
  			<apn value="mms.promonte.com">
  				<usage type="mms"/>
@@ -2235,7 +2235,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>mms</username>
  				<password>mms</password>
  				<mmsc>http://mm.vor.promonte.com</mmsc>
-@@ -9208,6 +9568,14 @@ conceived.
+@@ -9226,6 +9586,14 @@ conceived.
  				<usage type="internet"/>
  				<name>Prepaid (old)</name>
  			</apn>
@@ -2250,7 +2250,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -9252,6 +9620,14 @@ conceived.
+@@ -9270,6 +9638,14 @@ conceived.
  				<username>world</username>
  				<password>orange</password>
  			</apn>
@@ -2265,7 +2265,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -9304,6 +9680,14 @@ conceived.
+@@ -9322,6 +9698,14 @@ conceived.
  				<username>internet</username>
  				<password>internet</password>
  			</apn>
@@ -2280,7 +2280,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -9386,9 +9770,7 @@ conceived.
+@@ -9404,9 +9788,7 @@ conceived.
  			</apn>
  			<apn value="mms.hutchisonmacau.com">
  				<usage type="mms"/>
@@ -2291,7 +2291,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://10.30.15.51:10021/mmsc</mmsc>
  				<mmsproxy>10.30.15.53:8080</mmsproxy>
  			</apn>
-@@ -9405,7 +9787,7 @@ conceived.
+@@ -9423,7 +9805,7 @@ conceived.
  			</apn>
  			<apn value="ctmmms">
  				<usage type="mms"/>
@@ -2300,7 +2300,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms.wap.ctm.net:8002</mmsc>
  				<mmsproxy>192.168.99.3:8080</mmsproxy>
  			</apn>
-@@ -9429,6 +9811,14 @@ conceived.
+@@ -9447,6 +9829,14 @@ conceived.
  				<username>internet</username>
  				<password>internet</password>
  			</apn>
@@ -2315,7 +2315,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -9630,7 +10020,7 @@ conceived.
+@@ -9648,7 +10038,7 @@ conceived.
  			</apn>
  			<apn value="mms.itelcel.com">
  				<usage type="mms"/>
@@ -2324,7 +2324,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>mmsgprs</username>
  				<password>mmsgprs2003</password>
  				<mmsc>http://mms.itelcel.com/servlets/mms</mmsc>
-@@ -9654,6 +10044,14 @@ conceived.
+@@ -9672,6 +10062,14 @@ conceived.
  				<username>movistar</username>
  				<password>movistar</password>
  			</apn>
@@ -2339,7 +2339,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -9682,9 +10080,11 @@ conceived.
+@@ -9700,9 +10098,11 @@ conceived.
  			</apn>
  			<apn value="digimms">
  				<usage type="mms"/>
@@ -2353,7 +2353,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -9716,6 +10116,14 @@ conceived.
+@@ -9734,6 +10134,14 @@ conceived.
  				<dns>10.213.17.1</dns>
  				<dns>10.213.17.2</dns>
  			</apn>
@@ -2368,7 +2368,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<apn value="unet">
  				<usage type="mms"/>
  				<name>Maxis 3G MMS</name>
-@@ -9743,12 +10151,42 @@ conceived.
+@@ -9761,12 +10169,42 @@ conceived.
  				<usage type="internet"/>
  				<name>Celcom 3G</name>
  			</apn>
@@ -2411,7 +2411,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -9885,6 +10323,20 @@ conceived.
+@@ -9903,6 +10341,20 @@ conceived.
  				<username>web</username>
  				<password>web</password>
  			</apn>
@@ -2432,7 +2432,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -9913,6 +10365,14 @@ conceived.
+@@ -9931,6 +10383,14 @@ conceived.
  				<username>flat</username>
  				<password>flat</password>
  			</apn>
@@ -2447,7 +2447,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -10070,11 +10530,11 @@ conceived.
+@@ -10088,11 +10548,11 @@ conceived.
  				<plan type="prepaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -2463,7 +2463,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -10214,6 +10674,12 @@ conceived.
+@@ -10232,6 +10692,12 @@ conceived.
  				<username>orange</username>
  				<password>orange</password>
  			</apn>
@@ -2476,7 +2476,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  		<provider>
-@@ -10224,6 +10690,12 @@ conceived.
+@@ -10242,6 +10708,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -2489,7 +2489,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -10389,6 +10861,20 @@ conceived.
+@@ -10407,6 +10879,20 @@ conceived.
  				<mmsc>http://mmsc</mmsc>
  				<mmsproxy>mms-proxy.telenor.no:8080</mmsproxy>
  			</apn>
@@ -2510,7 +2510,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  
-@@ -10555,7 +11041,7 @@ conceived.
+@@ -10573,7 +11059,7 @@ conceived.
  			</apn>
  			<apn value="wap.telecom.co.nz">
  				<usage type="mms"/>
@@ -2519,7 +2519,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://lsmmsc.xtra.co.nz</mmsc>
  				<mmsproxy>210.55.11.73:8080</mmsproxy>
  			</apn>
-@@ -10584,6 +11070,12 @@ conceived.
+@@ -10602,6 +11088,12 @@ conceived.
  				<dns>202.73.206.16</dns>
  				<dns>202.73.198.16</dns>
  			</apn>
@@ -2532,7 +2532,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -10604,8 +11096,8 @@ conceived.
+@@ -10622,8 +11114,8 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -2543,7 +2543,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>118.148.1.118:8080</mmsproxy>
  			</apn>
  		</gsm>
-@@ -10650,12 +11142,13 @@ conceived.
+@@ -10668,12 +11160,13 @@ conceived.
  				<usage type="internet"/>
  				<name>Internet (old)</name>
  			</apn>
@@ -2561,7 +2561,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -10828,9 +11321,11 @@ conceived.
+@@ -10846,9 +11339,11 @@ conceived.
  				<dns>203.127.225.10</dns>
  				<dns>203.127.225.11</dns>
  			</apn>
@@ -2575,7 +2575,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://192.40.100.22:10021/mmsc</mmsc>
  				<mmsproxy>192.40.100.20:8080</mmsproxy>
  			</apn>
-@@ -10850,7 +11345,7 @@ conceived.
+@@ -10868,7 +11363,7 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -2584,7 +2584,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://10.102.61.238:8002</mmsc>
  				<mmsproxy>10.102.61.46:8080</mmsproxy>
  			</apn>
-@@ -10866,9 +11361,9 @@ conceived.
+@@ -10884,9 +11379,9 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -2596,7 +2596,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -10890,6 +11385,14 @@ conceived.
+@@ -10908,6 +11403,14 @@ conceived.
  				<usage type="internet"/>
  				<name>Jazz</name>
  			</apn>
@@ -2611,7 +2611,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -10899,8 +11402,16 @@ conceived.
+@@ -10917,8 +11420,16 @@ conceived.
  			<apn value="internet">
  				<plan type="postpaid"/>
  				<usage type="internet"/>
@@ -2630,7 +2630,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -10917,9 +11428,7 @@ conceived.
+@@ -10935,9 +11446,7 @@ conceived.
  			<apn value="ufone.mms">
  				<usage type="mms"/>
  				<name>Ufone MMS</name>
@@ -2641,7 +2641,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>172.16.13.27:8080</mmsproxy>
  			</apn>
  		</gsm>
-@@ -10932,22 +11441,28 @@ conceived.
+@@ -10950,22 +11459,28 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -2675,7 +2675,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -10982,12 +11497,6 @@ conceived.
+@@ -11000,12 +11515,6 @@ conceived.
  				<plan type="prepaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -2688,7 +2688,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider primary="true">
-@@ -11008,8 +11517,9 @@ conceived.
+@@ -11026,8 +11535,9 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -2700,7 +2700,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -11066,11 +11576,23 @@ conceived.
+@@ -11084,11 +11594,23 @@ conceived.
  				<mmsc>http://mms.orange.pl</mmsc>
  				<mmsproxy>192.168.6.104:8080</mmsproxy>
  			</apn>
@@ -2728,7 +2728,7 @@ index 9b1d28a69..fefc4cfc6 100644
  	</provider>
  	<provider primary="true">
  		<name>Plus</name>
-@@ -11115,12 +11637,52 @@ conceived.
+@@ -11133,12 +11655,52 @@ conceived.
  				<name>iPlus optimizer with data compression</name>
  				<name xml:lang="pl">iPlus optimizer z kompresją danych</name>
  			</apn>
@@ -2782,7 +2782,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider primary="true">
-@@ -11131,6 +11693,12 @@ conceived.
+@@ -11149,6 +11711,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -2795,7 +2795,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider primary="true">
-@@ -11382,7 +11950,7 @@ conceived.
+@@ -11400,7 +11968,7 @@ conceived.
  				<usage type="internet"/>
  				<name>NOS Kanguru Net Móvel (internet)</name>
  			</apn>
@@ -2804,7 +2804,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<usage type="mms"/>
  				<name>NOS (MMS)</name>
  				<mmsc>http://mmsc:10021/mmsc</mmsc>
-@@ -11445,6 +12013,7 @@ conceived.
+@@ -11463,6 +12031,7 @@ conceived.
  				<plan type="postpaid"/>
  				<plan type="prepaid"/>
  				<usage type="internet"/>
@@ -2812,7 +2812,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>vodafone</username>
  				<password>vodafone</password>
  			</apn>
-@@ -11569,6 +12138,12 @@ conceived.
+@@ -11587,6 +12156,12 @@ conceived.
  				<usage type="internet"/>
  				<name>Web (old)</name>
  			</apn>
@@ -2825,7 +2825,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -11584,11 +12159,11 @@ conceived.
+@@ -11602,11 +12177,11 @@ conceived.
  			</apn>
  			<apn value="mms.qtel">
  				<usage type="mms"/>
@@ -2841,7 +2841,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -11596,6 +12171,26 @@ conceived.
+@@ -11614,6 +12189,26 @@ conceived.
  
  <country code="re">
  	<name>Réunion (France)</name>
@@ -2868,7 +2868,7 @@ index 9b1d28a69..fefc4cfc6 100644
  	<provider>
  		<name>SFR Réunion</name>
  		<gsm>
-@@ -11654,6 +12249,12 @@ conceived.
+@@ -11672,6 +12267,12 @@ conceived.
  				<mmsc>http://wap.mms.orange.ro:8002</mmsc>
  				<mmsproxy>62.217.247.252:8799</mmsproxy>
  			</apn>
@@ -2881,7 +2881,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -11666,6 +12267,20 @@ conceived.
+@@ -11684,6 +12285,20 @@ conceived.
  				<username>live</username>
  				<password>vodafone</password>
  			</apn>
@@ -2902,7 +2902,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -11675,6 +12290,24 @@ conceived.
+@@ -11693,6 +12308,24 @@ conceived.
  			<password>zapp</password>
  		</cdma>
  	</provider>
@@ -2927,7 +2927,7 @@ index 9b1d28a69..fefc4cfc6 100644
  	<provider>
  		<name>Digi.Net Mobil</name>
  		<gsm>
-@@ -11822,6 +12455,7 @@ conceived.
+@@ -11840,6 +12473,7 @@ conceived.
  		<name xml:lang="ru">Билайн</name>
  		<gsm>
  			<network-id mcc="250" mnc="28"/>
@@ -2935,7 +2935,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<network-id mcc="250" mnc="99"/>
  			<balance-check>
  				<ussd>*102#</ussd>
-@@ -11840,12 +12474,37 @@ conceived.
+@@ -11858,12 +12492,37 @@ conceived.
  				<mmsc>http://mms</mmsc>
  				<mmsproxy>192.168.94.23:8080</mmsproxy>
  			</apn>
@@ -2973,7 +2973,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<balance-check>
  				<ussd>*100#</ussd>
  			</balance-check>
-@@ -11858,6 +12517,14 @@ conceived.
+@@ -11876,6 +12535,14 @@ conceived.
  				<dns>213.87.0.1</dns>
  				<dns>213.87.1.1</dns>
  			</apn>
@@ -2988,7 +2988,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -11899,7 +12566,7 @@ conceived.
+@@ -11917,7 +12584,7 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -2997,7 +2997,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>mms</username>
  				<password>mms</password>
  				<mmsc>http://mmsc:8002</mmsc>
-@@ -11953,6 +12620,12 @@ conceived.
+@@ -11971,6 +12638,12 @@ conceived.
  				<dns>130.244.127.161</dns>
  				<dns>130.244.127.169</dns>
  			</apn>
@@ -3010,7 +3010,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -12120,6 +12793,26 @@ conceived.
+@@ -12138,6 +12811,26 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>
@@ -3037,7 +3037,7 @@ index 9b1d28a69..fefc4cfc6 100644
  	<provider>
  		<name>Yota</name>
  		<gsm>
-@@ -12158,9 +12851,9 @@ conceived.
+@@ -12176,9 +12869,9 @@ conceived.
  			</apn>
  			<apn value="mms1">
  				<usage type="mms"/>
@@ -3049,7 +3049,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -12176,15 +12869,9 @@ conceived.
+@@ -12194,15 +12887,9 @@ conceived.
  			</apn>
  			<apn value="mms.net.sa">
  				<usage type="mms"/>
@@ -3067,7 +3067,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -12225,6 +12912,12 @@ conceived.
+@@ -12243,6 +12930,12 @@ conceived.
  				<usage type="internet"/>
  				<name>Bredband Kontantkort</name>
  			</apn>
@@ -3080,7 +3080,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -12240,6 +12933,16 @@ conceived.
+@@ -12258,6 +12951,16 @@ conceived.
  			<apn value="mms.telia.se">
  				<usage type="mms"/>
  				<name>Halebop MMS</name>
@@ -3097,7 +3097,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mmss/</mmsc>
  				<mmsproxy>193.209.134.132:80</mmsproxy>
  			</apn>
-@@ -12366,9 +13069,9 @@ conceived.
+@@ -12384,9 +13087,9 @@ conceived.
  				<usage type="internet"/>
  				<name>Mobilt Bredband</name>
  			</apn>
@@ -3109,7 +3109,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms</mmsc>
  				<mmsproxy>172.30.253.241:8799</mmsproxy>
  			</apn>
-@@ -12418,6 +13121,12 @@ conceived.
+@@ -12436,6 +13139,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -3122,7 +3122,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -12508,12 +13217,18 @@ conceived.
+@@ -12526,12 +13235,18 @@ conceived.
  				<usage type="internet"/>
  				<name>M Card (prepaid)</name>
  			</apn>
@@ -3143,7 +3143,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>172.16.14.10:8080</mmsproxy>
  			</apn>
  		</gsm>
-@@ -12533,6 +13248,14 @@ conceived.
+@@ -12551,6 +13266,14 @@ conceived.
  				<usage type="mms"/>
  				<name>IDEAS MMS</name>
  				<username>65IDEAS</username>
@@ -3158,7 +3158,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<password>IDEAS</password>
  				<mmsc>http://mms.singtel.com:10021/mmsc</mmsc>
  				<mmsproxy>165.21.42.84:8080</mmsproxy>
-@@ -12598,6 +13321,14 @@ conceived.
+@@ -12616,6 +13339,14 @@ conceived.
  				<dns>213.229.248.161</dns>
  				<dns>193.189.160.11</dns>
  			</apn>
@@ -3173,7 +3173,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -12617,10 +13348,10 @@ conceived.
+@@ -12635,10 +13366,10 @@ conceived.
  			</apn>
  			<apn value="mms.simobil.si">
  				<usage type="mms"/>
@@ -3186,7 +3186,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>80.95.224.46:9201</mmsproxy>
  			</apn>
  		</gsm>
-@@ -12635,7 +13366,7 @@ conceived.
+@@ -12653,7 +13384,7 @@ conceived.
  			</apn>
  			<apn value="mms.t-2.net">
  				<usage type="mms"/>
@@ -3195,7 +3195,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://www.mms.t-2.net:8002</mmsc>
  				<mmsproxy>172.20.18.137:8080</mmsproxy>
  			</apn>
-@@ -12658,6 +13389,20 @@ conceived.
+@@ -12676,6 +13407,20 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>
@@ -3216,7 +3216,7 @@ index 9b1d28a69..fefc4cfc6 100644
  </country>
  
  <country code="sk">
-@@ -12675,7 +13420,7 @@ conceived.
+@@ -12693,7 +13438,7 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -3225,7 +3225,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>mms</username>
  				<password>mms</password>
  				<mmsc>http://mms</mmsc>
-@@ -12687,12 +13432,21 @@ conceived.
+@@ -12705,12 +13450,21 @@ conceived.
  		<name>Orange</name>
  		<gsm>
  			<network-id mcc="231" mnc="01"/>
@@ -3247,7 +3247,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -12847,7 +13601,7 @@ conceived.
+@@ -12865,7 +13619,7 @@ conceived.
  			</apn>
  			<apn value="multimedia">
  				<usage type="mms"/>
@@ -3256,7 +3256,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms.mobilelife.co.th</mmsc>
  				<mmsproxy>203.170.229.34:8080</mmsproxy>
  			</apn>
-@@ -12887,8 +13641,8 @@ conceived.
+@@ -12905,8 +13659,8 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -3267,7 +3267,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>203.155.200.133:8080</mmsproxy>
  			</apn>
  		</gsm>
-@@ -12905,10 +13659,10 @@ conceived.
+@@ -12923,10 +13677,10 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -3280,7 +3280,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsproxy>10.4.7.39:8080</mmsproxy>
  			</apn>
  		</gsm>
-@@ -12921,6 +13675,12 @@ conceived.
+@@ -12939,6 +13693,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -3293,7 +3293,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -13127,7 +13887,7 @@ conceived.
+@@ -13145,7 +13905,7 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -3302,7 +3302,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>mms</username>
  				<password>mms</password>
  				<mmsc>http://mms.avea.com.tr/servlets/mms</mmsc>
-@@ -13157,7 +13917,7 @@ conceived.
+@@ -13175,7 +13935,7 @@ conceived.
  				<username>mms</username>
  				<password>mms</password>
  				<mmsc>http://mms.turkcell.com.tr/servlets/mms</mmsc>
@@ -3311,7 +3311,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -13187,6 +13947,14 @@ conceived.
+@@ -13205,6 +13965,14 @@ conceived.
  				<usage type="internet"/>
  				<name>KKTC Telsim</name>
  			</apn>
@@ -3326,7 +3326,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -13280,7 +14048,7 @@ conceived.
+@@ -13298,7 +14066,7 @@ conceived.
  			</apn>
  			<apn value="fetnet01">
  				<usage type="mms"/>
@@ -3335,7 +3335,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms</mmsc>
  				<mmsproxy>210.241.199.199:9201</mmsproxy>
  			</apn>
-@@ -13297,9 +14065,9 @@ conceived.
+@@ -13315,9 +14083,9 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -3347,7 +3347,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -13312,11 +14080,11 @@ conceived.
+@@ -13330,11 +14098,11 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -3363,7 +3363,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -13329,10 +14097,17 @@ conceived.
+@@ -13347,10 +14115,17 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -3384,7 +3384,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -13430,7 +14205,7 @@ conceived.
+@@ -13448,7 +14223,7 @@ conceived.
  			</apn>
  			<apn value="mms.kyivstar.net">
  				<usage type="mms"/>
@@ -3393,7 +3393,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<username>mms</username>
  				<password>mms</password>
  				<mmsc>http://mms.kyivstar.net</mmsc>
-@@ -13483,6 +14258,12 @@ conceived.
+@@ -13501,6 +14276,12 @@ conceived.
  				<dns>212.58.160.33</dns>
  				<dns>212.58.160.34</dns>
  			</apn>
@@ -3406,7 +3406,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -13493,6 +14274,12 @@ conceived.
+@@ -13511,6 +14292,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -3419,7 +3419,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -13512,6 +14299,24 @@ conceived.
+@@ -13530,6 +14317,24 @@ conceived.
  				<dns>212.58.160.33</dns>
  				<dns>212.58.160.34</dns>
  			</apn>
@@ -3444,7 +3444,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -13746,9 +14551,10 @@ conceived.
+@@ -13764,9 +14569,10 @@ conceived.
  	<provider>
  		<name>AT&amp;T</name>
  		<gsm>
@@ -3456,7 +3456,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<network-id mcc="310" mnc="280"/>
  			<network-id mcc="310" mnc="410"/>
  			<network-id mcc="310" mnc="560"/>
-@@ -13856,11 +14662,12 @@ conceived.
+@@ -13874,11 +14680,12 @@ conceived.
  				<usage type="internet"/>
  				<name>Internet with VPN (old)</name>
  			</apn>
@@ -3474,7 +3474,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -13918,6 +14725,14 @@ conceived.
+@@ -13936,6 +14743,14 @@ conceived.
  	</provider>
  	<provider>
  		<name>Sprint</name>
@@ -3489,7 +3489,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		<cdma>
  			<!-- Assignments taken from IFAST: http://www.ifast.org/files/NationalSID.htm -->
  			<sid value="4103"/>
-@@ -14322,12 +15137,6 @@ conceived.
+@@ -14340,12 +15155,6 @@ conceived.
  		<gsm>
  			<!-- Former Western Wireless (roaming only) -->
  			<network-id mcc="310" mnc="590"/>
@@ -3502,7 +3502,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			<apn value="cellular1wap">
  				<usage type="mms"/>
  				<name>CellularOne MMS</name>
-@@ -14655,6 +15464,12 @@ conceived.
+@@ -14673,6 +15482,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -3515,7 +3515,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -14768,6 +15583,106 @@ conceived.
+@@ -14836,6 +15651,106 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>
@@ -3622,7 +3622,7 @@ index 9b1d28a69..fefc4cfc6 100644
  </country>
  
  <country code="uy">
-@@ -14800,7 +15715,7 @@ conceived.
+@@ -14868,7 +15783,7 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -3631,7 +3631,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mmsc.mms.ancelutil.com.uy</mmsc>
  				<mmsproxy>200.40.246.2:3128</mmsproxy>
  			</apn>
-@@ -14824,6 +15739,14 @@ conceived.
+@@ -14892,6 +15807,14 @@ conceived.
  				<username>ctiweb</username>
  				<password>ctiweb999</password>
  			</apn>
@@ -3646,7 +3646,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -14844,6 +15767,14 @@ conceived.
+@@ -14912,6 +15835,14 @@ conceived.
  				<username>movistar</username>
  				<password>movistar</password>
  			</apn>
@@ -3661,7 +3661,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -14917,7 +15848,7 @@ conceived.
+@@ -14985,7 +15916,7 @@ conceived.
  			</apn>
  			<apn value="expresate.digitel.ve">
  				<usage type="mms"/>
@@ -3670,7 +3670,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms.412.com.ve/servlets/mms</mmsc>
  				<mmsproxy>10.99.0.10:8080</mmsproxy>
  			</apn>
-@@ -14935,7 +15866,7 @@ conceived.
+@@ -15003,7 +15934,7 @@ conceived.
  			</apn>
  			<apn value="mm.movilnet.com.ve">
  				<usage type="mms"/>
@@ -3679,7 +3679,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://mms2.movilnet.com.ve/servlets/mms</mmsc>
  				<mmsproxy>192.168.16.12:8080</mmsproxy>
  			</apn>
-@@ -14970,10 +15901,10 @@ conceived.
+@@ -15038,10 +15969,10 @@ conceived.
  			<apn value="m-i090">
  				<usage type="mms"/>
  				<name>Mobifone MMS</name>
@@ -3693,7 +3693,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -15000,8 +15931,8 @@ conceived.
+@@ -15068,8 +15999,8 @@ conceived.
  				<name>Vinaphone MMS</name>
  				<username>mms</username>
  				<password>mms</password>
@@ -3704,7 +3704,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -15033,8 +15964,8 @@ conceived.
+@@ -15101,8 +16032,8 @@ conceived.
  			<apn value="v-mms">
  				<usage type="mms"/>
  				<name>Viettel MMS</name>
@@ -3715,7 +3715,7 @@ index 9b1d28a69..fefc4cfc6 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -15048,7 +15979,7 @@ conceived.
+@@ -15116,7 +16047,7 @@ conceived.
  			</apn>
  			<apn value="mms">
  				<usage type="mms"/>
@@ -3724,7 +3724,7 @@ index 9b1d28a69..fefc4cfc6 100644
  				<mmsc>http://10.10.128.58/servlets/mms</mmsc>
  				<mmsproxy>10.10.128.44:8080</mmsproxy>
  			</apn>
-@@ -15077,6 +16008,14 @@ conceived.
+@@ -15145,6 +16076,14 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -3739,7 +3739,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  </country>
-@@ -15108,6 +16047,12 @@ conceived.
+@@ -15176,6 +16115,12 @@ conceived.
  				<mmsc>http://mms.cmobile.co.za/</mmsc>
  				<mmsproxy>196.31.116.250</mmsproxy>
  			</apn>
@@ -3752,7 +3752,7 @@ index 9b1d28a69..fefc4cfc6 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -15167,8 +16112,8 @@ conceived.
+@@ -15235,8 +16180,8 @@ conceived.
  			</apn>
  			<apn value="mms.vodacom.net">
  				<usage type="mms"/>

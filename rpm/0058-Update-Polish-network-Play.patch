@@ -8,10 +8,10 @@ Subject: [PATCH] Update Polish network Play
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 084bfa258..0c3a74c2b 100644
+index efe90a6..0f74755 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -11637,7 +11637,8 @@ conceived.
+@@ -11655,7 +11655,8 @@ conceived.
  			<apn value="mms">
  				<usage type="mms"/>
  				<name>Play MMS</name>

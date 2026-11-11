@@ -9,10 +9,10 @@ Iceland providers update
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 9762d6d85..c9742a02d 100644
+index 5163696..e62427e 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -7873,7 +7873,7 @@ conceived.
+@@ -7891,7 +7891,7 @@ conceived.
  		<name>Nova</name>
  		<gsm>
  			<network-id mcc="274" mnc="11"/>
@@ -21,7 +21,7 @@ index 9762d6d85..c9742a02d 100644
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  				<dns>192.168.190.54</dns>
-@@ -7901,7 +7901,7 @@ conceived.
+@@ -7919,7 +7919,7 @@ conceived.
  				<usage type="mms"/>
  				<name>Siminn MMS</name>
  				<mmsc>http://mms.simi.is/servlets/mms</mmsc>

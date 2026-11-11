@@ -8,10 +8,10 @@ Subject: [PATCH] Added MMS settings for 3 (Italy). MER#902
  1 file changed, 7 insertions(+), 4 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 609462229..505257a33 100644
+index e58aa60..c57ea70 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -7962,11 +7962,14 @@ conceived.
+@@ -7980,11 +7980,14 @@ conceived.
  		<gsm>
  			<network-id mcc="222" mnc="99"/>
  			<apn value="tre.it">

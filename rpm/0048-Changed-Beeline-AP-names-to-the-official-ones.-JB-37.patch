@@ -8,10 +8,10 @@ Subject: [PATCH] Changed Beeline AP names to the official ones. JB#37626
  1 file changed, 1 insertion(+), 2 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 79011c80b..bcd40c641 100644
+index 6085493..d60e20a 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -12617,8 +12617,7 @@ conceived.
+@@ -12635,8 +12635,7 @@ conceived.
  			<apn value="home.beeline.ru">
  				<plan type="postpaid"/>
  				<usage type="internet"/>
