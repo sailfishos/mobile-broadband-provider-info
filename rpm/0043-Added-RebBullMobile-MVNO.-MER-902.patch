@@ -8,10 +8,10 @@ Subject: [PATCH] Added RebBullMobile MVNO. MER#902
  1 file changed, 20 insertions(+), 2 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 505257a33..f967bc179 100644
+index c57ea70..017d933 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -11803,7 +11803,7 @@ conceived.
+@@ -11821,7 +11821,7 @@ conceived.
  		</gsm>
  	</provider>
  	<!-- Polish MVNO operators -->
@@ -20,7 +20,7 @@ index 505257a33..f967bc179 100644
  		<name>Multimo</name>
  		<gsm>
  			<network-id mcc="260" mnc="03"/>
-@@ -11872,7 +11872,25 @@ conceived.
+@@ -11890,7 +11890,25 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>

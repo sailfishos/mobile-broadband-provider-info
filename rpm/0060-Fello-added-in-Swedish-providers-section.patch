@@ -9,10 +9,10 @@ Fello added in Swedish providers section
  1 file changed, 19 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 632c25f3e..d5ae9ca30 100644
+index 5a6c9aa..55cabe2 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -13321,6 +13321,25 @@ conceived.
+@@ -13339,6 +13339,25 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>

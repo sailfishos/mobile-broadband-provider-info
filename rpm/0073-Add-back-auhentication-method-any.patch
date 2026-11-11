@@ -12,10 +12,10 @@ so keeping the declaration here as well.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/serviceproviders.2.dtd b/serviceproviders.2.dtd
-index 09239cc83..ebea6e95b 100644
+index a85f954..d7f1c8d 100644
 --- a/serviceproviders.2.dtd
 +++ b/serviceproviders.2.dtd
-@@ -114,7 +114,7 @@
+@@ -115,7 +115,7 @@
  <!-- password required for authentication when starting a packet data session -->
  
  <!ELEMENT authentication EMPTY>

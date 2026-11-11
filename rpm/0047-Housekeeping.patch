@@ -8,10 +8,10 @@ Subject: [PATCH] Housekeeping
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 5854e25c8..79011c80b 100644
+index 54103d0..6085493 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -11891,7 +11891,7 @@ conceived.
+@@ -11909,7 +11909,7 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>
@@ -20,7 +20,7 @@ index 5854e25c8..79011c80b 100644
  		<name>Netia</name>
  		<gsm>
  			<network-id mcc="260" mnc="06"/>
-@@ -11901,7 +11901,7 @@ conceived.
+@@ -11919,7 +11919,7 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>
@@ -29,7 +29,7 @@ index 5854e25c8..79011c80b 100644
  		<name>Vectra</name>
  		<gsm>
  			<network-id mcc="260" mnc="06"/>
-@@ -11911,7 +11911,7 @@ conceived.
+@@ -11929,7 +11929,7 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>
@@ -38,7 +38,7 @@ index 5854e25c8..79011c80b 100644
  		<name>INEA</name>
  		<gsm>
  			<network-id mcc="260" mnc="03"/>
-@@ -11929,7 +11929,7 @@ conceived.
+@@ -11947,7 +11947,7 @@ conceived.
  			<password>sferia</password>
  		</cdma>
  	</provider>

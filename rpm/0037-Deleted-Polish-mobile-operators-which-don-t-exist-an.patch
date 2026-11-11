@@ -14,10 +14,10 @@ Aster is no more.
  1 file changed, 12 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 644f1b9bd..f2d3e63bc 100644
+index 6881c49..642dedf 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -11762,12 +11762,6 @@ conceived.
+@@ -11780,12 +11780,6 @@ conceived.
  				<mmsc>http://mms.fmgmobile.pl:8002/</mmsc>
  				<mmsproxy>212.2.96.16:8080</mmsproxy>
  			</apn>
@@ -30,7 +30,7 @@ index 644f1b9bd..f2d3e63bc 100644
  			<apn value="mms.mobile.pl">
  				<usage type="mms"/>
  				<name>mBank mobile MMS</name>
-@@ -11776,12 +11770,6 @@ conceived.
+@@ -11794,12 +11788,6 @@ conceived.
  				<mmsc>http://mms.mobile.pl:8080</mmsc>
  				<mmsproxy>212.2.96.16:8080</mmsproxy>
  			</apn>

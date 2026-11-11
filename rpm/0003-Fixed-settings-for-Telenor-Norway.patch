@@ -17,10 +17,10 @@ so let's fix it for Telenor customers and let those Ventelo customers with
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 27f18ffa1..f81b93205 100644
+index 4c3498c..f895924 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -10885,10 +10885,10 @@ conceived.
+@@ -10903,10 +10903,10 @@ conceived.
  			</apn>
  			<apn value="telenor">
  				<usage type="mms"/>

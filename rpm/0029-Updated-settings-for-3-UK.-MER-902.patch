@@ -8,10 +8,10 @@ Subject: [PATCH] Updated settings for 3 UK. MER#902
  1 file changed, 8 insertions(+), 5 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 6dc11b003..7d1d1c39a 100644
+index 59de829..f73eced 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -5959,17 +5959,20 @@ conceived.
+@@ -5977,17 +5977,20 @@ conceived.
  		<name>3</name>
  		<gsm>
  			<network-id mcc="234" mnc="20"/>

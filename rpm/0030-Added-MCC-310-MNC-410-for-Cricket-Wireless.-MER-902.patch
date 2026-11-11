@@ -9,10 +9,10 @@ AT&T has been marked as the primary provider. They share MNC with Cricket.
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 7d1d1c39a..ddd5571b0 100644
+index f73eced..653d929 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -14624,7 +14624,7 @@ conceived.
+@@ -14642,7 +14642,7 @@ conceived.
  			<callee type="fire-brigade"/>
  		</emergency-number>
  	</emergency-numbers>
@@ -21,7 +21,7 @@ index 7d1d1c39a..ddd5571b0 100644
  		<name>AT&amp;T</name>
  		<gsm>
  			<network-id mcc="310" mnc="030"/>
-@@ -14689,6 +14689,7 @@ conceived.
+@@ -14707,6 +14707,7 @@ conceived.
  		<name>Cricket Wireless</name>
  		<gsm>
  			<network-id mcc="310" mnc="150"/>

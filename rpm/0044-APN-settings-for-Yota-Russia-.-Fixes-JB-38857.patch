@@ -8,10 +8,10 @@ Subject: [PATCH] APN settings for Yota (Russia). Fixes JB#38857
  1 file changed, 17 insertions(+)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index f967bc179..f0c5d98ea 100644
+index 017d933..702ca7f 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -12767,6 +12767,23 @@ conceived.
+@@ -12785,6 +12785,23 @@ conceived.
  			</apn>
  		</gsm>
  	</provider>

@@ -16,10 +16,10 @@ Changes to Polish networks:
  1 file changed, 13 insertions(+), 36 deletions(-)
 
 diff --git a/serviceproviders.xml b/serviceproviders.xml
-index 580b8ebb9..ddca1aeca 100644
+index d8399c4..b2ea3bc 100644
 --- a/serviceproviders.xml
 +++ b/serviceproviders.xml
-@@ -11635,7 +11635,6 @@ conceived.
+@@ -11653,7 +11653,6 @@ conceived.
  				<usage type="mms"/>
  				<name>Play MMS</name>
  				<mmsc>http://10.10.28.164/mms/wapenc</mmsc>
@@ -27,7 +27,7 @@ index 580b8ebb9..ddca1aeca 100644
  			</apn>
  		</gsm>
  	</provider>
-@@ -11700,14 +11699,6 @@ conceived.
+@@ -11718,14 +11717,6 @@ conceived.
  				<mmsc>http://mms.orange.pl</mmsc>
  				<mmsproxy>192.168.6.104:8080</mmsproxy>
  			</apn>
@@ -42,7 +42,7 @@ index 580b8ebb9..ddca1aeca 100644
  		</gsm>
  	</provider>
  	<provider primary="true">
-@@ -11750,13 +11741,6 @@ conceived.
+@@ -11768,13 +11759,6 @@ conceived.
  				<username>plusgsm</username>
  				<password>plusgsm</password>
  			</apn>
@@ -56,7 +56,7 @@ index 580b8ebb9..ddca1aeca 100644
  			<apn value="mms">
  				<usage type="mms"/>
  				<name>Plus MMS</name>
-@@ -11769,19 +11753,13 @@ conceived.
+@@ -11787,19 +11771,13 @@ conceived.
  				<mmsc>http://mms.fmgmobile.pl:8002/</mmsc>
  				<mmsproxy>212.2.96.16:8080</mmsproxy>
  			</apn>
@@ -77,7 +77,7 @@ index 580b8ebb9..ddca1aeca 100644
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
-@@ -11815,18 +11793,6 @@ conceived.
+@@ -11833,18 +11811,6 @@ conceived.
  				<username>internet</username>
  				<password>internet</password>
  			</apn>
@@ -96,7 +96,7 @@ index 580b8ebb9..ddca1aeca 100644
  		</gsm>
  		<cdma>
  			<username>cdma@orange</username>
-@@ -11899,6 +11865,12 @@ conceived.
+@@ -11917,6 +11883,12 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
@@ -109,7 +109,7 @@ index 580b8ebb9..ddca1aeca 100644
  		</gsm>
  	</provider>
  	<provider>
-@@ -11909,13 +11881,18 @@ conceived.
+@@ -11927,13 +11899,18 @@ conceived.
  				<plan type="postpaid"/>
  				<usage type="internet"/>
  			</apn>
