@@ -1,0 +1,713 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Marko Saukko <marko.saukko@jolla.com>
+Date: Wed, 25 Nov 2026 08:48:53 +0200
+Subject: [PATCH] Add operators missing from the database. JB#66116
+
+Add providers for networks that the Android apns-conf.xml of a recent
+MediaTek device lists and we do not have at all, when LineageOS or the
+AOSP sample apns-full-conf.xml confirms the internet access point. The
+MMS access point is added only when it is confirmed as well.
+
+Names come from the GSMA TS.25 list shipped on the same device, cleaned
+up by hand. Networks without a TS.25 name, networks that have been shut
+down, and operators we already list under the same name are left out.
+---
+ serviceproviders.xml | 489 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 489 insertions(+)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index bb567fd..bbfc686 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -149,6 +149,21 @@ conceived.
+ 
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Etisalat</name>
++		<gsm>
++			<network-id mcc="412" mnc="50"/>
++			<apn value="etisalat.af.web">
++				<usage type="internet"/>
++			</apn>
++			<apn value="etisalat.af.mms">
++				<usage type="mms"/>
++				<name>Etisalat MMS</name>
++				<mmsc>etisalat.af</mmsc>
++				<mmsproxy>10.0.0.72:80</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="al">
+@@ -2156,6 +2171,15 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Unifique</name>
++		<gsm>
++			<network-id mcc="724" mnc="29"/>
++			<apn value="unifique.br">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="bs">
+@@ -2234,6 +2258,19 @@ conceived.
+ 	</provider>
+ </country>
+ 
++<country code="bt">
++	<name>Bhutan</name>
++	<provider>
++		<name>TashiCell</name>
++		<gsm>
++			<network-id mcc="402" mnc="77"/>
++			<apn value="ticlnet">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
++</country>
++
+ <country code="by">
+ 	<name>Belarus</name>
+ 	<provider>
+@@ -2675,6 +2712,34 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Bell MTS</name>
++		<gsm>
++			<network-id mcc="302" mnc="660"/>
++			<apn value="sp.mts">
++				<usage type="internet"/>
++			</apn>
++			<apn value="sp.mts">
++				<usage type="mms"/>
++				<mmsc>http://mmsc2.mts.net/</mmsc>
++				<mmsproxy>wapgw1.mts.net:9401</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>Eastlink</name>
++		<gsm>
++			<network-id mcc="302" mnc="270"/>
++			<apn value="wisp.mobi.eastlink.ca">
++				<usage type="internet"/>
++			</apn>
++			<apn value="mms.mobi.eastlink.ca">
++				<usage type="mms"/>
++				<mmsc>http://mmss.mobi.eastlink.ca</mmsc>
++				<mmsproxy>10.232.12.49:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="cd">
+@@ -2699,6 +2764,19 @@ conceived.
+ 	</provider>
+ </country>
+ 
++<country code="cf">
++	<name>Central African Republic</name>
++	<provider>
++		<name>Orange</name>
++		<gsm>
++			<network-id mcc="623" mnc="03"/>
++			<apn value="orangeca3g">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
++</country>
++
+ <country code="cg">
+ 	<name>Congo (Rep.)</name>
+ </country>
+@@ -2872,6 +2950,17 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Orange</name>
++		<gsm>
++			<network-id mcc="612" mnc="03"/>
++			<apn value="orangeciweb">
++				<usage type="internet"/>
++				<username>web</username>
++				<password>web</password>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="cl">
+@@ -3145,6 +3234,17 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Liberty</name>
++		<gsm>
++			<network-id mcc="712" mnc="04"/>
++			<apn value="internet.movistar.cr">
++				<usage type="internet"/>
++				<username>movistarcr</username>
++				<password>movistarcr</password>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="co">
+@@ -3331,6 +3431,19 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>PrimeTel</name>
++		<gsm>
++			<network-id mcc="280" mnc="20"/>
++			<apn value="ip.primetel">
++				<usage type="internet"/>
++			</apn>
++			<apn value="ip.primetel">
++				<usage type="mms"/>
++				<mmsc>http://mms.primetel</mmsc>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="cz">
+@@ -4419,6 +4532,15 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>CNT</name>
++		<gsm>
++			<network-id mcc="740" mnc="02"/>
++			<apn value="internet.cnt.net.ec">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="ee">
+@@ -4971,6 +5093,15 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Foroya Tele</name>
++		<gsm>
++			<network-id mcc="288" mnc="01"/>
++			<apn value="internet">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="fi">
+@@ -6497,6 +6628,19 @@ conceived.
+ 	</provider>
+ </country>
+ 
++<country code="gw">
++	<name>Guinea-Bissau</name>
++	<provider>
++		<name>Orange</name>
++		<gsm>
++			<network-id mcc="632" mnc="03"/>
++			<apn value="4Gogb">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
++</country>
++
+ <country code="gy">
+ 	<name>Guyana</name>
+ 	<provider>
+@@ -6737,6 +6881,20 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Claro</name>
++		<gsm>
++			<network-id mcc="708" mnc="001"/>
++			<apn value="internet.ideasclaro">
++				<usage type="internet"/>
++			</apn>
++			<apn value="mms.ideasclaro">
++				<usage type="mms"/>
++				<mmsc>http://10.6.32.27/servlets/mms</mmsc>
++				<mmsproxy>10.6.32.2:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="hr">
+@@ -7141,6 +7299,16 @@ conceived.
+ 			<sid value="10623"/>
+ 		</cdma>
+ 	</provider>
++	<provider>
++		<name>Smartfren</name>
++		<gsm>
++			<network-id mcc="510" mnc="09"/>
++			<network-id mcc="510" mnc="28"/>
++			<apn value="Smartfren4G">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="ie">
+@@ -7524,6 +7692,20 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Jawwal</name>
++		<gsm>
++			<network-id mcc="425" mnc="05"/>
++			<apn value="internet">
++				<usage type="internet"/>
++			</apn>
++			<apn value="mms">
++				<usage type="mms"/>
++				<mmsc>http://mms.jawwal.ps/servlets/mms</mmsc>
++				<mmsproxy>213.244.118.129:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="im">
+@@ -7877,6 +8059,21 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Zain</name>
++		<gsm>
++			<network-id mcc="418" mnc="20"/>
++			<network-id mcc="418" mnc="30"/>
++			<apn value="internet">
++				<usage type="internet"/>
++			</apn>
++			<apn value="mms">
++				<usage type="mms"/>
++				<mmsc>http://mms:8002/</mmsc>
++				<mmsproxy>172.29.11.12:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="ir">
+@@ -9262,6 +9459,24 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Alfa</name>
++		<gsm>
++			<network-id mcc="415" mnc="01"/>
++			<apn value="internet.mic1.com.lb">
++				<usage type="internet"/>
++				<username>mic1</username>
++				<password>mic1</password>
++			</apn>
++			<apn value="mms.mic1.com.lb">
++				<usage type="mms"/>
++				<username>mic1</username>
++				<password>mic1</password>
++				<mmsc>http://mms.mic1.com.lb</mmsc>
++				<mmsproxy>192.168.23.51:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="li">
+@@ -9276,6 +9491,21 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Swisscom</name>
++		<gsm>
++			<network-id mcc="295" mnc="01"/>
++			<apn value="gprs.swisscom.ch">
++				<usage type="internet"/>
++			</apn>
++			<apn value="event.swisscom.ch">
++				<usage type="mms"/>
++				<name>Swisscom MMS</name>
++				<mmsc>http://mms.natel.ch:8079</mmsc>
++				<mmsproxy>192.168.210.2:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="lc">
+@@ -9380,6 +9610,19 @@ conceived.
+ 	</provider>
+ </country>
+ 
++<country code="lr">
++	<name>Liberia</name>
++	<provider>
++		<name>Orange</name>
++		<gsm>
++			<network-id mcc="618" mnc="07"/>
++			<apn value="orangelbr">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
++</country>
++
+ <country code="ls">
+ 	<name>Lesotho</name>
+ 	<provider>
+@@ -10033,6 +10276,20 @@ conceived.
+ 		<name>China Telecom</name>
+ 		<cdma/>
+ 	</provider>
++	<provider>
++		<name>SmarTone Macau</name>
++		<gsm>
++			<network-id mcc="455" mnc="00"/>
++			<apn value="smartgprs">
++				<usage type="internet"/>
++			</apn>
++			<apn value="smartgprs">
++				<usage type="mms"/>
++				<mmsc>http://mms.smartone.com.mo/dmog/mo</mmsc>
++				<mmsproxy>10.9.9.29:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="mk">
+@@ -10426,6 +10683,25 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>unifi</name>
++		<gsm>
++			<network-id mcc="502" mnc="11"/>
++			<network-id mcc="502" mnc="153"/>
++			<apn value="unifi">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>Yes</name>
++		<gsm>
++			<network-id mcc="502" mnc="152"/>
++			<apn value="yesnet">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="mz">
+@@ -11531,6 +11807,20 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Bitel</name>
++		<gsm>
++			<network-id mcc="716" mnc="15"/>
++			<apn value="bitel">
++				<usage type="internet"/>
++			</apn>
++			<apn value="bitel-mms">
++				<usage type="mms"/>
++				<mmsc>http://181.176.241.99:8080</mmsc>
++				<mmsproxy>10.121.144.3:8000</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="pf">
+@@ -12215,6 +12505,24 @@ conceived.
+ 
+ </country>
+ 
++<country code="pr">
++	<name>Puerto Rico</name>
++	<provider>
++		<name>Claro</name>
++		<gsm>
++			<network-id mcc="330" mnc="110"/>
++			<apn value="lte.claropr.com">
++				<usage type="internet"/>
++			</apn>
++			<apn value="mmslte.claropr.com">
++				<usage type="mms"/>
++				<name>Claro MMS</name>
++				<mmsc>http://mmsg.claropr.com:10021/mmsc</mmsc>
++			</apn>
++		</gsm>
++	</provider>
++</country>
++
+ <country code="pt">
+ 	<name>Portugal</name>
+ 	<provider>
+@@ -12529,6 +12837,19 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Free</name>
++		<gsm>
++			<network-id mcc="647" mnc="03"/>
++			<apn value="free.re">
++				<usage type="internet"/>
++			</apn>
++			<apn value="free.re">
++				<usage type="mms"/>
++				<mmsc>http://mms.free.re</mmsc>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="ro">
+@@ -12644,6 +12965,23 @@ conceived.
+ 		</gsm>
+ 	</provider>
+ 
++	<provider>
++		<name>Telekom Romania</name>
++		<gsm>
++			<network-id mcc="226" mnc="06"/>
++			<apn value="broadband">
++				<usage type="internet"/>
++			</apn>
++			<apn value="mms">
++				<usage type="mms"/>
++				<username>mms</username>
++				<password>mms</password>
++				<authentication method="pap"/>
++				<mmsc>http://mmsc1.mms.telekom.ro:8002</mmsc>
++				<mmsproxy>10.252.1.62:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="rs">
+@@ -13666,6 +14004,15 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Simba</name>
++		<gsm>
++			<network-id mcc="525" mnc="10"/>
++			<apn value="tpg">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="si">
+@@ -13968,6 +14315,24 @@ conceived.
+ 	</provider>
+ </country>
+ 
++<country code="sy">
++	<name>Syria</name>
++	<provider>
++		<name>Syriatel</name>
++		<gsm>
++			<network-id mcc="417" mnc="01"/>
++			<apn value="net.syriatel.com">
++				<usage type="internet"/>
++			</apn>
++			<apn value="mms.syriatel.com">
++				<usage type="mms"/>
++				<mmsc>http://mymms.syriatel.com/</mmsc>
++				<mmsproxy>172.20.5.6:80</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
++</country>
++
+ <country code="th">
+ 	<name>Thailand</name>
+ 	<provider>
+@@ -14066,6 +14431,25 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>TrueMove H</name>
++		<gsm>
++			<network-id mcc="520" mnc="00"/>
++			<network-id mcc="520" mnc="04"/>
++			<apn value="internet">
++				<usage type="internet"/>
++				<username>true</username>
++				<password>true</password>
++			</apn>
++			<apn value="hmms">
++				<usage type="mms"/>
++				<username>true</username>
++				<password>true</password>
++				<mmsc>http://mms.trueh.com:8002/</mmsc>
++				<mmsproxy>10.4.7.39:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="tj">
+@@ -14499,6 +14883,29 @@ conceived.
+ 		<name xml:lang="zh">亞太電信 (亞太行動寬頻電信)</name>
+ 		<cdma/>
+ 	</provider>
++	<provider>
++		<name>Asia Pacific Telecom</name>
++		<gsm>
++			<network-id mcc="466" mnc="05"/>
++			<apn value="gtnet">
++				<usage type="internet"/>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>KGT-Online</name>
++		<gsm>
++			<network-id mcc="466" mnc="88"/>
++			<apn value="internet">
++				<usage type="internet"/>
++			</apn>
++			<apn value="kgtmms">
++				<usage type="mms"/>
++				<mmsc>http://mms.kgtmms.net.tw/mms/wapenc</mmsc>
++				<mmsproxy>172.28.33.5:8080</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="tz">
+@@ -16133,6 +16540,88 @@ conceived.
+ 			</apn>
+ 		</gsm>
+ 	</provider>
++	<provider>
++		<name>Cellular One</name>
++		<gsm>
++			<network-id mcc="310" mnc="320"/>
++			<apn value="isp.cellularoneaz.net">
++				<usage type="internet"/>
++			</apn>
++			<apn value="wap.c1csky.net">
++				<usage type="mms"/>
++				<mmsc>http://mmsc.c1neaz.csky.us:6672</mmsc>
++				<mmsproxy>209.4.229.94:9401</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>C Spire</name>
++		<gsm>
++			<network-id mcc="311" mnc="230"/>
++			<apn value="internet.cs4glte.com">
++				<usage type="internet"/>
++			</apn>
++			<apn value="internet.cs4glte.com">
++				<usage type="mms"/>
++				<mmsc>http://pix.cspire.com/servlets/mms</mmsc>
++				<mmsproxy>66.175.144.91:80</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>GCI</name>
++		<gsm>
++			<network-id mcc="311" mnc="370"/>
++			<apn value="web.gci">
++				<usage type="internet"/>
++			</apn>
++			<apn value="mms.gci">
++				<usage type="mms"/>
++				<mmsc>http://mmsc.gci.net</mmsc>
++				<mmsproxy>24.237.158.34:9201</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>Nex-Tech Wireless</name>
++		<gsm>
++			<network-id mcc="312" mnc="420"/>
++			<apn value="internet.lte.ntwls.com">
++				<usage type="internet"/>
++			</apn>
++			<apn value="internet.lte.ntwls.com">
++				<usage type="mms"/>
++				<mmsc>http://mms.ntwls.net/nex-tech/mms.php</mmsc>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>Union Wireless</name>
++		<gsm>
++			<network-id mcc="310" mnc="020"/>
++			<apn value="smart.com">
++				<usage type="internet"/>
++			</apn>
++			<apn value="union.mms.com">
++				<usage type="mms"/>
++				<mmsc>http://mms.unionwireless.com</mmsc>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>Viaero Wireless</name>
++		<gsm>
++			<network-id mcc="310" mnc="450"/>
++			<apn value="internet.vedge.com">
++				<usage type="internet"/>
++			</apn>
++			<apn value="mms">
++				<usage type="mms"/>
++				<mmsc>http://mms.viaero.com</mmsc>
++				<mmsproxy>10.168.3.23:9401</mmsproxy>
++			</apn>
++		</gsm>
++	</provider>
+ </country>
+ 
+ <country code="uy">
