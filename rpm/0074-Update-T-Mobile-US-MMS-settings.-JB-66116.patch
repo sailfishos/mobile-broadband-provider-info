@@ -1,0 +1,34 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Marko Saukko <marko.saukko@jolla.com>
+Date: Wed, 25 Nov 2026 07:31:48 +0200
+Subject: [PATCH] Update T-Mobile US MMS settings. JB#66116
+
+The old internet2.voicestream.com APN with MMSC
+http://216.155.174.84/servlets/mms and proxy 216.155.165.50:8080
+no longer works. Use fast.t-mobile.com with the MMSC already listed
+for the internet entry and no proxy. Request ipv4v6, which is what
+works on device; ofono would otherwise use IPv4 only for MMS.
+---
+ serviceproviders.xml | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 76af062..420e10e 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -14947,12 +14947,11 @@ conceived.
+ 				<usage type="internet"/>
+ 				<name>Internet with VPN (old)</name>
+ 			</apn>
+-			<!--http://support.t-mobile.com/docs/DOC-2090#non -->
+-			<apn value="internet2.voicestream.com">
++			<apn value="fast.t-mobile.com">
+ 				<usage type="mms"/>
+ 				<name>T-Mobile MMS</name>
+-				<mmsc>http://216.155.174.84/servlets/mms</mmsc>
+-				<mmsproxy>216.155.165.50:8080</mmsproxy>
++				<protocol type="ipv4v6"/>
++				<mmsc>http://mms.msg.eng.t-mobile.com/mms/wapenc</mmsc>
+ 			</apn>
+ 		</gsm>
+ 	</provider>
