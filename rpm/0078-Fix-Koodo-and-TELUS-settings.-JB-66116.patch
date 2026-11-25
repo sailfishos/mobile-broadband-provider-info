@@ -1,0 +1,55 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Marko Saukko <marko.saukko@jolla.com>
+Date: Wed, 25 Nov 2026 11:55:41 +0200
+Subject: [PATCH] Fix Koodo and TELUS settings. JB#66116
+
+The Koodo MMS proxy listens on port 8799, as for TELUS, but the entry
+had no port, so MMS went to port 80. Request ipv4v6 on both access
+points and add network code 302 221, as Android does for Koodo.
+Add network code 302 221 also for TELUS.
+---
+ serviceproviders.xml | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index bbfc686..9a57a81 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -2554,6 +2554,7 @@ conceived.
+ 		<name>Telus Mobility</name>
+ 		<gsm>
+ 			<network-id mcc="302" mnc="220"/>
++			<network-id mcc="302" mnc="221"/>
+ 			<network-id mcc="302" mnc="860"/>
+ 			<network-id mcc="302" mnc="880"/>
+ 			<apn value="isp.telus.com">
+@@ -2579,6 +2580,7 @@ conceived.
+ 			<apn value="sp.telus.com">
+ 				<usage type="mms"/>
+ 				<name>TELUS MMS</name>
++				<protocol type="ipv4v6"/>
+ 				<mmsc>http://aliasredirect.net/proxy/mmsc</mmsc>
+ 				<mmsproxy>mmscproxy.mobility.ca:8799</mmsproxy>
+ 			</apn>
+@@ -2698,17 +2700,20 @@ conceived.
+ 		<name>Koodo</name>
+ 		<gsm>
+ 			<network-id mcc="302" mnc="220"/>
++			<network-id mcc="302" mnc="221"/>
+ 			<gid1>4b4f</gid1>
+ 			<apn value="sp.koodo.com">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+ 				<name>Internet</name>
++				<protocol type="ipv4v6"/>
+ 			</apn>
+ 			<apn value="sp.koodo.com">
+ 				<usage type="mms"/>
+ 				<name>Koodo MMS</name>
++				<protocol type="ipv4v6"/>
+ 				<mmsc>http://aliasredirect.net/proxy/koodo/mmsc</mmsc>
+-				<mmsproxy>mmscproxy.mobility.ca</mmsproxy>
++				<mmsproxy>mmscproxy.mobility.ca:8799</mmsproxy>
+ 			</apn>
+ 		</gsm>
+ 	</provider>
