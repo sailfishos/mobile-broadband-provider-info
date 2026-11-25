@@ -1,0 +1,173 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Marko Saukko <marko.saukko@jolla.com>
+Date: Wed, 25 Nov 2026 08:48:13 +0200
+Subject: [PATCH] Add missing network codes of known operators. JB#66116
+
+Add MCC/MNC pairs that the Android apns-conf.xml of a recent MediaTek
+device lists for an operator we already have, when LineageOS or the
+AOSP sample apns-full-conf.xml confirms the internet access point, the
+operator name matches the provider or its GSMA TS.25 name, and the
+provider already lists that access point. SIMs of these networks were
+not provisioned at all before.
+---
+ serviceproviders.xml | 26 ++++++++++++++++++++++++--
+ 1 file changed, 24 insertions(+), 2 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index 69bb555..bb567fd 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -1009,6 +1009,8 @@ conceived.
+ 		<name>Telstra</name>
+ 		<gsm>
+ 			<network-id mcc="505" mnc="01"/>
++			<network-id mcc="505" mnc="11"/>
++			<network-id mcc="505" mnc="39"/>
+ 			<network-id mcc="505" mnc="71"/>
+ 			<network-id mcc="505" mnc="72"/>
+ 			<balance-check>
+@@ -2071,6 +2073,7 @@ conceived.
+ 			<network-id mcc="724" mnc="03"/>
+ 			<network-id mcc="724" mnc="04"/>
+ 			<network-id mcc="724" mnc="08"/>
++			<network-id mcc="724" mnc="54"/>
+ 			<voicemail>*100</voicemail>
+ 			<balance-check>
+ 				<ussd>*222#</ussd>
+@@ -2580,6 +2583,7 @@ conceived.
+ 		<gsm>
+ 			<network-id mcc="302" mnc="500"/>
+ 			<network-id mcc="302" mnc="510"/>
++			<network-id mcc="302" mnc="520"/>
+ 			<apn value="media.ng">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+@@ -2896,6 +2900,7 @@ conceived.
+ 		<name>Entel PCS</name>
+ 		<gsm>
+ 			<network-id mcc="730" mnc="01"/>
++			<network-id mcc="730" mnc="10"/>
+ 			<apn value="imovil.entelpcs.cl">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+@@ -3017,7 +3022,10 @@ conceived.
+ 		<gsm>
+ 			<network-id mcc="460" mnc="00"/>
+ 			<network-id mcc="460" mnc="02"/>
++			<network-id mcc="460" mnc="04"/>
+ 			<network-id mcc="460" mnc="07"/>
++			<network-id mcc="460" mnc="08"/>
++			<network-id mcc="460" mnc="13"/>
+ 			<apn value="cmwap">
+ 				<plan type="postpaid"/>
+ 				<usage type="wap"/>
+@@ -4106,6 +4114,7 @@ conceived.
+ 		<name>TDC</name>
+ 		<gsm>
+ 			<network-id mcc="238" mnc="01"/>
++			<network-id mcc="238" mnc="10"/>
+ 
+ 			<voicemail>20171717</voicemail>
+ 			<balance-check>
+@@ -4987,6 +4996,7 @@ conceived.
+ 		<name>DNA</name>
+ 		<gsm>
+ 			<network-id mcc="244" mnc="03"/>
++			<network-id mcc="244" mnc="04"/>
+ 			<network-id mcc="244" mnc="12"/>
+ 			<network-id mcc="244" mnc="13"/>
+ 			<apn value="internet">
+@@ -5671,6 +5681,7 @@ conceived.
+ 		<name>Lebara UK</name>
+ 		<gsm>
+ 			<network-id mcc="234" mnc="15"/>
++			<network-id mcc="234" mnc="87"/>
+ 			<apn value="uk.lebara.mobi">
+ 				<plan type="prepaid"/>
+ 				<usage type="internet"/>
+@@ -5883,6 +5894,7 @@ conceived.
+ 		<gsm>
+ 			<network-id mcc="234" mnc="31"/>
+ 			<network-id mcc="234" mnc="32"/>
++			<network-id mcc="234" mnc="38"/>
+ 			<apn value="vdata">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+@@ -6551,6 +6563,7 @@ conceived.
+ 		<name>China Mobile</name>
+ 		<gsm>
+ 			<network-id mcc="454" mnc="12"/>
++			<network-id mcc="454" mnc="13"/>
+ 			<!-- http://www.hk.chinamobile.com/images/handsets/android_settings_en.pdf -->
+ 			<apn value="CMHK">
+ 				<usage type="internet"/>
+@@ -6579,6 +6592,8 @@ conceived.
+ 		<name>SmarTone</name>
+ 		<gsm>
+ 			<network-id mcc="454" mnc="06"/>
++			<network-id mcc="454" mnc="15"/>
++			<network-id mcc="454" mnc="17"/>
+ 			<apn value="SmarTone">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+@@ -7708,6 +7723,7 @@ conceived.
+ 			<network-id mcc="404" mnc="75"/>
+ 			<network-id mcc="404" mnc="76"/>
+ 			<network-id mcc="404" mnc="77"/>
++			<network-id mcc="404" mnc="79"/>
+ 			<network-id mcc="404" mnc="80"/>
+ 			<network-id mcc="404" mnc="81"/>
+ 
+@@ -7838,7 +7854,7 @@ conceived.
+ 	<provider>
+ 		<name>Asia Cell</name>
+ 		<gsm>
+-			<network-id mcc="418" mnc="50"/>
++			<network-id mcc="418" mnc="05"/>
+ 			<apn value="net.asiacell.com">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+@@ -9530,6 +9546,7 @@ conceived.
+ 		<name>LMT</name>
+ 		<gsm>
+ 			<network-id mcc="247" mnc="01"/>
++			<network-id mcc="247" mnc="10"/>
+ 			<apn value="internet.lmt.lv">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+@@ -10225,6 +10242,7 @@ conceived.
+ 		<name>Telcel</name>
+ 		<gsm>
+ 			<network-id mcc="334" mnc="02"/>
++			<network-id mcc="334" mnc="020"/>
+ 
+ 			<voicemail>*86</voicemail>
+ 			<balance-check>
+@@ -12277,6 +12295,8 @@ conceived.
+ 		<name>Vodafone</name>
+ 		<gsm>
+ 			<network-id mcc="268" mnc="01"/>
++			<network-id mcc="268" mnc="91"/>
++			<network-id mcc="268" mnc="92"/>
+ 			<voicemail>123</voicemail>
+ 			<balance-check>
+ 				<ussd>*#123#</ussd>
+@@ -13993,7 +14013,9 @@ conceived.
+ 	<provider>
+ 		<name>DTAC</name>
+ 		<gsm>
++			<network-id mcc="520" mnc="05"/>
+ 			<network-id mcc="520" mnc="18"/>
++			<network-id mcc="520" mnc="47"/>
+ 			<apn value="www.dtac.co.th">
+ 				<plan type="postpaid"/>
+ 				<usage type="internet"/>
+@@ -15174,7 +15196,7 @@ conceived.
+ 			<network-id mcc="310" mnc="010"/>
+ 			<network-id mcc="310" mnc="011"/>
+ 			<network-id mcc="310" mnc="012"/>
+-			<network-id mcc="311" mnc="480"/>
++			<network-id mcc="311" mnc="390"/>
+ 			<network-id mcc="311" mnc="480"/>
+ 			<network-id mcc="311" mnc="481"/>
+ 			<network-id mcc="311" mnc="482"/>
