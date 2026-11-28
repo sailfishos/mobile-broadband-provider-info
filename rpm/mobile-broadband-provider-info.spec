@@ -85,6 +85,11 @@ Patch0070: 0070-United-Arab-Emirates-providers-update.patch
 Patch0071: 0071-Fix-Orange-Belgium-network-APN.patch
 Patch0072: 0072-Adding-Voicemail-number-on-the-Belgium-Orange-Networ.patch
 Patch0073: 0073-Add-back-auhentication-method-any.patch
+Patch0074: 0074-Update-T-Mobile-US-MMS-settings.-JB-66116.patch
+Patch0075: 0075-Update-operator-APN-settings-from-Android-APN-data.-.patch
+Patch0076: 0076-Add-missing-network-codes-of-known-operators.-JB-661.patch
+Patch0077: 0077-Add-operators-missing-from-the-database.-JB-66116.patch
+Patch0078: 0078-Fix-Koodo-and-TELUS-settings.-JB-66116.patch
 
 %description
 This package contains mobile broadband settings for different service providers
